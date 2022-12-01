@@ -1,0 +1,198 @@
+/************** NAVBAR SECTION  **************/
+@media screen and (max-width: 1199px) {
+    .nav-link{
+       margin-left: 15px;
+    }
+}
+
+
+@media screen and (max-width: 991px ) {
+  .header {
+    background-position: right 18px;
+    background-size: 550px 850px;
+  }
+    .nav-sm{
+        position: absolute;
+        top: 0;
+        background-color: #fff;
+        color: white;
+        padding: 20px;
+        padding-top: 40px;
+        width: 300px;
+        height: 100vh;
+        left: -300px;
+        z-index: 1000;
+        align-items: flex-start!important;
+        justify-content: left;
+        transition: all .01s ease-in-out;
+    }
+
+    .nav-sm .nav-item{
+        background-color: #F2F4F8;
+        margin-top: 5px;
+        width: 100%;
+        padding: 5px 10px;
+        margin: 0;
+        border-bottom: 1px solid white;
+    }
+
+    .nav-sm .nav-link{
+        color: #303030;
+        font-size: 14px;
+    }
+    .mt-sm-4{
+        margin-top: 20px!important;
+    }
+    .bottom-border{
+        border-bottom: 1px solid #1583E9!important;
+    }
+
+    .header .showcase{
+        padding-bottom: 50px;
+        background-size: 97%;
+        background-repeat: no-repeat;
+        background-position: center top;
+      }
+
+    .showcase .showcase-content{
+        margin-top: 120px;
+      }
+
+      .showcase-content h1{
+        font-size: 2.3rem;
+       
+       }
+       .showcase-content a.partner-btn{
+        margin: 45px 0 40px 0;
+      }
+/************** WORKFLOW SECTION  **************/
+.proclass img{
+    left: 80%;
+    width: 55px;
+    height: 13px;
+    
+  }
+  .proclass .icon{
+   height: 60px;
+   width: 60px;
+  }
+
+  #become-a-mentor p.p-justify{
+    font-size: .8rem;
+  }
+  #become-a-mentor h3.heading-bold{
+    font-size: 1rem;
+  }
+  #become-a-mentor div.svg{
+    font-size: .8rem;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .header {
+    background-position: right 10px;
+    background-size: 380px 850px;
+  }
+    .proclass img{
+        top: 18px!important;
+        left: 80%;
+        width: 45px!important;
+        height: 10px;
+        
+      }
+      .proclass .icon{
+       height: 45px!important;
+       width: 45px!important;
+      }
+
+    .showcase .showcase-content{
+        margin-top: 100px;
+      }
+
+      .showcase-content h1{
+        font-family: poppins-bold, poppins-extrabold;
+        font-size: 1.8rem!important;
+       
+       }
+       .showcase-content a.partner-btn{
+        margin: 45px 0 40px 0;
+      }
+}
+
+@media screen and (max-width: 576px) {
+  .header {
+    background-position: right 10px;
+    background-size: 380px 850px;
+  }
+  .row.process{
+  flex-direction: column!important;
+  margin-left: .5rem;
+  margin-right: .5rem;
+}
+
+  .proclass img{
+     display: none!important;
+      
+    }
+    .proclass .icon{
+     height: 70px;
+     width: 70px;
+    }
+
+
+  .showcase .showcase-content{
+      margin-top: 100px;
+    }
+
+    .showcase-content h1{
+      font-family: poppins-bold, poppins-extrabold;
+      font-size: 1.5rem;
+     
+     }
+     .showcase-content a.partner-btn{
+      margin: 45px 0 40px 0;
+    }
+    #testimonials-carousel .owl-nav .owl-next,
+    #testimonials-carousel .owl-nav .owl-prev{
+      display: none!important;
+    }
+    .quote-text, .quote-author{
+      font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 425px){
+  .showcase-content a.partner-btn{
+    font-size: 1.5rem;
+    margin: 35px 0;
+  }
+  .showcase-content .input-group input[type="text"],
+.header .search-input{
+  height: 40px;
+}
+.header .showcase .showcase-content .input-group button{
+  background-color: var(--red-color);
+  height: 40px;
+  width: 40px;
+  margin-left: -40px;
+}
+  .text-sm{
+    font-size: .6rem;
+  }
+  .showcase .showcase-content{
+      margin-top: 40px!important;
+    }
+    #mentorship-category .heading-bold{
+      font-size: 1.3rem;
+    }
+
+    .subfooter .contents{
+      flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 350px) {
+  
+}
+
