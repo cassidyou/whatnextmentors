@@ -111,6 +111,7 @@ a{
   padding: 4px 25px!important;
   font-size: 1.5rem;
   display: inline-block;
+  border-radius: 4px;
 }
 .getstarted-btn{
   background-color: #30814D;
@@ -119,13 +120,14 @@ a{
   padding: 4px 35px;
   font-size: 1.5rem;
   display: inline-block;
+  border-radius: 4px;
 }
  
 .partner-btn-sm{
-  /* color: white; */
   padding: 12px 60px;
   font-size: 0.7rem;
   display: inline-block;
+  border-radius: 7px;
 }
 
 .section-heading{
@@ -330,6 +332,7 @@ section{
   text-align: center;
 }
 
+
 .header .showcase .showcase-content .input-group button{
   background-color: var(--red-color);
   height: 50px;
@@ -451,7 +454,7 @@ box-shadow: var(--dropshadow);
   background-color: var(--mentor-reg-inputcolor);
   border-radius: 30px 0 30px 0;
   width: 250px;
-  height: auto;
+  height: 310px;
   overflow: hidden;
   text-align: center;
   left: 50%;
@@ -464,25 +467,37 @@ box-shadow: var(--dropshadow);
   -moz-transform:  translateX(-50%);
 }
 
+.member-container h6,
+.member-container h3{
+  margin: 0;
+  color: var(--light-color);
+  text-align: center;
+  background-color: #FF0707;
+  padding: 5px 10px;
+}
+
 
 .member-container h3{
-  position: absolute;
-  color: var(--light-color);
-  bottom: 40px;
-  width: 100%;
   font-size: 1.1rem;
-
   font-weight: 1000;
-  text-align: center;
+  padding-bottom: 2.5px;
 }
 
 .member-container h6{
- position: absolute;
- color: var(--light-color);
- bottom: 28px;
  font-size: .7rem;
-width: 100%;
-text-align: center;
+ padding-top: 2.5px;
+}
+
+
+.member-container .intro{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .member-container .greendiv{

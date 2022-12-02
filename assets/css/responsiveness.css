@@ -39,6 +39,8 @@
     .nav-sm .nav-link{
         color: #303030;
         font-size: 14px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .mt-sm-4{
         margin-top: 20px!important;
@@ -171,6 +173,10 @@
 .header .search-input{
   height: 40px;
 }
+.showcase-content input[type="text"]::placeholder{
+  font-size: .8rem;
+}
+
 .header .showcase .showcase-content .input-group button{
   background-color: var(--red-color);
   height: 40px;
@@ -192,7 +198,18 @@
     }
 }
 
-@media screen and (max-width: 350px) {
-  
+@media screen and (max-width: 375px) {
+  .showcase-content input[type="text"]::placeholder{
+    font-size: .6rem;
+  }
+  .showcase-content a.partner-btn{
+    font-size: 1.5rem;
+    margin: 25px 0;
+  }
+  .showcase .showcase-content{
+    margin-top: 25px!important;
+  }
 }
+
+
 

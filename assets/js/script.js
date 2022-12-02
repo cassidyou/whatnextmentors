@@ -1,6 +1,6 @@
 $(document).ready(function(){
    //Animation on Scroll Instance
-    // AOS.init();
+    AOS.init();
 
     //Navbar toggling 
     const menuBtn = $('.menu-btn');
