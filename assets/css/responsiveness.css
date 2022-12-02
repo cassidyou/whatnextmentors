@@ -209,6 +209,20 @@
   .showcase .showcase-content{
     margin-top: 25px!important;
   }
+  #newsletter .partner-btn-sm{
+    height: 3rem;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 7px 7px 0;
+  }
+  #newsletter input[type="text"]{
+    height: 3rem;
+    border-radius: 7px 0 0 7px;
+  }
 }
 
 

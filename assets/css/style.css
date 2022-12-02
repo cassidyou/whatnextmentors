@@ -526,6 +526,7 @@ box-shadow: var(--dropshadow);
 #newsletter input[type="text"]{
   height: 3.5rem;
   border-radius: 0;
+  border-radius: 7px 0 0 7px;
 }
 
 #newsletter .partner-btn-sm{
@@ -535,6 +536,7 @@ box-shadow: var(--dropshadow);
   padding-left: 20px;
   padding-right: 20px;
   font-size: 1.2rem;
+  border-radius: 0 7px 7px 0;
 }
 
 #newsletter input[type="text"]::placeholder{
