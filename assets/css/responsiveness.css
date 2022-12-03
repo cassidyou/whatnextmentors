@@ -223,6 +223,13 @@
     height: 3rem;
     border-radius: 7px 0 0 7px;
   }
+  
+}
+
+@media screen and (max-width: 320px) {
+  #mentorship-category .heading-bold{
+    font-size: 1rem;
+  }
 }
 
 
