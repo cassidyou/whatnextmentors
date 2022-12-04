@@ -70,12 +70,14 @@ body {
   background-color: #ffffff;
   font-family: poppins-regular;
   overflow-x: hidden!important;
-  /* background-image: url("../../assets/img/bg/bg-img2.png"); */
   background-repeat: no-repeat;
   background-size: 55% 81%;
   background-position: 100% 5%;
   box-sizing: border-box;
 }
+
+
+
 
 /*************** Utilities  ***********************************/
 
@@ -718,92 +720,177 @@ text-transform: capitalize;
 } 
 
 
+/*####################################### SIGN UP AND SIGN IN PAGE  ###############################*/
+header#signup-login{
+  background-image: url("../../assets/img/bg/bg-img2.png");
+  /* background-color: #ffffff;
+  font-family: poppins-regular;
+  overflow-x: hidden!important;
+  background-repeat: no-repeat;
+  background-size: 500px 1000px;
+  background-position: right top;
+  box-sizing: border-box; */
+}
+
+#form-containter{
+  margin-top: 20px;
+  position: relative;
+  height:750px;
+  margin: 50px 3rem 10px 3rem;
+  display: block;
+  background-color: var(--light-color);
+  border: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+.form-field, .form-intro{
+  height: 750px;
+}
+
+.form-intro h4{
+  font-size: 1.15rem;
+  text-transform: uppercase;
+  margin-bottom: 300px!important;
+  display: block;
+}
 
 
+.form-intro h2{
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.form-intro h6{
+  margin-bottom: 120px;
+}
+
+.form-intro #signin-btn,
+.form-intro #signup-btn,
+#signup-submit, #signin-submit{
+  padding: 15px 0px;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  background-color: var(--green-color);
+  border-radius: 50px;
+  border: 1px solid var(--light-color);
+  color: var(--light-color);
+  font-weight: 700;
+  width: 250px;
+}
+
+.form-field h5{
+  text-transform: uppercase;
+  font-size: .8rem;
+  font-weight: 800;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.form-field h6{
+  font-size: .8rem;
+  font-weight: 600;
+}
+
+.form-field #social-links{
+  background: rgba(235, 233, 233, 0.25);
+  padding: 30px 0;
+  margin-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+.form-field #social-links ul{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ margin-bottom: 0;
+ padding-left: 0;
+}
 
 
+.form-field #social-links ul .svg-inline--fa{
+  height: 20px;
+  width: 20px;
+  border-radius: 50px;
+  padding: 10px;
+  background-color: var(--light-color);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+}
 
-/*
+.form-field #social-links ul .fa-google-plus-g{
+  background: #F24E1E;
+  color: var(--light-color);
+}
+.form-field #social-links ul .fa-facebook{
+  background:#4267B2;
+  color: var(--light-color);
+}
+.form-field #social-links ul .fa-twitter{
+  background:#00acee;
+  color: var(--light-color);
+}
+.form-field #social-links ul .fa-instagram{
+  background: #F078EB;
+  color: var(--light-color);
+}
 
+.form-field, .form-intro{
+  position: absolute;
+ 
+}
+.to-left{
+  left: 0;
+}
+.to-right{
+  right: 0;
+}
 
+.form-field{
+  z-index: 1;
+}
+.form-intro{
+  z-index: 2;
+}
 
-.footer-row{
+#signup-form input{
+  background: rgba(235, 233, 233, 0.25);
+  padding: 15px 15px 15px 100px;
+  font-size: 18px;
+  line-height: 30px;
+  display: block;
+  width: 100%;
+  outline: 0;
+  border: none;
+}
+
+#signup-form input::placeholder{
+  font-size: .8rem;
+}
+
+.form-input{
+  position: relative;
+  display: flex;
   align-items: center;
   justify-content: center;
-  border-top: 1px solid rgba(0, 0, 0, 0.07);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
-  margin-top: 100px;
-  background-color: var(--green-color);
-
+  width: 100%;
+  margin: 20px 0;
 }
-
-#footer .bg-green{
-  background-color: var(--green-color);
-  height: 100%!important;
- 
-}
-#footer .bg-green{
-  padding: 70px 0;
-}
-
-#footer .light-bg{
-  padding: 40px 0;
-  background-color: #ffffff!important;
+.icon{
+  position: absolute;
+  left: 30px;
+  top: 0;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
 
-.footer-link li{
-  display: inline;
-  margin-bottom: 8.3px;
-  font-weight: 500;
-}
-
-.footer-links li a{
-  color: var(--light-color);
-  font-size: .9rem;
-}
- 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/****************** Mobile ********************/
- @media screen and (max-width: 767px) {
-    .topnav-content{
-     flex-direction: column;
-     font-size: .6rem;
-    }
-    .topnav-content > *{
-      margin-top: 5px;
-      margin-bottom: 5px;
-    }
- }
-
-/*
-@media screen and (max-width: 352px) {
-  .header .text-sm{
-    font-size: .5rem;
-  }
-}
-
-
-@media screen and (max-width: 991px) {
-  
-} */
 

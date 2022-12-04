@@ -32,10 +32,10 @@
 <body>
   <main>
     <!-------------------- HEADER SECTION  ------------------->
-    <div class="header">
+    <header class="header" id="signup-login">
       <div class="top text-light bg-green">
         <div class="container">
-          <div class="topnav-content d-flex align-items-center justify-content-between"  data-aos="fade-up" data-aos-duration="1000">
+          <div class="topnav-content d-flex align-items-center justify-content-between">
             <div id="social-links text-light">
                 <a href="" class="text-light mx-3"><i class="fa-brands fa-facebook-f"></i></a>
                 <a href="" class="text-light mx-3"><i class="fa-brands fa-instagram"></i></a>
@@ -81,33 +81,70 @@
             </div>
         </div>
       </nav>
-    </div>
 
+      <!--------------------SIGNUP AND LOGIN SECTION --------------------------->
+      <div class="container-fluid">
+        <div>
+          <div class="d-block"  id="form-containter">
+            <div class="col-sm-5 form-intro bg-green to-left text-center text-light py-5 px-3">
+                <h4>WhatNextMentors</h4>
+                <h2>Welcome back</h2>
+                <h6>To keep connected with us <br> login with your personal info</h6>
+                <div id="submit-container">
+                    <button id="signin-btn"> SIGN IN</button>
+                </div>
+            </div>
+            <div class="col-sm-7 form-field to-right px-5">
+              <div class="container py-5 px-3">
+                <h5>Sign up to whatnextmentors</h5>
+                <h6>Continue with your social account</h6>
+                <div id="social-links">
+                  <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-8">
+                      <ul>
+                        <li><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                      </ul>
+                    </div>
+                    <div class="col-2"></div>
+                  </div>
+                  
+                </div>
+                <h6>Sign up with your email</h6>
+                <form id="signup-form" action="" class="mt-4">
+                  <div class="form-input">
+                    <span class="icon"><i class="fa-regular fa-envelope"></i></span>
+                    <input type="text" class="" placeholder="Email">
+                  </div>
+                  <div class="form-input">
+                    <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                    <input type="text" class="" placeholder="Password">
+                  </div>
+                  <div class="form-input">
+                    <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                    <input type="text" class="" placeholder="Confirm password">
+                  </div>
+                  <div id="submit-container">
+                      <button type="submit" id="signup-submit"> SIGN UP</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
+  </main>
     <!-------------------- FOOTER SECTION  ------------------->
 
      <footer id="footer">
       <div class="container-fluid">
         <div class="row align-items-center footer-row">
-          <div class="col-12 col-sm-4 col-lg- py-6" data-aos="fade-up" data-aos-duration="2000">
+          <div class="col-12 col-sm-4 col-lg- py-6">
             <div class="row">
               <div class="col-sm-1"></div>
               <div class="col-sm-10 text-center">
@@ -119,7 +156,7 @@
           <div class="col-12 col-sm-8 py-6 bg-green">
             <div class="row">
               <div class="col-lg-1"></div>
-              <div class="col-12 col-sm-4 col-md-5 col-lg-4" data-aos="fade-up" data-aos-duration="2500">
+              <div class="col-12 col-sm-4 col-md-5 col-lg-4">
                 <ul class="footer-links">
                   <li><a href="#">Contact Us</a></li>
                   <li><a href="#">About</a></li>
@@ -130,7 +167,7 @@
                   <li class="mb-0"><a href="#">Blog</a></li>
                 </ul>
               </div>
-              <div class="col-12 col-sm-6 col-md-6 col-lg-5 text-light footer-intro" data-aos="fade-up" data-aos-duration="3000">      
+              <div class="col-12 col-sm-6 col-md-6 col-lg-5 text-light footer-intro">      
                 <h6>WhatNextMentors</h6>
                 <p>WhatNextMentors is the world's largest community of professional and mentors, mentees and Volunteers</p>
                 <br><br>
@@ -155,7 +192,7 @@
       </div>
       <div class="subfooter">
         <div class="container">
-          <div class="contents py-3" data-aos="fade-up" data-aos-duration="2000">
+          <div class="contents py-3" >
             <div> 
               &copy; WhatNextMentors &nbsp; | &nbsp; All Rights Reserved
             </div>
@@ -166,26 +203,6 @@
         </div>
       </div>
     </footer>
-  </main>
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
       <!----------------------------Javascript Files  ------------------------->
