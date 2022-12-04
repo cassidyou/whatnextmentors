@@ -723,13 +723,6 @@ text-transform: capitalize;
 /*####################################### SIGN UP AND SIGN IN PAGE  ###############################*/
 header#signup-login{
   background-image: url("../../assets/img/bg/bg-img2.png");
-  /* background-color: #ffffff;
-  font-family: poppins-regular;
-  overflow-x: hidden!important;
-  background-repeat: no-repeat;
-  background-size: 500px 1000px;
-  background-position: right top;
-  box-sizing: border-box; */
 }
 
 #form-containter{
@@ -877,7 +870,7 @@ header#signup-login{
   width: 100%;
   margin: 20px 0;
 }
-.icon{
+.innner-icon{
   position: absolute;
   left: 30px;
   top: 0;
@@ -889,7 +882,23 @@ header#signup-login{
   justify-content: center;
 }
 
+/*####################################### ABOUT US  ###############################*/
+#about-us-showcase{
+  background-image: url('../../assets/img/bg/about-us.png');
+  height: 285px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  overflow: hidden!important;
+}
 
+#about-us-showcase .overlay{
+  position: absolute;
+  width: 100%;
+  height: 55vh;
+  background-color: var(--overlay-bgcolor);
+}
 
 
 
