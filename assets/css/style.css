@@ -885,21 +885,114 @@ header#signup-login{
 /*####################################### ABOUT US  ###############################*/
 #about-us-showcase{
   background-image: url('../../assets/img/bg/about-us.png');
-  height: 285px;
+  height: 320px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: right top;
   position: relative;
   overflow: hidden!important;
+  border: 1px solid red;
 }
 
 #about-us-showcase .overlay{
+  z-index: 4;
   position: absolute;
   width: 100%;
-  height: 55vh;
+  height: auto;
   background-color: var(--overlay-bgcolor);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+#about-us-showcase .content{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#about-us-showcase .content h2{
+  font-family: poppins-semibold;
+}
+
+.page-direction {
+  font-size: .8rem;
+}
+#problem-statement .statement{
+  text-align: justify;
+  font-size: .98rem;
+  margin-bottom: 70px!important;
+}
+#problem-statement .heading{
+  color: #000000;
+  display: inline-block;
+  text-transform: uppercase;
+  border-bottom: 2px solid rgba(0, 0, 0, 1);
+  padding-bottom: 10px;
+  font-family: poppins-semibold;
+  font-size: 1.7rem;
+  text-align: left;
+}
+.mission-heading{
+  padding: 15px 0;
+  margin-bottom: 20px;
+}
+
+.mission-heading, .mission .accordion-header button{
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 1000;
+  background-color: rgba(202, 202, 202, 0.2)!important;
+  box-shadow: none;
+
+}
+
+.mission .accordion > * {
+  border: none;
+  box-shadow: none;
+}
+
+.mission .accordion-item{
+  margin: 20px 0;
+}
+.mission .accordion  .accordion-body,
+.mission .accordion .accordion-header > button{
+  background-color: rgba(202, 202, 202, 0.2)!important;
+  color: #000000;
+}
+
+.mission .accordion-body{
+  padding: 20px;
+}
+.stats-container{
+  padding: 80px 0;
+}
+.stats{
+  margin-top: 50px;
+}
+.stats h2{
+  position: relative;
+  font-size: 3.6rem;
+  font-weight: 1000;
+  padding-bottom: 0!important;
+}
+
+.stats h2 span{
+  position: absolute;
+  font-size: 1.5rem;
+}
+
+.stats span.title{
+  text-transform: uppercase;
 }
 
 
-
-
+.join-us-btn{
+  color: var(--light-color);
+  background-color: var(--red-color);
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  padding: 10px 14px;
+  border-radius: 7px;
+}

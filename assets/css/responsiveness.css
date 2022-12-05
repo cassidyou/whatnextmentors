@@ -221,6 +221,14 @@
   line-height: 20px;
 }
 
+.stats h2{
+  font-size: 2rem;
+}
+
+.stats span.title{
+  font-size: .7rem;
+}
+
 
 }
 
@@ -264,7 +272,26 @@
     .quote-text, .quote-author{
       font-size: .8rem;
     }
+
+    .stats h2{
+      font-size: 1.5rem;
+    }
+
+    .stats span.title{
+      font-size: .8rem;
+    }
+
+    
+    .join-us-btn{
+      text-transform: uppercase;
+      font-size: 1.4rem;
+      padding: 10px 14px;
+      border-radius: 7px;
+    }
 }
+
+
+
 
 @media screen and (max-width: 425px){
   .showcase-content a.partner-btn{
@@ -298,6 +325,25 @@
     .subfooter .contents{
       flex-direction: column;
     }
+
+    #problem-statement .heading{
+      font-size: 1.2rem;
+    }
+
+    #problem-statement p{
+      font-size: .9rem;
+    }
+
+    .mission-heading, .mission .accordion-header button{
+      font-size: .9rem;
+    }
+
+    .mission .accordion-body{
+      font-size: .8rem;
+    }
+
+
+   
 }
 
 @media screen and (max-width: 375px) {

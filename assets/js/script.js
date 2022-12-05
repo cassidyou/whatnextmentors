@@ -94,7 +94,7 @@ $(document).on("click", ".form-intro #signin-btn", function(){
                            '         <div class="col-2"></div>' +
                            '     </div>' +
                            ' </div>' +
-                           ' <h6>Sign up with your email</h6>' +
+                           ' <h6>Sign in with your email</h6>' +
                            ' <form id="signup-form" action="" class="mt-4">' +
                            '   <div class="form-input">' +
                            '     <span class="icon"><i class="fa-regular fa-envelope"></i></span>' +
@@ -171,7 +171,8 @@ $(document).on('click', '.form-intro #signup-btn', function(){
     );
 
 
- 
+//  ################################## ABOUT US PAGE #################################
+
 
  
      
