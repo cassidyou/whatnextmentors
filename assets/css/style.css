@@ -186,6 +186,43 @@ section{
 }
 
 
+.showcase-50{
+  height: 320px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right top;
+  position: relative;
+  overflow: hidden!important;
+}
+
+.showcase-50 .overlay{
+  z-index: 4;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  background-color: var(--overlay-bgcolor);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.showcase-50 .overlay .content{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.showcase-50 .overlay .content h2{
+  font-family: poppins-semibold;
+}
+
+.page-direction {
+  font-size: .8rem;
+}
+
+
 /************************* HEADER SECTION  **************************/
  .header {
   width: auto;
@@ -885,39 +922,9 @@ header#signup-login{
 /*####################################### ABOUT US  ###############################*/
 #about-us-showcase{
   background-image: url('../../assets/img/bg/about-us.png');
-  height: 320px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right top;
-  position: relative;
-  overflow: hidden!important;
 }
 
-#about-us-showcase .overlay{
-  z-index: 4;
-  position: absolute;
-  width: 100%;
-  height: auto;
-  background-color: var(--overlay-bgcolor);
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-#about-us-showcase .content{
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
 
-#about-us-showcase .content h2{
-  font-family: poppins-semibold;
-}
-
-.page-direction {
-  font-size: .8rem;
-}
 #problem-statement .statement{
   text-align: justify;
   font-size: .98rem;
@@ -994,4 +1001,120 @@ header#signup-login{
   font-size: 1.6rem;
   padding: 10px 14px;
   border-radius: 7px;
+}
+
+
+
+/*####################################### BLOG PAGE  ###############################*/
+#blog-showcase{
+  background-image: url('../../assets/img/bg/bg-blog.png');
+}
+
+body#blog{
+  background-color: var(--blog-bgcolor);
+}
+
+.blog-heading{
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.blog-card, .sidebar-card{
+  background-color: var(--light-color);
+  box-shadow: var(--dropshadow);
+}
+
+.blog-card-img{
+  width: 100%;
+  overflow: hidden;
+}
+
+.blog-card-img img{
+  width: 100%;
+  height: auto;
+}
+
+.blog-card-body{
+  padding: 25px 20px 0 20px;
+}
+
+.blog-card-body small{
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 10px;
+  font-size: .7rem;
+}
+
+.blog-card-title{
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.blog-card-excerpt{
+  text-align: justify;
+  font-size: .75rem;
+}
+
+.blog-card-footer{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 20px 15px 20px;
+  text-transform: uppercase;
+  font-size: .8rem;
+  font-weight: 700;
+}
+.blog-card-footer .reaction .svg-inline--fa .fa-share-nodes,
+.blog-card-footer .reaction .svg-inline--fa .fa-heart{
+  cursor: pointer;
+
+}
+
+.sidebar-card{
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  margin-bottom: .5rem;
+}
+
+.sidebar-card-img img{
+  height: 100%;
+  width: auto;
+}
+
+.sidebar-card-body{
+  padding: 10px 10px 10px 0;
+}
+
+.sidebar-card-excerpt{
+  font-size: .75rem;
+}
+
+.sidebar-card-readmore a{
+  background: var(--green-color);
+  color: var(--light-color);
+  padding: 5px 10px;
+  text-transform: capitalize;
+  font-size: .8rem;
+  border-radius: 4px;
+}
+
+.pagination{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.1rem;
+ font-family: poppins-semibold;
+ margin-top: 50px;
+}
+.pagination div:hover{
+  cursor: pointer;
+}
+
+.active-page{
+  background-color: var(--green-color);
+  color: var(--light-color);
+  padding: 5px 10px;
+  border-radius: 2px;
 }
