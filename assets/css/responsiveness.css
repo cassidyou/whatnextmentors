@@ -350,7 +350,7 @@
     }
 
     .sidebar-card{
-      width: 400px;
+      width: 100%;
     }
 
 
@@ -381,10 +381,6 @@
   #newsletter input[type="text"]{
     height: 3rem;
     border-radius: 7px 0 0 7px;
-  }
-
-  .sidebar-card{
-    width: 310px;
   }
   
 }
