@@ -1118,3 +1118,121 @@ body#blog{
   padding: 5px 10px;
   border-radius: 2px;
 }
+
+
+
+/*********************************** BLOG SINGLE PAGE *************************/
+#single-blog-main .header-info small{
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 10px;
+  font-size: .7rem;
+}
+
+#single-blog-main .header-info .blog-card-title{
+  margin: 70px 0;
+}
+
+.blog-p{
+  font-size: 1rem;
+  line-height: 1.7;
+  font-family: poppins-light;
+}
+
+#single-blog-main .blog-card-footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#single-blog-main .blog-card-footer .reaction{
+  margin-right: 10%;
+}
+
+/****************** USER DASHBOARD PAGE  ********************/
+#user-dashboard section{
+  margin-top: 40px!important;
+  margin-bottom: 40px;
+}
+.profile-showcase{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 0;
+  position: relative;
+  overflow: visible!important;
+}
+
+.profile-showcase .profile-img{
+  --h: 250px;
+ height: var(--h);
+ width: var(--h);
+  border: 3px solid var(--light-color);
+  border-radius: 150px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  overflow: hidden;
+  position: absolute;
+  bottom: -150px;
+}
+
+.profile-showcase .profile-img img{
+  width: 100%;
+  height: 100%;
+}
+
+.camera{
+  color: white;
+  position: absolute;
+  font-size: 1.3rem;
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--light-color);
+  color: #000000;
+  right: 150px;
+  bottom: 20px;
+}
+.camera:hover{
+  cursor: pointer;
+}
+
+.profile-img .camera{
+  right: 50px;
+  background-color: var(--green-color);
+  color: var(--light-color);
+}
+
+#user-dashboard .getstarted-btn{
+  text-transform: uppercase;
+  font-family: poppins-light;
+  font-weight: 100;
+  font-size: 1rem;
+  padding: 5px 50px;
+  margin-bottom: 20px;
+}
+
+.upsurvey{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#user-dashboard h3.text-green{
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+#user-dashboard a.partner-btn{
+ text-transform: uppercase;
+ font-weight: 100;
+ font-size: 1rem;
+ padding-left: 0!important;
+ padding-right: 0!important;
+ width: 300px;
+ text-align: center;
+}
