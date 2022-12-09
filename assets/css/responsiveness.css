@@ -112,6 +112,24 @@
   font-size: .9rem;
   padding: 5px 10px!important;
 }
+.contact-us-info{
+  padding: 40px 20px;
+}
+
+.contact-us-info .heading{
+  font-size: 1rem!important;
+  margin-bottom: 50px;
+}
+
+.contact-us-info .contact-info h5{
+  font-size: .8rem;
+}
+.social h5{
+  font-size: .9rem;
+}
+.social .social-links a {
+  font-size: .7rem!important;
+}
 }
 
 
@@ -253,6 +271,30 @@ section.converse .d-flex{
   align-items: flex-start!important;
 }
 
+.contact-us-info, #form-container{
+  padding: 40px;
+}
+
+
+.contact-us-info .heading{
+  font-size: 1.5rem!important;
+  margin-bottom: 50px;
+}
+
+.contact-us-info .heading span{
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 5px;
+}
+
+.contact-us-info .contact-info{
+  margin: 80px 0;
+  display: block;
+}
+
+.contact-us-info .contact-info h5{
+  font-size: 1.2rem;
+}
+
 }
 
 @media screen and (max-width: 576px) {
@@ -325,6 +367,18 @@ section.converse .d-flex{
       transform: translate(-50%);
     }
 
+    #user-profile .profile-intro{
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #user-profile .profile-img{
+      margin-bottom: 10px;
+    }
+    .profile-intro-text .partner-btn{
+      padding: 10px 30px!important;
+      font-size: .9rem;
+    }
 }
 
 
@@ -388,6 +442,19 @@ section.converse .d-flex{
       margin-top: 130px;
     }
 
+    .profile-intro-text .heading{
+      font-size: 1.5rem!important;
+      letter-spacing: 1px;
+    }
+
+    #areas-of-help .heading{
+      font-size: 1.4rem;
+    }
+
+    #areas-of-help h5{
+      font-size: 1rem;
+    }
+
 
    
 }
@@ -429,6 +496,19 @@ section.converse .d-flex{
   .upsurvey{
     flex-direction: column;
   }
+
+  .profile-intro-text .partner-btn{
+    padding: 10px 20px!important;
+    font-size: .8rem;
+  }
+  .profile-intro-text .heading{
+    font-size: 1.2rem!important;
+    letter-spacing: 1px;
+  }
+
+  .profile-intro-text p{
+    font-size: 0.8rem;
+  }
   
 }
 
@@ -436,6 +516,31 @@ section.converse .d-flex{
   #mentorship-category .heading-bold{
     font-size: 1rem;
   }
+
+  #user-profile .profile-img{
+    width: 150px;
+    height: 150px;
+  }
+
+  .profile-intro-text h3.heading{
+    font-size: 1rem!important;
+  }
+  .profile-intro-text p{
+    font-size: 0.7rem;
+  }
+
+  .profile-intro-text .partner-btn{
+    font-size: .7rem;
+    text-transform: uppercase;
+    padding: 10px!important;
+  }
+
+  
+.profile-intro-text .refer{
+  text-transform: capitalize;
+  margin: 0 10px;
+  font-size: .8rem;
+}
 }
 
 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Dashboard</title>
+    <title>Contact Us</title>
 
     <!-- add icon link -->
     <link rel = "icon" href ="./assets/img/logo/logo1.png" type = "image/x-icon">
@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsiveness.css">
 </head>
-<body>
+<body style="background-color: var(--blog-bgcolor);">
     <!-------------------- HEADER SECTION  ------------------->
     <div class="header" id="about-us-header">
       <div class="top text-light bg-green">
@@ -80,107 +80,73 @@
             </div>
         </div>
       </nav>
+    </div>
 
-      <!---------------------------SHOWCASE  -------------------------->
-      <div id="blog-showcase" class="showcase-50 profile-showcase" style="background-image: url('./assets/img/profile/profile-img.png');">
-       <div class="container" >
-            <div class="profile-img">
-                <img src="./assets/img/profile/profile-img.png" class="img-flud" alt="Profile image">
-                <div class="camera">
-                  <i class="fa-solid fa-camera"></i>
+<div>
+    <div id="contact-us">
+        <div class="container-fluid">
+            <div class="row mt-3 mb-5">
+                <div class="col-12">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126093.78155365585!2d7.379826948888413!3d9.024418912465427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e745f4cd62fd9%3A0x53bd17b4a20ea12b!2sAbuja%2C%20Federal%20Capital%20Territory!5e0!3m2!1sen!2sng!4v1670612064674!5m2!1sen!2sng" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
-            <div class="camera">
-              <i class="fa-solid fa-camera"></i>
+        </div>
+            <!-- Contact form -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-8" id="contact-form-container">
+                       <div id="form-container">
+                        <h3 class="heading">Get in Touch</h3>
+                        <p>We are always happy to make valuable new contacts</p>
+                        <div id="contact-us-form">
+                            <div class="form-group row">
+                               <div class="col-md-6">
+                                <label for="name">Name</label>
+                                <input type="text" name="name" id="name" class="form-control">
+                               </div>
+                               <div class="col-md-6">
+                                <label for="email">Email</label>
+                                <input type="text" name="email" id="email" class="form-control">
+                               </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-12">
+                                    <label for="address">Address</label>
+                                    <input type="text" name="address" id="address" class="form-control">
+                                </div>
+                            </div>
+                            <input type="submit" value="Get in Touch" class="getstarted-btn">
+                        </div>
+                       </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4" id="contact-us-info">
+                        <div class="contact-us-info text-light">
+                            <h3 class="heading">Contact <span>Information</span></h3>
+                            <div class="contact-info">
+                                <h5>Mrs Smith 71 Cherry Court</h5>
+                                <h5>SOUTAMPTON SO53 SPD UK</h5>
+                                <h5>+234 8073 345 223</h5>
+                                <h5>+234 8073 345 223</h5>
+                            </div>
+                            <div class="social">
+                                <h5>Follow Us via:</h5>
+                                <div id="social-links text-light">
+                                    <a href="" class="text-light mx-2"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="" class="text-light mx-2"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="" class="text-light mx-2"><i class="fab fa-youtube"></i></a>
+                                    <a href="" class="text-light mx-2"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-       </div>
     </div>
-  </div>  
-  <main id="user-dashboard">
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-sm-6 col-md-5 col-lg-4"></div>
-          <div class="col-12 col-sm-6  col-md-7 col-lg-8">
-            <div class="upsurvey">           
-              <a href="" class="getstarted-btn"> update profile</a>
-              <a href="" class="getstarted-btn"> take a quick survey</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <hr>
-
-    <section class="converse">
-      <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
-          <div>
-            <h3 class="text-green">Conversations</h3>
-            <p>You haven't connected with anyone yet.</p>
-          </div>
-          <div>
-            <a href="" class="partner-btn">Search for mentors</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <hr>
-
-    <section class="converse">
-      <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
-          <div>
-            <h3 class="text-green">Conversations</h3>
-            <p>You haven't connected with anyone yet.</p>
-          </div>
-          <div>
-            <a href="" class="partner-btn">Search for mentees</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <hr>
-
-    <section class="converse">
-      <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
-          <div>
-            <h3 class="text-green">questions</h3>
-            <p>You need to update your profile before you can ask questions</p>
-          </div>
-          <div>
-            <a href="" class="partner-btn">update your profile</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <hr>
-
-    <section class="converse">
-      <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
-          <div>
-            <h3 class="text-green">Answers</h3>
-            <p>You haven't answered any questions yet.</p>
-          </div>
-          <div>
-            <a href="" class="partner-btn">find questions and answers</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <hr>
-
-  </main>
+</div>
   
-
-    <!-------------------- BLOG CONTENT SECTION  ------------------->
-
 
  
     <!-------------------- FOOTER SECTION  ------------------->
-
      <footer id="footer">
       <div class="container-fluid">
         <div class="row align-items-center footer-row">
@@ -243,8 +209,6 @@
         </div>
       </div>
     </footer>
-
-
       <!----------------------------Javascript Files  ------------------------->
       <script src="./assets/js/jQuery3.6.1.min.js"></script>
       <script src="./assets/js/all.min.js"></script>
@@ -252,7 +216,6 @@
       <script src="./assets/js/bootstrap.min.js"></script>
       <script src="./assets/js/owl.carousel.min.js"></script>
       <script src="./assets/js/aos.js"></script>
-
       <script src="./assets/js/script.js"></script>
 </body>
 </html>

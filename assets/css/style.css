@@ -1155,17 +1155,18 @@ body#blog{
   margin-bottom: 40px;
 }
 .profile-showcase{
-  background-size: cover;
+  background-size: auto 100%;
   background-repeat: no-repeat;
-  background-position: center 0;
+  background-position: center top;
   position: relative;
   overflow: visible!important;
+  background-color: #000000;
 }
 
 .profile-showcase .profile-img{
   --h: 250px;
- height: var(--h);
- width: var(--h);
+  height: var(--h);
+  width: var(--h);
   border: 3px solid var(--light-color);
   border-radius: 150px;
   display: flex;
@@ -1174,10 +1175,11 @@ body#blog{
   overflow: hidden;
   position: absolute;
   bottom: -150px;
+  background-color: #000000;
 }
 
 .profile-showcase .profile-img img{
-  width: 100%;
+  width: auto;
   height: 100%;
 }
 
@@ -1235,4 +1237,316 @@ body#blog{
  padding-right: 0!important;
  width: 300px;
  text-align: center;
+}
+
+/************************** MENTOR SEARCH PAGE ******************************/
+#search-form label{
+  margin:30px 0 10px 0;
+  font-size: .9rem;
+}
+
+#search-form .form-control{
+  height: 45px;
+  background-color: var(--mentor-reg-inputcolor);
+  border: none;
+  font-size: .9rem;
+}
+#search-form .form-control:focus{
+  border: none;
+  outline: none;
+  outline-color: transparent;
+  box-shadow: none;
+}
+
+#search-form a.search-btn{
+  background-color: var(--green-color);
+  color: var(--light-color);
+  text-transform: uppercase;
+  padding: 10px 40px;
+  border-radius: 6px;
+  font-size: .9rem;
+}
+
+.search-card{
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  border-radius: 7px;
+  box-shadow: var(--dropshadow);
+}
+
+.search-card .header-content{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.search-card .header-content .card-img{
+  width: 90px;
+  height: 90px;
+  border: 4px solid var(--green-color);
+  border-radius: 50px;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+}
+
+.search.search-card .header-content .card-img img{
+  height: 100%;
+}
+
+.search-card-header .header-info h6{
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: .9rem;
+}
+
+.search-card-header .header-info{
+  margin-left: 20px;
+}
+.search-card-header .header-info h6.text-green{
+  font-size: 1rem;
+  font-family: poppins-semibold;
+}
+
+
+.search-card-header .header-info small{
+  font-size: .7rem;
+  font-weight: 100;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.search-card-body{
+  background-color: var(--mentor-rating-bgcolor);
+}
+.search-card h6.heading{
+  font-size: .9rem;
+  font-family: poppins-semibold;
+  background-color: var(--light-color);
+  margin-left: 20px;
+}
+
+.search-card-body .expertise-levels .col-6{
+  font-size: .8rem;
+  margin: 10px 0;
+}
+
+.search-card-body .expertise-levels .rating{
+  height: 15px;
+  background: var(--green-color);
+  border-radius: 10px;
+}
+
+.search-card-body .expertise-levels .hrm-rate{
+  width: 45%;
+}
+.search-card-body .expertise-levels .fa-rate{
+  width: 60%;
+}
+.search-card-body .expertise-levels .sm-rate{
+  width: 30%;
+}
+.search-card-body .expertise-levels .t-rate{
+  width: 10%;
+}
+.search-card-body .expertise-levels .lc-rate{
+  width: 90%;
+}
+
+.search-card-footer h6.heading{
+  margin-left: 0;
+}
+
+.search-card-footer p.bio{
+  font-size: .8rem;
+  line-height: 1.5;
+}
+
+.search-card-footer a.getstarted-btn{
+  font-size: .7rem;
+  text-transform: uppercase;
+  padding: 7px 15px;
+  font-family: poppins-light;
+  word-spacing: 7px;
+  letter-spacing: 2px;
+}
+
+
+/********************* USER PROFILE PAGE *************************/
+#user-profile .profile-intro{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 30px 10px;
+}
+#user-profile .profile-img{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: 5px solid var(--light-color);
+  border-radius: 50%;
+  background-color: var(--search-inputcolor);
+  margin: 0 20px ;
+  overflow: hidden;
+
+}
+
+
+
+#user-profile .profile-img img{
+  width: auto;
+  height: 100%;
+}
+
+.profile-intro-text h3.heading{
+  font-family: poppins-semibold!important;
+  font-size: 2rem;
+  word-spacing: 7px;
+  letter-spacing: 2px;
+}
+
+.profile-intro-text p.bb-1{
+  border-bottom: 1px solid var(--light-color);
+}
+
+.profile-intro-text p{
+  padding-bottom: 5px;
+  font-size: 0.95rem;
+}
+
+.profile-intro-text .partner-btn{
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 10px 50px!important;
+}
+
+.profile-intro-text .refer{
+  text-transform: capitalize;
+  margin: 0 20px;
+}
+
+#areas-of-help{
+  margin-top: 20px;
+}
+
+#areas-of-help .heading{
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 1.7rem;
+
+}
+
+#areas-of-help h5{
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+#areas-of-help p{
+  font-size: 0.9rem;
+}
+
+.skill-icon{
+  font-size: 1.3rem!important;
+  margin-right: 20px!important;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+/************************* USER TERMS *********************/
+#user-terms{
+  margin: 40px 0;
+}
+
+#user-terms .heading{
+  font-weight: 1000;
+  font-weight: 0.9rem;
+}
+
+#user-terms .step-num{
+  font-weight: 1000!important;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+#change-role,
+.getstarted-btn.continue{
+  font-size: .9rem;
+  padding: 10px 20px;
+  margin: 5px 10px;
+  border: none;
+  font-weight: 100;
+};
+
+.getstarted-btn.continue{
+  padding: 10px 50px;
+  margin-top: 20px;
+}
+
+
+/********************** CONTACT US PAGE ************************************/
+#contact-form-container{
+  background-color: var(--light-color);
+}
+
+#contact-us .heading{
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+
+#contact-us-form label{
+  font-size: 1rem;
+  font-weight: 100;
+  font-family: poppins-light;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+#contact-us-form input{
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 0;
+}
+
+#contact-us-form input:focus{
+  box-shadow: none;
+}
+
+#contact-us-form .getstarted-btn{
+  display: block;
+  margin-top: 30px;
+  font-size: .8rem;
+  font-family: poppins-light;
+  border-radius: 8px;
+  padding: 10px 30px;
+}
+
+#contact-us-info{
+  background-color: var(--green-color);
+}
+
+.contact-us-info, #form-container{
+  padding: 40px;
+}
+
+
+.contact-us-info .heading{
+  font-size: 1.5rem!important;
+  margin-bottom: 50px;
+}
+
+.contact-us-info .heading span{
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 5px;
+}
+
+.contact-us-info .contact-info{
+  margin: 80px 0;
+  display: block;
+}
+
+.contact-us-info .contact-info h5{
+  font-size: 1.2rem;
 }

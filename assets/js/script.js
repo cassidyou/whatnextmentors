@@ -58,12 +58,8 @@ $(document).ready(function(){
 
 
 //############################# SIGNUP AND LOGIN PAGE #############################
-// var formFiedHeight = $(".form-field").outerHeight();
-// $("#form-containter").outerHeight(formFiedHeight);
-// $(".form-intro").outerHeight(formFiedHeight);
 
-
-$(document).on("click", ".form-intro #signin-btn", function(){
+ $(document).on("click", ".form-intro #signin-btn", function(){
     $(".form-intro").animate({right: '0'}, 200).removeAttr("style").removeClass("to-left");
     $(".form-field").animate({left: '0'}, 200).removeAttr("style").removeClass("to-right");
     
@@ -116,11 +112,11 @@ $(document).on("click", ".form-intro #signin-btn", function(){
                        ' </div>' 
     );
   });
-});
 
-$(document).on('click', '.form-intro #signup-btn', function(){
-    $(".form-intro").animate({left: '0'}, 200).removeAttr("style").removeClass("to-right");
-    $(".form-field").animate({right: '0'}, 200).removeAttr("style").removeClass("to-left");
+
+    $(document).on('click', '.form-intro #signup-btn', function(){
+        $(".form-intro").animate({left: '0'}, 200).removeAttr("style").removeClass("to-right");
+        $(".form-field").animate({right: '0'}, 200).removeAttr("style").removeClass("to-left");
 
     $(".form-intro").html('<h4>WhatNextMentors</h4>' +
             '<h2>Welcome back</h2>' +
@@ -169,15 +165,20 @@ $(document).on('click', '.form-intro #signup-btn', function(){
                              ' </form>' +
                             ' </div>' 
     );
-
-
-//  ################################## ABOUT US PAGE #################################
-
-
- 
-     
-
-      
-
-
 })
+
+
+
+
+
+
+$("#change-role").click(function(){
+  let user =  $(".user-role").text();
+  if(user == "Mentor"){
+    $(".user-role").text("Mentee");
+  } else if(user == "Mentee"){
+    $(".user-role").text("Mentor");
+  }
+})
+
+});
