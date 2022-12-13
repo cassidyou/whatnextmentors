@@ -379,6 +379,9 @@ section.converse .d-flex{
       padding: 10px 30px!important;
       font-size: .9rem;
     }
+    .roles-card{
+      justify-content: center;
+    }
 }
 
 
@@ -455,6 +458,51 @@ section.converse .d-flex{
       font-size: 1rem;
     }
 
+    #team-row{
+      margin-top: 100px;
+    }
+    .card-container{
+      position: relative;
+      display: block;
+      height: auto;
+      margin-top: 50px;
+      margin-bottom: 0;
+    }
+    .team-card{
+      display: none!important;
+    }
+    .team-sub-card{
+      position: static;
+     display: block;
+     box-shadow: var(--dropshadow);
+     padding: 10px;
+     margin-bottom: 100px;
+    }
+    .team-sub-card-header{
+     flex-direction: column;
+     justify-content: center;
+     justify-content: center;
+    }
+
+    .team-sub-card-header .header-img{
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      top: -100px;
+    }
+
+    .team-sub-card .info{
+      margin-top: 100px;
+    }
+
+    .info .team-name{
+      display: block;
+      text-align: center;
+    }
+
+    .team-sub-card-body p{
+      height: auto;
+    }
 
    
 }

@@ -22,7 +22,7 @@ $(document).ready(function(){
      menuBtn.removeClass('open');
         $('.nav-sm').animate({left: '-300px'});
         menuOpen = false;
-})
+    })
 
     //sticky top navbar
     var stickyNavTop = $("nav.navbar").offset().top;
@@ -57,7 +57,7 @@ $(document).ready(function(){
 
 
 
-//############################# SIGNUP AND LOGIN PAGE #############################
+    //############################# SIGNUP AND LOGIN PAGE #############################
 
  $(document).on("click", ".form-intro #signin-btn", function(){
     $(".form-intro").animate({right: '0'}, 200).removeAttr("style").removeClass("to-left");
@@ -165,20 +165,76 @@ $(document).ready(function(){
                              ' </form>' +
                             ' </div>' 
     );
-})
+    })
 
 
 
 
 
 
-$("#change-role").click(function(){
-  let user =  $(".user-role").text();
-  if(user == "Mentor"){
-    $(".user-role").text("Mentee");
-  } else if(user == "Mentee"){
-    $(".user-role").text("Mentor");
-  }
-})
+    $("#change-role").click(function(){
+      let user =  $(".user-role").text();
+      if(user == "Mentor"){
+        $(".user-role").text("Mentee");
+      } else if(user == "Mentee"){
+        $(".user-role").text("Mentor");
+      }
+    })
+
+    
+
+
+
+
+    // var currentTab = 0;
+    // showTab(currentTab);
+    // function showTab(index){
+    // var tabs = document.getElementsByClassName("tab");
+    // tabs[index].style.display = "block";
+    // if (index == 0){
+    //     $("#prevBtn").addClass("d-none");
+    // }else{
+    //     $("#prevBtn").removeClass("d-none");
+    // }
+
+    // if(index == (tabs.length - 1)){
+    //     $("#nextBtn").addClass("d-none");
+    //     $("#update-profile").removeClass("d-none")
+    // } else{
+    //     $("#nextBtn").removeClass("d-none");
+    //     $("#update-profile").addClass("d-none")
+    // }
+
+    // }
+
+    // function nextPrev(n){
+    //     var tabs = document.getElementsByClassName("tab");
+    //     tabs[currentTab].style.display = "none";
+    //     currentTab += n;
+    //     showTab(currentTab);
+    // }
+
+    // $("#nextBtn").click(function(){
+    //    console.log("clicked")
+    //     nextPrev(1)
+    // })
+
+    // $("#prevBtn").click(function(){
+    //    console.log("clicked")
+    //     nextPrev(-1)
+    // })
+
+var screenSize = $(window).innerWidth();
+console.log(screenSize);
+
+if(screenSize >= 426){
+    $(".card-container").hover(function(){
+    $(this).children(".team-card").fadeOut("slow");
+    $(this).children(".team-sub-card").fadeIn("slow");
+    },function(){
+        $(this).children(".team-card").fadeIn("slow");
+        $(this).children(".team-sub-card").fadeOut("slow");
+    })
+}
 
 });
