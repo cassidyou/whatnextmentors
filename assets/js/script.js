@@ -186,43 +186,43 @@ $(document).ready(function(){
 
 
 
-    // var currentTab = 0;
-    // showTab(currentTab);
-    // function showTab(index){
-    // var tabs = document.getElementsByClassName("tab");
-    // tabs[index].style.display = "block";
-    // if (index == 0){
-    //     $("#prevBtn").addClass("d-none");
-    // }else{
-    //     $("#prevBtn").removeClass("d-none");
-    // }
+    var currentTab = 0;
+    showTab(currentTab);
+    function showTab(index){
+    var tabs = document.getElementsByClassName("tab");
+    tabs[index].style.display = "block";
+    if (index == 0){
+        $("#prevBtn").addClass("d-none");
+    }else{
+        $("#prevBtn").removeClass("d-none");
+    }
 
-    // if(index == (tabs.length - 1)){
-    //     $("#nextBtn").addClass("d-none");
-    //     $("#update-profile").removeClass("d-none")
-    // } else{
-    //     $("#nextBtn").removeClass("d-none");
-    //     $("#update-profile").addClass("d-none")
-    // }
+    if(index == (tabs.length - 1)){
+        $("#nextBtn").addClass("d-none");
+        $("#update-profile").removeClass("d-none")
+    } else{
+        $("#nextBtn").removeClass("d-none");
+        $("#update-profile").addClass("d-none")
+    }
 
-    // }
+    }
 
-    // function nextPrev(n){
-    //     var tabs = document.getElementsByClassName("tab");
-    //     tabs[currentTab].style.display = "none";
-    //     currentTab += n;
-    //     showTab(currentTab);
-    // }
+    function nextPrev(n){
+        var tabs = document.getElementsByClassName("tab");
+        tabs[currentTab].style.display = "none";
+        currentTab += n;
+        showTab(currentTab);
+    }
 
-    // $("#nextBtn").click(function(){
-    //    console.log("clicked")
-    //     nextPrev(1)
-    // })
+    $("#nextBtn").click(function(){
+       console.log("clicked")
+        nextPrev(1)
+    })
 
-    // $("#prevBtn").click(function(){
-    //    console.log("clicked")
-    //     nextPrev(-1)
-    // })
+    $("#prevBtn").click(function(){
+       console.log("clicked")
+        nextPrev(-1)
+    })
 
 var screenSize = $(window).innerWidth();
 console.log(screenSize);
