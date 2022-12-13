@@ -224,6 +224,13 @@ $(document).ready(function(){
         nextPrev(-1)
     })
 
+
+
+
+
+
+
+    
 var screenSize = $(window).innerWidth();
 console.log(screenSize);
 
