@@ -295,6 +295,29 @@ section.converse .d-flex{
   font-size: 1.2rem;
 }
 
+.chat-container{
+  grid-template-columns: 1fr;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+
+#chat-area, #profile-view{
+  position: absolute;
+  right: -1000px;
+}
+
+.grid-2{
+  grid-template-columns: 2fr 3fr;
+}
+
+#profile-view{
+  position: absolute;
+}
+
+
+
 }
 
 @media screen and (max-width: 576px) {

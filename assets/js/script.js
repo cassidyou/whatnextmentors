@@ -186,44 +186,7 @@ $(document).ready(function(){
 
 
 
-    var currentTab = 0;
-    showTab(currentTab);
-    function showTab(index){
-    var tabs = document.getElementsByClassName("tab");
-    tabs[index].style.display = "block";
-    if (index == 0){
-        $("#prevBtn").addClass("d-none");
-    }else{
-        $("#prevBtn").removeClass("d-none");
-    }
-
-    if(index == (tabs.length - 1)){
-        $("#nextBtn").addClass("d-none");
-        $("#update-profile").removeClass("d-none")
-    } else{
-        $("#nextBtn").removeClass("d-none");
-        $("#update-profile").addClass("d-none")
-    }
-
-    }
-
-    function nextPrev(n){
-        var tabs = document.getElementsByClassName("tab");
-        tabs[currentTab].style.display = "none";
-        currentTab += n;
-        showTab(currentTab);
-    }
-
-    $("#nextBtn").click(function(){
-       console.log("clicked")
-        nextPrev(1)
-    })
-
-    $("#prevBtn").click(function(){
-       console.log("clicked")
-        nextPrev(-1)
-    })
-
+    
 
 
 
@@ -232,7 +195,11 @@ $(document).ready(function(){
 
     
 var screenSize = $(window).innerWidth();
-console.log(screenSize);
+var screenHeight = $(window).innerHeight();
+$(".chat-container").css("height", screenHeight);
+
+
+
 
 if(screenSize >= 426){
     $(".card-container").hover(function(){
@@ -244,4 +211,61 @@ if(screenSize >= 426){
     })
 }
 
+
+
+
+// if(screenSize >= 768 && screenSize <= 991){
+//     $(".chat-container").addClass("grid-2");
+// }
+
+if(screenSize <= 767){
+    $(".chat-inbox").click(function(){
+        $("#chats").addClass("d-none");
+      $("#chat-area").css({
+        right: "0",
+        zIndex: 2,
+        width: "cal(100vw - 20px)",
+        height: "100vh"
+      })
+    })
+
+    $(".chat-inbox-body").css("paddingBottom", "0")
+    $(".chat-inbox-body .chat-inbox").last().css("marginBottom", "0px");
+    $(".chat-inbox").removeClass("active");
+
+    
+}
+
+
+
+
+
+$(".chat-inbox").click(function(){
+    $(".chat-inbox").removeClass("active");
+    $(this).addClass("active");
+})
+
+
+
+
+
+
+
+$(".chat-area-header-img").click(function(){
+    $(".chat-container").removeClass("grid-2").addClass("grid-3");
+    $("#profile-view").removeClass("d-none");
+})
+
+$("#profile-view .close-view").click(function(){
+    $(".chat-container").removeClass("grid-3").addClass("grid-2");
+    $("#profile-view").addClass("d-none");
+})
+
+
+
+
+
+$(".right-inner-icon .svg-inline--fa.fa-paperclip").click(function(){
+    $(".send-doc-photo").fadeToggle("slow");
+})
 });

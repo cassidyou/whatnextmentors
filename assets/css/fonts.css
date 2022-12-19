@@ -34,3 +34,7 @@
     font-family: "poppins-semibold";
     src: url("../fonts/");
   }
+  @font-face {
+    font-family: "poppins-extralight";
+    src: url("../fonts/Poppins-ExtraLight.otf");
+  }
