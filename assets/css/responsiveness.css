@@ -295,26 +295,7 @@ section.converse .d-flex{
   font-size: 1.2rem;
 }
 
-.chat-container{
-  grid-template-columns: 1fr;
-  position: relative;
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
 
-
-#chat-area, #profile-view{
-  position: absolute;
-  right: -1000px;
-}
-
-.grid-2{
-  grid-template-columns: 2fr 3fr;
-}
-
-#profile-view{
-  position: absolute;
-}
 
 
 
@@ -405,6 +386,65 @@ section.converse .d-flex{
     .roles-card{
       justify-content: center;
     }
+
+
+
+    .chat-container{
+      height: calc(100vh - 110px)!important;
+      grid-template-columns: 1fr!important;
+      position: relative;
+      overflow-x: hidden;
+      overflow-y: hidden;
+    }
+    
+    
+    #chat-area, #profile-view{
+      position: absolute;
+      right: -1000px;
+    }
+    
+    .grid-2{
+      grid-template-columns: 2fr 3fr;
+    }
+    
+    #profile-view{
+      position: absolute;
+    }
+    
+    #chats .chat-inbox-body{
+      height: 330px;
+      top: 0;
+    }
+
+    #chat-area .chat-area-header .close-view{
+      display: block;
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 1.4rem;
+      cursor: pointer;
+    }
+
+    .chat-area-body{
+      height: 310px;
+      position: static;
+      border-bottom: 0;
+      padding-bottom: 10px;
+    }
+    .chat-area-footer{
+      bottom: 100px;
+    }
+
+    #chat-area #input-form{
+      padding: 8px 130px 8px 25px;
+    }
+    .right-inner-icon .svg-inline--fa.fa-paperclip, .right-inner-icon .svg-inline--fa.fa-camera, .right-inner-icon .svg-inline--fa.fa-face-smile {
+    margin: 0 5px;
+}
+
+.left-inner-icon {
+    left: 10px;
+}
 }
 
 

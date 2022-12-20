@@ -196,6 +196,10 @@ $(document).ready(function(){
     
 var screenSize = $(window).innerWidth();
 var screenHeight = $(window).innerHeight();
+var chatInboxBodyHeight = $("#chats .chat-inbox-body").innerHeight();
+
+var chatHeaderHeight = $("#chats .chat-header").innerHeight();
+console.log(chatInboxBodyHeight)
 $(".chat-container").css("height", screenHeight);
 
 
@@ -218,21 +222,25 @@ if(screenSize >= 426){
 //     $(".chat-container").addClass("grid-2");
 // }
 
-if(screenSize <= 767){
+if(screenSize <= 576){
     $(".chat-inbox").click(function(){
-        $("#chats").addClass("d-none");
       $("#chat-area").css({
-        right: "0",
         zIndex: 2,
         width: "cal(100vw - 20px)",
-        height: "100vh"
-      })
+        height: "100vh",
+        transition: "all 0.6s ease-in-ease-out"
+      }).animate({right: "0"});
+      $("#chats").addClass("d-none");
     })
 
     $(".chat-inbox-body").css("paddingBottom", "0")
     $(".chat-inbox-body .chat-inbox").last().css("marginBottom", "0px");
     $(".chat-inbox").removeClass("active");
 
+    $("#chat-area .chat-area-header .close-view").click(function(){
+        $("#chat-area").animate({right: "-1000px"});
+        $("#chats").removeClass("d-none");
+    })
     
 }
 
