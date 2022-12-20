@@ -106,7 +106,6 @@
       </section>
 
     <div class="container">
-        <h4 class="update-heading">Complete your profile</h4>
         <small class="text-danger">All fields are required</small>
 
         <form action="" id="update-profile-form">
@@ -318,5 +317,48 @@
       <script src="./assets/js/owl.carousel.min.js"></script>
       <script src="./assets/js/aos.js"></script>
       <script src="./assets/js/script.js"></script>
+
+      <script>
+        $(document).ready(function(){
+            var currentTab = 0;
+            showTab(currentTab);
+            function showTab(index){
+            var tabs = document.getElementsByClassName("tab");
+            tabs[index].style.display = "block";
+            if (index == 0){
+                $("#prevBtn").addClass("d-none");
+            }else{
+                $("#prevBtn").removeClass("d-none");
+            }
+          
+            if(index == (tabs.length - 1)){
+                $("#nextBtn").addClass("d-none");
+                $("#update-profile").removeClass("d-none")
+            } else{
+                $("#nextBtn").removeClass("d-none");
+                $("#update-profile").addClass("d-none")
+            }
+          
+            }
+          
+            function nextPrev(n){
+                var tabs = document.getElementsByClassName("tab");
+                tabs[currentTab].style.display = "none";
+                currentTab += n;
+                showTab(currentTab);
+            }
+          
+            $("#nextBtn").click(function(){
+               console.log("clicked")
+                nextPrev(1)
+            })
+          
+            $("#prevBtn").click(function(){
+               console.log("clicked")
+                nextPrev(-1)
+            })
+
+        })
+      </script>
 </body>
 </html>

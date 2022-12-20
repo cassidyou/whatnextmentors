@@ -5,6 +5,14 @@
     }
 }
 
+@media screen and (min-width: 992px) {
+  .grid-2{
+    grid-template-columns: 3fr 7fr;
+  }
+  .grid-3{
+    grid-template-columns: 3fr 4.5fr 2.5fr;
+  }
+}
 
 @media screen and (max-width: 991px ) {
   .header {
@@ -130,7 +138,25 @@
 .social .social-links a {
   font-size: .7rem!important;
 }
+
+.grid-2{
+  grid-template-columns: 1fr 2fr;
 }
+
+#profile-view{
+  position: absolute;
+  right: -800px;
+}
+.chat-container{
+  position: relative;
+   overflow-x: hidden;
+  overflow-y: hidden;
+}
+}
+
+
+
+
 
 
 @media screen and (max-width: 767px) {
@@ -299,6 +325,8 @@ section.converse .d-flex{
 
 
 
+
+
 }
 
 @media screen and (max-width: 576px) {
@@ -393,7 +421,7 @@ section.converse .d-flex{
       height: calc(100vh - 110px)!important;
       grid-template-columns: 1fr!important;
       position: relative;
-      overflow-x: hidden;
+       overflow-x: hidden;
       overflow-y: hidden;
     }
     
@@ -440,12 +468,14 @@ section.converse .d-flex{
     }
     .right-inner-icon .svg-inline--fa.fa-paperclip, .right-inner-icon .svg-inline--fa.fa-camera, .right-inner-icon .svg-inline--fa.fa-face-smile {
     margin: 0 5px;
-}
+    }
 
 .left-inner-icon {
     left: 10px;
 }
+
 }
+
 
 
 
@@ -620,7 +650,32 @@ section.converse .d-flex{
   .profile-intro-text p{
     font-size: 0.8rem;
   }
+
   
+  
+}
+
+@media screen and (max-width: 350px) {
+  #chat-area #input-form{
+    padding: 8px 115px 8px 5px;
+    font-size: .9rem;
+  }
+  .right-inner-icon .svg-inline--fa.fa-paperclip, .right-inner-icon .svg-inline--fa.fa-camera, .right-inner-icon .svg-inline--fa.fa-face-smile {
+  margin: 0 5px;
+  }
+
+.left-inner-icon {
+  left: -15px;
+}
+.right-inner-icon > button#sendBtn {
+  border: none;
+  margin-left: 0px;
+  background: var(--green-color);
+  height: 40px;
+  width: 40px;
+  color: var(--light-color);
+  border-radius: 20px;
+}
 }
 
 @media screen and (max-width: 320px) {

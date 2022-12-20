@@ -218,9 +218,21 @@ if(screenSize >= 426){
 
 
 
-// if(screenSize >= 768 && screenSize <= 991){
-//     $(".chat-container").addClass("grid-2");
-// }
+if(screenSize >= 992){
+    $(".chat-container").addClass("grid-2");
+    $("#profile-view").addClass("d-none");
+
+    $("#profile-view .close-view").click(function(){
+       $(".chat-container").removeClass("grid-3").addClass("grid-2");
+       $("#profile-view").addClass("d-none");
+    });
+
+    $(".chat-area-header-img").click(function(){
+        $(".chat-container").removeClass("grid-2").addClass("grid-3");
+        $("#profile-view").removeClass("d-none");
+    })
+}
+
 
 if(screenSize <= 576){
     $(".chat-inbox").click(function(){
@@ -241,7 +253,45 @@ if(screenSize <= 576){
         $("#chat-area").animate({right: "-1000px"});
         $("#chats").removeClass("d-none");
     })
+
+
+    $(".chat-area-header-img").click(function(){
+        $("#profile-view").css({
+            zIndex: 2,
+            width: "300px",
+            height: "67.5vh",
+            opacity: "1",
+            background: "var(--blog-bgcolor)",
+            transition: "all 0.6s ease-in-ease-out"
+          }).animate({right: "0"});
+    })
+
+
+    $("#profile-view .close-view").click(function(){
+        $("#profile-view").animate({right: "-1000px"});
+    })
     
+    
+}
+
+if(screenSize >= 577 && screenSize  <= 991){
+    $(".chat-container").addClass("grid-2");
+
+    $(".chat-area-header-img").click(function(){
+        
+        $("#profile-view").css({
+            zIndex: 2,
+            width: "300px",
+            height: "85vh",
+            opacity: "1",
+            background: "var(--blog-bgcolor)",
+            transition: "all 0.6s ease-in-ease-out"
+          }).animate({right: "0"});
+    });
+
+    $("#profile-view .close-view").click(function(){
+        $("#profile-view").animate({right: "-1000px"});
+    })
 }
 
 
@@ -259,15 +309,12 @@ $(".chat-inbox").click(function(){
 
 
 
-$(".chat-area-header-img").click(function(){
-    $(".chat-container").removeClass("grid-2").addClass("grid-3");
-    $("#profile-view").removeClass("d-none");
-})
 
-$("#profile-view .close-view").click(function(){
-    $(".chat-container").removeClass("grid-3").addClass("grid-2");
-    $("#profile-view").addClass("d-none");
-})
+
+// $("#profile-view .close-view").click(function(){
+//     $(".chat-container").removeClass("grid-3").addClass("grid-2");
+//     $("#profile-view").addClass("d-none");
+// })
 
 
 
