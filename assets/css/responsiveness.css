@@ -326,7 +326,32 @@ section.converse .d-flex{
 
 
 
+#forum-main .container-flex {
+  padding: 10px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
 
+form#ask-question .profile-img,
+.question-info .profile-info .profile-img{
+  height: 50px;
+  width: 50px;
+}
+
+
+form#ask-question input.question{
+  border-radius: 50px;
+  height: 45px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: .9rem;
+}
+.question-info .profile-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 70%;
+}
 }
 
 @media screen and (max-width: 576px) {
@@ -597,7 +622,40 @@ section.converse .d-flex{
       height: auto;
     }
 
-   
+    form#ask-question input.question {
+      height: 40px;
+      width: 80%;
+  }
+  .question-container .question-info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    row-gap: 20px;
+    flex-direction: column;
+}
+
+.question-info .profile-info {
+  width: 100%;
+}
+
+.question-engagement {
+  width: 100%;
+}
+.answer-container .profile-img {
+  height: 30px;
+  width: 30px;
+}
+.answer-container .answer-details .name {
+  font-size: .9rem;
+}
+
+.answer-container .answer-details .membership {
+ font-size: .9rem;
+}
+
+.answer-container .answer-details .answer-content {
+  font-size: .8rem;
+}
 }
 
 @media screen and (max-width: 375px) {
@@ -650,7 +708,11 @@ section.converse .d-flex{
   .profile-intro-text p{
     font-size: 0.8rem;
   }
-
+  #survey-form ul.options li {
+    font-size: .9rem;
+    padding: 3px 20px;
+  
+}
   
   
 }

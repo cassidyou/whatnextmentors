@@ -93,19 +93,19 @@ $(document).ready(function(){
                            ' <h6>Sign in with your email</h6>' +
                            ' <form id="signup-form" action="" class="mt-4">' +
                            '   <div class="form-input">' +
-                           '     <span class="icon"><i class="fa-regular fa-envelope"></i></span>' +
+                           '     <span class="inner-icon"><i class="fa-regular fa-envelope"></i></span>' +
                            '     <input type="text" class="" placeholder="Email">' +
                            '   </div>' +
                            '   <div class="form-input">' +
-                           '     <span class="icon"><i class="fa-solid fa-lock"></i></span>' +
+                           '     <span class="inner-icon"><i class="fa-solid fa-lock"></i></span>' +
                            '     <input type="text" class="" placeholder="Password">' +
                            '   </div>' +
                            '   <div class="form-input" id="hide-me">' +
-                           '     <span class="icon" style="background-color:transparent; color: transparent; border: transparent;"><i class="fa-solid fa-lock"></i></span>' +
+                           '     <span class="inner-icon" style="background-color:transparent; color: transparent; border: transparent;"><i class="fa-solid fa-lock"></i></span>' +
                            '     <input type="text" class=""  style="background-color:transparent; color: transparent; border: transparent;">' +
                            '   </div>' +
-                           '   <div id="submit-container">' +
-                           '       <button type="submit" id="signup-submit"> SIGN IN</button>' +
+                           '   <div id="submit-container" class="text-center">' +
+                           '      <a href="./user-dashboard.html" type="submit" id="signin-submit"> SIGN IN</a>' +
                            '   </div>' +
                            ' <div class="text-end mt-3"><a href="#" class="text-success">Forgot Password</a></div>'+
                            ' </form>' +
@@ -124,7 +124,7 @@ $(document).ready(function(){
             '<h6>To keep connected with us <br> login with your personal info</h6>' +
 
            '  <div id="submit-container">' +
-               '  <button id="signin-btn"> SIGN IN</button>' +
+               '  <a href="./user-dashboard.html" type="submit" id="signin-submit"> SIGN IN</a>' +
            '  </div>'
     );
 
@@ -148,22 +148,26 @@ $(document).ready(function(){
                              ' <h6>Sign up with your email</h6>' +
                              ' <form id="signup-form" action="" class="mt-4">' +
                              '   <div class="form-input">' +
-                             '     <span class="icon"><i class="fa-regular fa-envelope"></i></span>' +
+                             '     <span class="inner-icon"><i class="fa-regular fa-envelope"></i></span>' +
                              '     <input type="text" class="" placeholder="Email">' +
                              '   </div>' +
                              '   <div class="form-input">' +
-                             '     <span class="icon"><i class="fa-solid fa-lock"></i></span>' +
+                             '     <span class="inner-icon"><i class="fa-solid fa-lock"></i></span>' +
                              '     <input type="text" class="" placeholder="Password">' +
                              '   </div>' +
                              '   <div class="form-input">' +
-                             '     <span class="icon"><i class="fa-solid fa-lock"></i></span>' +
+                             '     <span class="inner-icon"><i class="fa-solid fa-lock"></i></span>' +
                              '     <input type="text" class="" placeholder="Confirm password">' +
                              '   </div>' +
-                             '   <div id="submit-container">' +
-                             '       <button type="submit" id="signup-submit"> SIGN UP</button>' +
+                             '   <div id="submit-container" class="text-center">' +
+                             '        <a href="./user-dashboard.html" type="submit" id="signup-submit"> SIGN UP</a>' +
                              '   </div>' +
                              ' </form>' +
                             ' </div>' 
+
+                            
+                     
+                 
     );
     })
 
@@ -322,5 +326,12 @@ $(".chat-inbox").click(function(){
 
 $(".right-inner-icon .svg-inline--fa.fa-paperclip").click(function(){
     $(".send-doc-photo").fadeToggle("slow");
+})
+
+
+
+$("#survey-form ul.options li").click(function(){
+    $(this).addClass("active");
+    $(this).siblings().removeClass("active");
 })
 });
