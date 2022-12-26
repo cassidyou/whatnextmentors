@@ -124,50 +124,14 @@ $(document).ready(function(){
             '<h6>To keep connected with us <br> login with your personal info</h6>' +
 
            '  <div id="submit-container">' +
-               '  <a href="./user-dashboard.html" type="submit" id="signin-submit"> SIGN IN</a>' +
+               '  <button  id="signin-btn"> SIGN IN</button>' +
            '  </div>'
     );
 
-    $(".form-field").html('<div class="container py-5 px-3">' +
-                             ' <h5>Sign up to whatnextmentors</h5>' +
-                             ' <h6>Continue with your social account</h6>' +
-                             ' <div id="social-links">' +
-                             '     <div class="row">' +
-                             '         <div class="col-2"></div>' +
-                             '         <div class="col-8">' +
-                             '         <ul>' +
-                             '             <li><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>' +
-                             '             <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>' +
-                             '             <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>' +
-                             '             <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>' +
-                             '         </ul>' +
-                             '         </div>' +
-                             '         <div class="col-2"></div>' +
-                             '     </div>' +
-                             ' </div>' +
-                             ' <h6>Sign up with your email</h6>' +
-                             ' <form id="signup-form" action="" class="mt-4">' +
-                             '   <div class="form-input">' +
-                             '     <span class="inner-icon"><i class="fa-regular fa-envelope"></i></span>' +
-                             '     <input type="text" class="" placeholder="Email">' +
-                             '   </div>' +
-                             '   <div class="form-input">' +
-                             '     <span class="inner-icon"><i class="fa-solid fa-lock"></i></span>' +
-                             '     <input type="text" class="" placeholder="Password">' +
-                             '   </div>' +
-                             '   <div class="form-input">' +
-                             '     <span class="inner-icon"><i class="fa-solid fa-lock"></i></span>' +
-                             '     <input type="text" class="" placeholder="Confirm password">' +
-                             '   </div>' +
-                             '   <div id="submit-container" class="text-center">' +
-                             '        <a href="./user-dashboard.html" type="submit" id="signup-submit"> SIGN UP</a>' +
-                             '   </div>' +
-                             ' </form>' +
-                            ' </div>' 
-
-                            
-                     
-                 
+    $(".form-field").html('<h2>Join our community of Mentors and Mentees to receive world class mentorship and share your expertise with others.</h2>'+
+    '<div><a href="./mentee-signup.html" class="mentee-link">Find a mentor</a></div> ' +
+    '<div><a href="./mentor-signup.html" class="mentor-link">Become a mentor</a></div> ' 
+         
     );
     })
 
@@ -203,7 +167,6 @@ var screenHeight = $(window).innerHeight();
 var chatInboxBodyHeight = $("#chats .chat-inbox-body").innerHeight();
 
 var chatHeaderHeight = $("#chats .chat-header").innerHeight();
-console.log(chatInboxBodyHeight)
 $(".chat-container").css("height", screenHeight);
 
 
@@ -314,16 +277,6 @@ $(".chat-inbox").click(function(){
 
 
 
-
-// $("#profile-view .close-view").click(function(){
-//     $(".chat-container").removeClass("grid-3").addClass("grid-2");
-//     $("#profile-view").addClass("d-none");
-// })
-
-
-
-
-
 $(".right-inner-icon .svg-inline--fa.fa-paperclip").click(function(){
     $(".send-doc-photo").fadeToggle("slow");
 })
@@ -334,4 +287,52 @@ $("#survey-form ul.options li").click(function(){
     $(this).addClass("active");
     $(this).siblings().removeClass("active");
 })
+
+
+
+
+
+$("input.area:checkbox").on("change", function(){
+    var rate =  $(this).parent(".accordion-body").parent(".accordion-collapse").siblings(".accordion-header").children(".accordion-button").children(".mentor-expertise-share").children(".rate");
+    var level =  $(this).parent(".accordion-body").parent(".accordion-collapse").siblings(".accordion-header").children(".accordion-button").children(".mentor-expertise-share");
+    var rateWidth = rate.width();
+    var levelWidth = level.width();
+    var totalOptions = $(this).siblings("input:checkbox").length + 1;
+    
+    var increment = levelWidth / totalOptions;
+   if($(this).prop("checked")){
+
+        rateWidth  += increment;
+        rate.width(rateWidth);
+        console.log(rateWidth);
+ 
+    }else{
+        rateWidth  -= increment;
+        rate.width(rateWidth);
+        console.log(rateWidth);
+   }
+
+})
+
+
+
+
+$("#mentee-signup-form select#menteeRole").change(function(){
+    var selectedRole = $(this).children("option:selected").val();
+    $("#mentee-signup-form span.user-role-display").text(selectedRole);
+    
+    if(selectedRole == "Associate"){
+        $("#mentee-signup-form .associate-school-info").removeClass("d-none");
+    } else if(selectedRole !== "Associate"){
+        $("#mentee-signup-form .associate-school-info").addClass("d-none");
+    }
+});
+
+
+
+
+
+
+
+
 });

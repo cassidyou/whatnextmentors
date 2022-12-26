@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentor Signup</title>
+
+    <!-- add icon link -->
+    <link rel = "icon" href ="./assets/img/logo/logo1.png" type = "image/x-icon">
+
+    <!----------------------------Fontawesome CSS  ------------------------->
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/all6.2.1.min.css">
+
+    <!----------------------------Bootstrap CSS  ------------------------->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+    <!----------------------------Owl Carousel CSS  ------------------------->
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+
+    <!----------------------------Animation on scroll CSS  ------------------------->
+    <link rel="stylesheet" href="./assets/css/aos.css">
+
+
+
+    <!----------------------------Custom CSS  ------------------------->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsiveness.css">
+</head>
+<body>
+  <main>
+    <!-------------------- HEADER SECTION  ------------------->
+    <header class="header" id="signup-login">
+      <div class="top text-light bg-green">
+        <div class="container">
+          <div class="topnav-content d-flex align-items-center justify-content-between">
+            <div id="social-links text-light">
+                <a href="" class="text-light mx-3"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="" class="text-light mx-3"><i class="fa-brands fa-instagram"></i></a>
+                <a href="" class="text-light mx-3"><i class="fab fa-youtube"></i></a>
+                <a href="" class="text-light mx-3"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="contact">
+                <div class="text-sm">Call Us Today! +1-513-8074 &nbsp;|&nbsp; info@whatnextmentors.org</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--------------------------- NAVBAR SECTION ------------------------------>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container cosynav">
+          <a class="navbar-brand" href="index.html"><img src="./assets/img/logo/logo1.png" class="img-fluid" id="logo" alt="logo"></a>
+          
+          <ul class="navbar-nav ma-auto  nav-sm">
+              <span class="close d-lg-none d-sm-block">&times;</span>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">HOME </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about-us.html">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="team.html">OUR TEAM</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link getstarted-btn" href="signup.html">GET STARTED</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link partner-btn" href="partnership.html">PARTNER WITH US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="blog.html">BLOG</a>
+              </li>
+          </ul>
+             <!-- Harmburger menu icon -->
+             <div class="menu-btn d-lg-none d-sm-block pt-2">
+              <div class="menu-btn-burger"></div>
+            </div>
+        </div>
+      </nav>
+
+      <!--------------------SIGNUP AND LOGIN SECTION --------------------------->
+      <div class="container">
+       
+
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 border reg-form-container p-lg-4">
+                <div class="update-heading text-center"> <h3>Mentor Registration</h3></div>
+                    <div class="mentor-signup-progress-bar mb-4">
+                        <div class="width"></div>
+                    </div>
+                    <small class="mt-3">Required fields are marked with <span class="text-danger">*</span></small>
+                 <form id="mentor-signup-form" class="mt-4">
+                    <div class="mentor-signup-tab">
+                        <h6 class="fw-bolder">Continue with your social account</h6>
+                        <div id="social-links">
+                          <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-8">
+                              <ul>
+                                <li><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                              </ul>
+                            </div>
+                            <div class="col-2"></div>
+                          </div>
+                        </div>
+                        <h6 class="fw-bolder mt-4 mb-3">Sign up with your email</h6>
+                        
+                        <div class="form-group row">
+                            <div class="col-lg-6">
+                                <label for="firstName">First Name <span class="text-danger">*</span></label>
+                                <div class="form-input">
+                                  <span class="inner-icon"><i class="fa-regular fa-user"></i></span>
+                                  <input type="text" id="firstName" name="firstName" placeholder="First Name">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <label for="lastName">Last Name <span class="text-danger">*</span></label>
+                              <div class="form-input">
+                                <span class="inner-icon"><i class="fa-regular fa-user"></i></span>
+                                <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+                              </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-12">
+                                <label for="email">Email <span class="text-danger">*</span> </label>
+                                <div class="form-input">
+                                    <span class="inner-icon"><i class="fa-regular fa-envelope"></i></span>
+                                    <input type="text" id="email" name="email" placeholder="Email">
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-lg-6">
+                              <label for="password">Password <span class="text-danger">*</span></label>
+                              <div class="form-input">
+                                <span class="inner-icon"><i class="fa-solid fa-lock"></i></span>
+                                <input type="password" id="password" name="password" placeholder="Password">
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <label for="confirmPassword">Confirm password <span class="text-danger">*</span></label>
+                              <div class="form-input">
+                                <span class="inner-icon"><i class="fa-solid fa-lock"></i></span>
+                                <input type="confirmPassword" id="confirmPassword" name="confirmPassword" placeholder="Confirm password">
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mentor-signup-tab">
+                      <h4><b>Community Guidelines</b></h4>
+                      <div class="my-4">
+                        <span>You are joining <b>WhatNextMentors</b> as a <span class="text-danger user-role fw-bolder">Mentor</span></span>
+                      </div>
+                      <p>
+                        Welcome to WhatNextMentors! Here are the very top-leve guidelines all memebers of our community must follow.
+                        <br>
+                        Our entire Code of Conduct can be found here.
+                        <div class="d-flex align-items-start">
+                          <div style="margin-right: 20px; font-size: 1.7rem;"><i class="fa-solid fa-check-double text-green"></i></div>
+                          <div>
+                            <p><b>Mentees may not ask mentors for financial support.</b></p>
+                            <p>
+                              Mentors provide guidance and advice, but do not provide financial support. Mentees asking mentors for direct
+                              financing will have their accounts deactivated immediately.
+                            </p>
+              
+                          </div>
+                        </div>
+                        <div class="d-flex align-items-start">
+                          <div style="margin-right: 20px; font-size: 1.7rem;"><i class="fa-solid fa-check-double text-green"></i></div>
+                          <div>
+                            <p><b>Mentors may not charge for their services</b></p>
+                            <p>
+                             WhatNextMentors is a 100% free service, where volunteer mentors share their experience and their guaidance.
+                             Mentors suggesting that Mentees pay for mentoring services on or off teh site will have their accounts 
+                             deactivated immediately.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="d-flex align-items-start">
+                          <div style="margin-right: 20px; font-size: 1.7rem;"><i class="fa-solid fa-check-double text-green"></i></div>
+                          <div>
+                            <p><b>Report prohibited behavior</b></p>
+                            <p>
+                              Both mentors and Mentees are invited to report either of the above prohibited behaviors via the REPORT links throughout the site. 
+                            </p>
+                          </div>
+                        </div>
+                      </p>
+                      <div class="form-group">
+                        <input type="checkbox"> I, <b>Pablo Escobar, agree to these expectations.</b>
+                      </div>
+                    </div>
+                    <div class="mentor-signup-tab">
+                        <div class="form-group row">
+                          <div class="col-md-6">
+                            <label for="dob">Date Of Birth</label>
+                            <div class="form-input">
+                              <span class="inner-icon"><i class="fa-solid fa-calendar"></i></span>
+                              <input type="date" id="dob" name="dob" placeholder="Date of Birth">
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <label for="nationality">Nationality</label>
+                            <div class="form-input">
+                              <span class="inner-icon"><i class="fa-solid fa-pen-to-square"></i></span>
+                             <select name="nationality" id="nationality">
+                              <option value="">Nigeria</option>
+                             </select>
+                            </div>
+                          </div>
+                        </div>
+                
+                        <div class="form-group row">
+                        <div class="col-md-6">
+                          <label for="countryOfResidence">Country of Residence</label>
+                          <div class="form-input">
+                            <span class="inner-icon"><i class="fa-solid fa-flag"></i></span>
+                           <select name="countryOfResidence" id="countryOfResidence">
+                            <option value="">Nigeria</option>
+                           </select>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <label for="stateOfResidence">State/Region</label>
+                          <div class="form-input">
+                            <span class="inner-icon"><i class="fa-solid fa-pen-to-square"></i></span>
+                           <select name="stateOfResidence" id="stateOfResidence">
+                            <option value="">Ebonyi</option>
+                           </select>
+                          </div>
+                        </div>
+                        </div>
+                
+                        <div class="form-group row">
+                        <div class="col-md-6">
+                          <label for="cityOfResidence">City of Residence</label>
+                          <div class="form-input">
+                            <span class="inner-icon"><i class="fa-solid fa-pen-to-square"></i></span>
+                           <select name="cityOfResidence" id="cityOfResidence">
+                            <option value="">City of Residence</option>
+                           </select>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <label for="phoneNo">Phone Number</label>
+                          <div class="form-input">
+                            <span class="inner-icon"><select name="countryCode" id="countryCode" style="padding: 0 0 0 0; margin-right: 10px; background-color: transparent;">
+                              <option value="">+234</option>
+                              <option value="">+299</option>
+                            </select></span>
+                          <input type="tel" name="phoneNo" id="phoneNo" placeholder="phoneNo" style="padding-left: 80px;">
+                          </div>
+                        </div>
+                        </div>
+                
+                        <div class="form-group row">
+                          <div class="col-12">
+                            <label for="bio">Brief Biography</label>
+                            <div class="form-input">
+                              <textarea name="bio" class="form-control" id="bio" placeholder="A brief Bio about yourself" cols="30" rows="5" style="padding-left: 10px;"></textarea>
+                            </div>
+                          </div>
+                        </div>
+                
+                        <div class="form-group row">
+                          <div class="col-12">
+                            <label for="expectation">Expectations</label>
+                            <div class="form-input">
+                              <textarea name="expectation" class="form-control" id="expectation" placeholder="What are your expectations?" cols="30" rows="5" style="padding-left: 10px;"></textarea>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="mentor-signup-tab">
+                      <div class="form-group row">
+                        <div class="col-12">
+                          <label for="areaOfExpertise">Area of expertise</label>
+                          <div class="form-input">
+                            <span class="inner-icon"><i class="fa-solid fa-calendar"></i></span>
+                            <select name="areaOfExpertise" id="areaOfExpertise">
+                              <option value="">What is your primary industry</option>
+                              <option value="">Agriculture</option>
+                              <option value="">Management</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <label for="organization">Organization</label>
+                          <div class="form-input">
+                            <span class="inner-icon"><i class="fa-solid fa-pen-to-square"></i></span>
+                           <select name="organization" id="organization">
+                            <option value="">Your Organization</option>
+                            <option value="">Banking and finance</option>
+                            <option value="">Production</option>
+                           </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <div class="col-12">
+                          <label for="roleInOrganization">Role in the Organization</label>
+                          <div class="form-input">
+                            <span class="inner-icon"><i class="fa-solid fa-calendar"></i></span>
+                            <select name="roleInOrganization" id="roleInOrganization">
+                              <option value="">Role in Organization</option>
+                              <option value="">Manager</option>
+                              <option value="">Human Resource</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <label for="lang">Language</label>
+                          <div class="form-input">
+                            <span class="inner-icon"><i class="fa-solid fa-pen-to-square"></i></span>
+                           <select name="lang" id="lang">
+                            <option value="">What language do you speak fluently?</option>
+                            <option value="">English</option>
+                            <option value="">Hausa</option>
+                            <option value="">Igbo</option>
+                            <option value="">Spanish</option>
+                           </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <div class="col-12">
+                          <label for="countryOfProfExperience">In which country do you have professional business experiecne? </label>
+                          <div class="form-input">
+                            <span class="inner-icon"><i class="fa-solid fa-flag"></i></span>
+                            <select name="countryOfProfExperience" id="countryOfProfExperience">
+                              <option value="">Select Country</option>
+                              <option value="">Nigeria</option>
+                              <option value="">USA</option>
+                              <option value="">UK</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <label for="physicalSession">Are you free for physical session?</label>
+                          <div class="form-input">
+                            <span class="inner-icon"><i class="fa-solid fa-pen-to-square"></i></span>
+                           <select name="physicalSession" id="physicalSession">
+                            <option value="">Select</option>
+                            <option value="">Yes</option>
+                            <option value="">No</option>
+                           </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label>Which areas of expertise would you like to share as a mentor?</label>
+
+                        <div class="accordion" id="accordionPanelsStayOpenExample">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                Accounting & Finance <div class="mentor-expertise-share"> <div class="rate"></div></div>
+                              </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                              <div class="accordion-body">
+                                <input type="checkbox" name="financeAccount" class="financeAccount area"  value="finance"> Finance <br>
+                                <input type="checkbox" name="financeAccount" class="financeAccount area"  value="Audit"> Audit <br>
+                                <input type="checkbox" name="financeAccount" class="financeAccount area"  value="Taxes"> Taxes <br>
+                                <input type="checkbox" name="financeAccount" class="financeAccount area"  value="Cash Flow"> Cash Flow <br>
+                                <input type="checkbox" name="financeAccount" class="financeAccount area"  value="Loans and Financing"> Loans and Financing <br>
+                                <input type="checkbox" name="financeAccount" class="financeAccount area"  value="Budgeting"> Budgeting <br>
+                                <input type="checkbox" name="financeAccount" class="financeAccount area"  value="Audit"> Accounting <br>
+                                <input type="checkbox" name="financeAccount" class="financeAccount area"  value="Audit"> Financial Planning <br>
+                                <input type="checkbox" name="financeAccount" class="financeAccount area"  value="Book Keeping"> Book Keeping <br>
+                                <input type="checkbox" name="financeAccount" class="financeAccount area"  value="Other Accounting"> Other Accounting and Finance
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                Human Resource <div class="mentor-expertise-share"> <div class="rate"></div></div>
+                              </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                              <div class="accordion-body">
+                                <input type="checkbox" name="humanResource" class="humanResource area" id="volunteerManagement" value="Volunteer Management"> Volunteer Management <br>
+                                <input type="checkbox" name="humanResource" class="humanResource area" id="compensationBenefits" value=" Compensation and Benefits"> Compensation and Benefits <br>
+                                <input type="checkbox" name="humanResource" class="humanResource area" id="staffingRecruiting" value="Staffing and Recruiting"> Staffing and Recruiting <br>
+                                <input type="checkbox" name="humanResource" class="humanResource area" id="contractorsConsults" value="Contractors and Consults"> Contractors and Consults <br>
+                                <input type="checkbox" name="humanResource" class="humanResource area" id="personnelPolicies" value="Personnel Policies"> Personnel Policies <br>
+                                <input type="checkbox" name="humanResource" class="humanResource area" id="employeeManagement" value="Employee Management"> Employee Management <br>
+                                <input type="checkbox" name="humanResource" class="humanResource area" id="otherHM" value="Other Human Resources"> Other Human Resources <br>
+                                <input type="checkbox" name="humanResource" class="humanResource area" id="employeeTraining" value="Employee Training"> Employee Training
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                International  <div class="mentor-expertise-share"> <div class="rate"></div></div>
+                              </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                              <div class="accordion-body">
+                                <input type="checkbox" name="international" class="international area" id="customsTariffs" value="Volunteer Management"> Customs and Tariffs <br>
+                                <input type="checkbox" name="international" class="international area" id="exportingImporting" value="Exporting and Importing"> Exporting and Importing <br>
+                                <input type="checkbox" name="international" class="international area" id="globalMarkets" value="Global Markets"> Global Markets <br>
+                                <input type="checkbox" name="international" class="international area" id="otherInternational" value="Other International"> Other International <br>
+                                <input type="checkbox" name="international" class="international area" id="outsourcing" value="Outsourcing"> Outsourcing<br>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                                Law  <div class="mentor-expertise-share"> <div class="rate"></div></div>
+                              </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                              <div class="accordion-body">
+                                <input type="checkbox" name="law" class="law area" id="contracts" value="Contracts"> Contracts <br>
+                                <input type="checkbox" name="law" class="law area" id="employmentLaborLaw" value="Employment/Labor Law"> Employment/Labor Law <br>
+                                <input type="checkbox" name="law" class="law area" id="immigrationLaw" value=" Immigration Law"> Immigration Law <br>
+                                <input type="checkbox" name="law" class="law area" id="intellectualProperty" value="Intellectual Property"> Intellectual Property <br>
+                                <input type="checkbox" name="law" class="law area" id="propertyLaw" value="Property Law"> Property Law<br>
+                                <input type="checkbox" name="law" class="law area" id="taxLaw" value="Tax Law"> Tax Law<br>
+                                <input type="checkbox" name="law" class="law area" id="otherLawLegal" value="Other Law and Legal"> Other Law and Legal
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                                Management  <div class="mentor-expertise-share"> <div class="rate"></div></div>
+                              </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+                              <div class="accordion-body">
+                                <input type="checkbox" name="management" class="management area" id="boardDevelopment" value="Board Development"> Board Development <br>
+                                <input type="checkbox" name="management" class="management area" id="businessInsurance" value="Business Insurance"> Business Insurance <br>
+                                <input type="checkbox" name="management" class="management area" id="businessStrategy" value="Business Strategy"> Business Strategy <br>
+                                <input type="checkbox" name="management" class="management area" id="fundraising" value="Fundraising"> Fundraising <br>
+                                <input type="checkbox" name="management" class="management area" id="growthDevelopment" value="Growth and Development"> Growth and Development<br>
+                                <input type="checkbox" name="management" class="management area" id="leadership" value="Leadership"> Leadership<br>
+                                <input type="checkbox" name="management" class="management area" id="planningGoalSetting" value="Planning and Goal Setting"> Planning and Goal Setting<br>
+                                <input type="checkbox" name="management" class="management area" id="projectManagement" value="Project Management"> Project Management<br>
+                                <input type="checkbox" name="management" class="management area" id="workLifeBalance" value="Work-Life Balance"> Work-Life Balance<br>
+                                <input type="checkbox" name="management" class="management area" id="otherManagement" value="Other Management"> Other Management
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+                                Marketing  <div class="mentor-expertise-share"> <div class="rate"></div></div>
+                              </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSix">
+                              <div class="accordion-body">
+                                <input type="checkbox" name="marketing" class="marketing area" id="advertisingPromotion" value="Advertising and Promotion"> Advertising and Promotion <br>
+                                <input type="checkbox" name="marketing" class="marketing area" id="brandingIdentity" value="Branding and Identity"> Branding and Identity <br>
+                                <input type="checkbox" name="marketing" class="marketing area" id="businessDevelopment" value="Business Development"> Business Development <br>
+                                <input type="checkbox" name="marketing" class="marketing area" id="distribution" value="Distribution"> Distribution <br>
+                                <input type="checkbox" name="marketing" class="marketing area" id="marketResearch" value="Market Research"> Market Research<br>
+                                <input type="checkbox" name="marketing" class="marketing area" id="marketingCollateral" value="Marketing Collateral"> Marketing Collateral<br>
+                                <input type="checkbox" name="marketing" class="marketing area" id="marketingStrategy" value="Marketing Strategy"> Marketing Strategy<br>
+                                <input type="checkbox" name="marketing" class="marketing area" id="pricing" value="Pricing"> Pricing<br>
+                                <input type="checkbox" name="marketing" class="marketing area" id="productDevelopment" value="Product Development"> Product Development<br>
+                                <input type="checkbox" name="marketing" class="marketing area" id="publicRelationMedia" value="Public Relations and Media"> Public Relations and Media<br>
+                                <input type="checkbox" name="marketing" class="marketing area" id="socialMedia" value="Social Media"> Social Media <br>
+                                <input type="checkbox" name="marketing" class="marketing area" id="webMarketing" value="Web Marketing"> Web Marketing <br>
+                                <input type="checkbox" name="marketing" class="marketing area" id="writingEditing" value="Writing and Editing"> Writing and Editing <br>
+                                <input type="checkbox" name="marketing" class="marketing area" id="otherMarketing" value="Other Management"> Other Marketing
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingSeven">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false" aria-controls="panelsStayOpen-collapseSeven">
+                                Operations  <div class="mentor-expertise-share"> <div class="rate"></div></div>
+                              </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSeven">
+                              <div class="accordion-body">
+                                <input type="checkbox" name="operations" class="operations area" id="inventoryManagement" value="Inventory Management"> Inventory Management <br>
+                                <input type="checkbox" name="operations" class="operations area" id="logistics" value="Logistics"> Logistics <br>
+                                <input type="checkbox" name="operations" class="operations area" id="manufacturing" value="Manufacturing"> Manufacturing <br>
+                                <input type="checkbox" name="operations" class="operations area" id="packagingLabeling" value="Packaging and Labeling"> Packaging and Labeling <br>
+                                <input type="checkbox" name="operations" class="operations area" id="processImprovement" value="Process Improvement"> Process Improvement<br>
+                                <input type="checkbox" name="operations" class="operations area" id="procurementVendors" value="Procurement and Vendors"> Procurement and Vendors<br>
+                                <input type="checkbox" name="operations" class="operations area" id="programDesignEvaluation" value="Program Design and Evaluation"> Program Design and Evaluation<br>
+                                <input type="checkbox" name="operations" class="operations area" id="qualityManagement" value="Quality Management"> Quality Management<br>
+                                <input type="checkbox" name="operations" class="operations area" id="productDevelopment" value="Transportation and Delivery"> Transportation and Delivery<br>
+                                <input type="checkbox" name="operations" class="operations area" id="otherOperations" value="Other Management"> Other Operations
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingEight">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="false" aria-controls="panelsStayOpen-collapseEight">
+                                Sales  <div class="mentor-expertise-share"> <div class="rate"></div></div>
+                              </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingEight">
+                              <div class="accordion-body">
+                                <input type="checkbox" name="sales" class="sales area"  value="Customer Service and CRM"> Customer Service and CRM <br>
+                                <input type="checkbox" name="sales" class="sales area"  value="Government Contracts"> Government Contracts <br>
+                                <input type="checkbox" name="sales" class="sales area"  value="Lead Generation"> Lead Generation <br>
+                                <input type="checkbox" name="sales" class="sales area"  value="Retail and Consumer Sales"> Retail and Consumer Sales <br>
+                                <input type="checkbox" name="sales" class="sales area"  value="Selling Products"> Selling Products<br>
+                                <input type="checkbox" name="sales" class="sales area"  value="Selling Services"> Selling Services<br>
+                                <input type="checkbox" name="sales" class="sales area"  value="Wholesale and B2B Sales"> Wholesale and B2B Sales<br>
+                                <input type="checkbox" name="sales" class="sales area"  value="Other Sales"> Other Sales
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingNine">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseNine" aria-expanded="false" aria-controls="panelsStayOpen-collapseNine">
+                                Startup  <div class="mentor-expertise-share"> <div class="rate"></div></div>
+                              </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseNine" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingNine">
+                              <div class="accordion-body">
+                                <input type="checkbox" name="startup" class="startup area"  value="Business Planning"> Business Planning <br>
+                                <input type="checkbox" name="startup" class="startup area"  value="Franchising"> Franchising <br>
+                                <input type="checkbox" name="startup" class="startup area"  value="Getting Started"> Getting Started <br>
+                                <input type="checkbox" name="startup" class="startup area"  value="Legal Structure"> Legal Structure <br>
+                                <input type="checkbox" name="startup" class="startup area"  value="Location and Zoning"> Location and Zoning<br>
+                                <input type="checkbox" name="startup" class="startup area"  value="Other Business Planning"> Other Business Planning
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingTen">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTen" aria-expanded="false" aria-controls="panelsStayOpen-collapseTen">
+                                Sustainability  <div class="mentor-expertise-share"> <div class="rate"></div></div>
+                              </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseTen" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTen">
+                              <div class="accordion-body">
+                                <input type="checkbox" name="sustainability" class="sustainability area"  value="Energy Efficiency"> Energy Efficiency <br>
+                                <input type="checkbox" name="sustainability" class="sustainability area"  value="Green Business"> Green Business <br>
+                                <input type="checkbox" name="sustainability" class="sustainability area"  value="Green Products"> Green Products <br>
+                                <input type="checkbox" name="sustainability" class="sustainability area"  value="Other Sustainability"> Other Sustainability
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingEleven">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEleven" aria-expanded="false" aria-controls="panelsStayOpen-collapseEleven">
+                                Technology And Internet  <div class="mentor-expertise-share"> <div class="rate"></div></div>
+                              </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseEleven" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingEleven">
+                              <div class="accordion-body">
+                                <input type="checkbox" name="TechnologyAndInternet" class="TechnologyAndInternet area"  value="E-commerce"> E-commerce <br>
+                                <input type="checkbox" name="TechnologyAndInternet" class="TechnologyAndInternet area"  value="Managing Technology"> Managing Technology <br>
+                                <input type="checkbox" name="TechnologyAndInternet" class="TechnologyAndInternet area"  value="Technology and Internet"> Technology and Internet <br>
+                                <input type="checkbox" name="TechnologyAndInternet" class="TechnologyAndInternet area"  value="Technology Planning"> Technology Planning <br>
+                                <input type="checkbox" name="TechnologyAndInternet" class="TechnologyAndInternet area"  value="Telecommunication"> Telecommunication <br>
+                                <input type="checkbox" name="TechnologyAndInternet" class="TechnologyAndInternet area"  value="Web Design"> Web Design <br>
+                                <input type="checkbox" name="TechnologyAndInternet" class="TechnologyAndInternet area"  value="Other Technology and Internet"> Other Technology and Internet
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <div class="col-12">
+                          <label for="professionalBackground">Describe your professional background <span class="text-danger">*</span></label>
+                          <div class="form-input">
+                            <textarea name="professionalBackground" id="professionalBackground" class="form-control" style="padding-left: 20px;" cols="30" rows="5" placeholder="Describe your professional background"></textarea>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <div class="col-12">
+                          <label for="mentorWhatToOffer">What I can offer <span class="text-danger">*</span></label>
+                          <div class="form-input">
+                            <textarea name="mentorWhatToOffer" id="mentorWhatToOffer" class="form-control" style="padding-left: 20px;" cols="30" rows="5" placeholder="Mentors who fill out these questions thoroghly are more likeyly to good responses from prospective Mentees."></textarea>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <div class="col-12">
+                          <label for="mentoringExpectation">My expectations for a successful mentoring relationship</label>
+                          <div class="form-input">
+                            <textarea name="mentoringExpectation" id="mentoringExpectation" class="form-control" style="padding-left: 20px;" cols="30" rows="5" placeholder="Mentors who fill out these questions thoroghly are more likeyly to good responses from prospective Mentees."></textarea>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <div class="col-12">
+                          <label for="menteeToDo">What an entrepreneur should do to prepare before I begin mentoring them <span class="text-danger">*</span></label>
+                          <div class="form-input">
+                            <textarea name="menteeToDo" id="menteeToDo" class="form-control" style="padding-left: 20px;" cols="30" rows="5" placeholder="Mentors who fill out these questions thoroghly are more likeyly to good responses from prospective Mentees."></textarea>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#" class="partner-btn mb-4" id="prevBtn">Previous</a>
+                    <a href="#" class="getstarted-btn mb-4" id="nextBtn">Next</a>
+                    <button class="getstarted-btn d-non mb-4" id="update-profile">Complete</button>
+                 </form>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        
+    </header>
+
+  </main>
+    <!-------------------- FOOTER SECTION  ------------------->
+
+    <footer id="footer">
+      <div class="container-fluid">
+        <div class="row align-items-center footer-row">
+          <div class="col-12 col-sm-4 col-lg- py-6" data-aos="fade-up" data-aos-duration="2000">
+            <div class="row">
+              <div class="col-sm-1"></div>
+              <div class="col-sm-10 text-center">
+                <img src="./assets/img/logo/logo1.png" class="img-fluid">
+              </div>
+              <div class="col-sm-1"></div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-8 py-6 bg-green">
+            <div class="row">
+              <div class="col-lg-1"></div>
+              <div class="col-12 col-sm-4 col-md-5 col-lg-4" data-aos="fade-up" data-aos-duration="2500">
+                <ul class="footer-links">
+                  <li><a href="contact-us.html">Contact Us</a></li>
+                  <li><a href="about-us.html">About</a></li>
+                  <li><a href="#">How It Works</a></li>
+                  <li><a href="signup.html">Get Started</a></li>
+                  <li><a href="signup.html">Find a mentor</a></li>
+                  <li><a href="signup.html">Become a mentor</a></li>
+                  <li class="mb-0"><a href="blog.html">Blog</a></li>
+                </ul>
+              </div>
+              <div class="col-12 col-sm-6 col-md-6 col-lg-5 text-light footer-intro" data-aos="fade-up" data-aos-duration="3000">      
+                <h6>WhatNextMentors</h6>
+                <p>WhatNextMentors is the world's largest community of professional and mentors, mentees and Volunteers</p>
+                <br><br>
+                <p class="mb-0">WhatNextMentors is a non-profit. Help support our mission.</p>
+    
+                <div>For support or other questions</div>
+                <div class="mt-3">
+                  <div class="d-inline-block">Contact Us</div>
+                  <div class="d-inline-block" id="footer-social-icons">
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-youtube"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-2"></div>
+            </div> 
+          </div>
+        </div>
+      </div>
+      <div class="subfooter">
+        <div class="container">
+          <div class="contents py-3">
+            <div> 
+              &copy; WhatNextMentors &nbsp; | &nbsp; All Rights Reserved
+            </div>
+            <div>
+              Design by Tutapis
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+      <!----------------------------Javascript Files  ------------------------->
+      <script src="./assets/js/jQuery3.6.1.min.js"></script>
+      <script src="./assets/js/all.min.js"></script>
+      <script src="./assets/js/all6.2.1.min.js"></script>
+      <script src="./assets/js/bootstrap.min.js"></script>
+      <script src="./assets/js/owl.carousel.min.js"></script>
+      <script src="./assets/js/aos.js"></script>
+      <script src="./assets/js/script.js"></script>
+</body>
+</html>
+
+<script>
+  $(document).ready(function(){
+      var currentTab = 0;
+
+      var progressBar = $(".mentor-signup-progress-bar");
+      var progress = progressBar.children(".width");
+      var tabs = $(".mentor-signup-tab");
+      var progressWidth = progress.width();
+      var tabLength = tabs.length;
+      var progressIncrement = progressBar.width() / (tabLength + 1);
+
+          progressWidth = progressWidth + progressIncrement;
+  
+      showTab(currentTab, progressWidth);
+
+        function showTab(index, a){
+          progress.width(a);
+            tabs[index].style.display = "block";
+            if (index == 0){
+                $("#prevBtn").addClass("d-none");
+            }else{
+                $("#prevBtn").removeClass("d-none");
+            }
+          
+            if(index == (tabs.length - 1)){
+                $("#nextBtn").addClass("d-none");
+                $("#update-profile").removeClass("d-none")
+            } else{
+                $("#nextBtn").removeClass("d-none");
+                $("#update-profile").addClass("d-none")
+            }
+          
+        }
+          
+        function nextPrev(n, a){
+            var tabs = document.getElementsByClassName("mentor-signup-tab");
+            tabs[currentTab].style.display = "none";
+            currentTab += n;
+            showTab(currentTab, a);
+        }
+          
+        $("#nextBtn").click(function(){
+          progressWidth += progressIncrement;
+            nextPrev(1, progressWidth)
+        })
+      
+        $("#prevBtn").click(function(){
+          progressWidth -= progressIncrement;
+            nextPrev(-1, progressWidth)
+        })
+  })
+</script>

@@ -782,7 +782,41 @@ header#signup-login{
   margin-bottom: 300px!important;
   display: block;
 }
+.sign-up-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 50px;
+}
+.sign-up-container h2{
+  font-size: 1.3rem;
+  line-height: 1.5;
+  text-align: center;
+}
 
+.sign-up-container .mentee-link,
+.sign-up-container .mentor-link{
+  display: inline-block;
+  padding: 10px 50px;
+  text-transform: uppercase;
+  border-radius: 7px;
+  color: #ffffff;
+}
+
+.sign-up-container .mentor-link{
+  background: rgb(17, 164, 17);
+}
+.sign-up-container .mentor-link:hover{
+  background: var(--green-color);
+}
+
+.sign-up-container .mentee-link{
+  background: rgb(20, 20, 176);
+}
+.sign-up-container .mentee-link:hover{
+  background: rgb(2, 2, 82);
+}
 
 .form-intro h2{
   font-size: 2rem;
@@ -824,14 +858,20 @@ header#signup-login{
   font-weight: 600;
 }
 
-.form-field #social-links{
+.form-field #social-links,
+#mentor-signup-form #social-links,
+#mentee-signup-form #social-links
+{
   background: rgba(235, 233, 233, 0.25);
   padding: 30px 0;
   margin-bottom: 5px;
   margin-bottom: 20px;
 }
 
-.form-field #social-links ul{
+.form-field #social-links ul,
+#mentor-signup-form #social-links ul,
+#mentee-signup-form #social-links ul
+{
  display: flex;
  align-items: center;
  justify-content: space-between;
@@ -840,7 +880,10 @@ header#signup-login{
 }
 
 
-.form-field #social-links ul .svg-inline--fa{
+.form-field #social-links ul .svg-inline--fa,
+#mentor-signup-form #social-links ul .svg-inline--fa,
+#mentee-signup-form #social-links ul .svg-inline--fa
+{
   height: 20px;
   width: 20px;
   border-radius: 50px;
@@ -849,19 +892,32 @@ header#signup-login{
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
 }
 
-.form-field #social-links ul .fa-google-plus-g{
+.form-field #social-links ul .fa-google-plus-g,
+#mentor-signup-form #social-links ul .fa-google-plus-g,
+#mentee-signup-form #social-links ul .fa-google-plus-g
+{
   background: #F24E1E;
   color: var(--light-color);
 }
-.form-field #social-links ul .fa-facebook{
+.form-field #social-links ul .fa-facebook,
+#mentor-signup-form #social-links ul .fa-facebook,
+#mentee-signup-form #social-links ul .fa-facebook
+{
   background:#4267B2;
   color: var(--light-color);
 }
-.form-field #social-links ul .fa-twitter{
+.form-field #social-links ul .fa-twitter,
+#mentor-signup-form #social-links ul .fa-twitter,
+#mentor-signup-form #social-links ul .fa-twitter,
+#mentee-signup-form #social-links ul .fa-twitter
+{
   background:#00acee;
   color: var(--light-color);
 }
-.form-field #social-links ul .fa-instagram{
+.form-field #social-links ul .fa-instagram,
+#mentor-signup-form #social-links ul .fa-instagram,
+#mentee-signup-form #social-links ul .fa-instagram
+{
   background: #F078EB;
   color: var(--light-color);
 }
@@ -1600,7 +1656,8 @@ body#blog{
 #update-profile-form input,
 #update-profile-form select,
 #update-profile-form textarea,
-#chats input{
+#chats input,
+#mentor-signup-form input{
   border-radius: 10px;
   line-height: 20px;
   padding-left: 40px;
@@ -1631,19 +1688,183 @@ body#blog{
   margin-bottom: 10px;
 }
 
-
+#mentor-signup-form .getstarted-btn,
+#mentor-signup-form .partner-btn,
 #update-profile-form .getstarted-btn,
-#update-profile-form .partner-btn{
+#update-profile-form .partner-btn,
+#mentee-signup-form .getstarted-btn,
+#mentee-signup-form .partner-btn,
+#update-profile-form .getstarted-btn,
+#update-profile-form .partner-btn
+
+{
   border: none;
   font-size: 1rem;
   font-weight: 100;
 }
 
-.tab{
+
+
+.tab, .mentor-signup-tab,
+.mentee-signup-tab{
   display: none;
 }
 
+.reg-form-container{
+  background: var(--light-color);
+}
 
+
+#mentor-signup-form .form-input,
+#mentee-signup-form .form-input
+ {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+ 
+}
+
+#mentor-signup-form label,
+#mentee-signup-form label
+{
+  margin-top: 10px;
+}
+
+#mentor-signup-form .form-input,
+#mentee-signup-form .form-input
+{
+  margin-top: 0px!important;
+}
+
+.form-control:focus{
+  outline: none!important;
+  box-shadow: none!important;
+}
+#mentor-signup-form .form-input input,
+#mentor-signup-form .form-input select,
+#mentee-signup-form .form-input input,
+#mentee-signup-form .form-input select
+
+ {
+ width: 100%;
+ font-size: 1rem;
+ padding: 5px 0px 5px 45px;
+ background: var(--blog-bgcolor);
+ border: none;
+ height: 45px;
+}
+#mentor-signup-form .form-input input:focus,
+#mentee-signup-form .form-input input:focus
+{
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+
+#mentor-signup-form .form-input .inner-icon,
+#mentee-signup-form .form-input .inner-icon
+{
+  position: absolute;
+  left: 15px;
+}
+
+.mentor-signup-progress-bar{
+  background: rgba(237, 230, 230, 0.76);
+  height: 20px;
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.mentor-signup-progress-bar .width{
+  background: green;
+  height: 100%;
+  width: 0%;
+  border-radius: inherit;
+}
+
+#mentor-signup-form  .mentor-expertise-share,
+#mentee-signup-form  .mentor-expertise-share
+{
+  width: 100px;
+  height: 15px;
+  margin-left: 5px;
+  border-radius: 20px;
+  background: rgb(205, 227, 235);
+}
+
+#mentor-signup-form  .mentor-expertise-share .rate,
+#mentee-signup-form  .mentor-expertise-share .rate
+{
+  background: rgb(35, 186, 245);
+  width: 0;
+  height: 100%;
+  border-radius: inherit;
+}
+#mentor-signup-form .accordion-button,
+#mentee-signup-form .accordion-button
+{
+  font-size: .9rem;
+}
+
+#mentor-signup-form .accordion-button:focus, 
+#mentee-signup-form .accordion-button:focus 
+{
+  box-shadow: none;
+}
+
+#mentor-signup-form .accordion-button:not(.collapsed)::after,
+#mentee-signup-form .accordion-button:not(.collapsed)::after
+ {
+ display: none;
+}
+#mentor-signup-form .accordion-button:not(.collapsed)::before,
+#mentee-signup-form .accordion-button:not(.collapsed)::before
+ {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230c63e4'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  transform: rotate(-180deg);
+}
+
+#mentor-signup-form .accordion-button::before,
+#mentee-signup-form .accordion-button::before
+ {
+  flex-shrink: 0;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 10px;
+  content: "";
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-size: 1rem;
+  transition: transform .2s ease-in-out;
+}
+
+#mentor-signup-form .accordion-button::after,
+#mentee-signup-form .accordion-button::after
+{
+  display: none;
+}
+
+#mentor-signup-form .accordion-body,
+#mentee-signup-form .accordion-body
+{
+  font-size: .8rem;
+}
+
+#mentor-signup-form .accordion-body input,
+#mentee-signup-form .accordion-body input
+{
+  margin-top: 10px;
+}
+
+#mentor-signup-form .form-group,
+#mentee-signup-form .form-group
+{
+  margin-bottom: 20px;
+}
+
+.tab
 
 
 /* MENTEE UPDATE PROFILE PAGE */
