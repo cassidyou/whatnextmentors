@@ -86,15 +86,116 @@
       <div class="container">
        
 
-        <div class="row">
+        <div class="row ">
             <div class="col-md-2"></div>
             <div class="col-md-8 border reg-form-container p-lg-4">
                 <div class="update-heading text-center"> <h3>Mentee Registration</h3></div>
-                    <div class="mentor-signup-progress-bar mb-4">
-                        <div class="width"></div>
+                <div class="row mentee-role-card-container">
+                  <div class="col-lg-4">
+                    <div class="mentee-role-card">
+                      <div class="mentee-role-card-header g-impact-card-header">
+                        <h4 class="heading">global impact</h4>
+                      </div>
+                      <div class="mentee-role-card-body">
+                        <p>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                          Illum quod eius veritatis debitis blanditiis eum! Inventore enim ducimus recusandae libero?
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                          Illum quod eius veritatis debitis blanditiis eum! Inventore enim ducimus recusandae libero?
+                        </p>
+                      </div>
+                      <div class="mentee-role-card-footer">
+                        <button class="mentee-signp-form-intro-btn" value="Global Impact">signup here</button>
+                      </div>
                     </div>
-                    <small class="mt-3">Required fields are marked with <span class="text-danger">*</span></small>
-                 <form id="mentee-signup-form" class="mt-4">
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="mentee-role-card">
+                      <div class="mentee-role-card-header ambassador-card-header">
+                        <h4 class="heading">Ambassador</h4>
+                      </div>
+                      <div class="mentee-role-card-body">
+                        <p>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                          Illum quod eius veritatis debitis blanditiis eum! Inventore enim ducimus recusandae libero?
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                          Illum quod eius veritatis debitis blanditiis eum! Inventore enim ducimus recusandae libero?
+                        </p>
+                      </div>
+                      <div class="mentee-role-card-footer">
+                        <button class="mentee-signp-form-intro-btn" value="Ambassador">signup here</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="mentee-role-card">
+                      <div class="mentee-role-card-header associate-card-header">
+                        <h4 class="heading">associates</h4>
+                      </div>
+                      <div class="mentee-role-card-body">
+                        <p>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                          Illum quod eius veritatis debitis blanditiis eum! Inventore enim ducimus recusandae libero?
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                          Illum quod eius veritatis debitis blanditiis eum! Inventore enim ducimus recusandae libero?
+                        </p>
+                      </div>
+                      <div class="mentee-role-card-footer">
+                        <button class="mentee-signp-form-intro-btn" value="Associate">signup here</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                   
+                 <form id="mentee-signup-form" class="mt-4 d-none">
+                  <div class="mentor-signup-progress-bar mb-4">
+                    <div class="width"></div>
+                  </div>
+                  <div class="my-4">
+                    <span>You are joining <b>WhatNextMentors</b> as  <span class="text-danger mentee-role-display fw-bolder"></span> <span id="change-role">change role</span></span>
+                  </div>
+                  <small class="mt-3">Required fields are marked with <span class="text-danger">*</span></small>
+                  <div class="mentee-signup-tab">
+                    <h4><b>Community Guidelines</b></h4>
+                    <p>
+                      Welcome to WhatNextMentors! Here are the very top-leve guidelines all memebers of our community must follow.
+                      <br>
+                      Our entire Code of Conduct can be found here.
+                      <div class="d-flex align-items-start">
+                        <div style="margin-right: 20px; font-size: 1.7rem;"><i class="fa-solid fa-check-double text-green"></i></div>
+                        <div>
+                          <p><b>Mentees may not ask mentors for financial support.</b></p>
+                          <p>
+                            Mentors provide guidance and advice, but do not provide financial support. Mentees asking mentors for direct
+                            financing will have their accounts deactivated immediately.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-start">
+                        <div style="margin-right: 20px; font-size: 1.7rem;"><i class="fa-solid fa-check-double text-green"></i></div>
+                        <div>
+                          <p><b>Mentors may not charge for their services</b></p>
+                          <p>
+                           WhatNextMentors is a 100% free service, where volunteer mentors share their experience and their guaidance.
+                           Mentors suggesting that Mentees pay for mentoring services on or off teh site will have their accounts 
+                           deactivated immediately.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-start">
+                        <div style="margin-right: 20px; font-size: 1.7rem;"><i class="fa-solid fa-check-double text-green"></i></div>
+                        <div>
+                          <p><b>Report prohibited behavior</b></p>
+                          <p>
+                            Both mentors and Mentees are invited to report either of the above prohibited behaviors via the REPORT links throughout the site. 
+                          </p>
+                        </div>
+                      </div>
+                    </p>
+                    <div class="form-group">
+                      <input type="checkbox"> I, <b>Pablo Escobar, agree to these expectations.</b>
+                    </div>
+                  </div>
                     <div class="mentee-signup-tab">
                         <h6 class="fw-bolder">Continue with your social account</h6>
                         <div id="social-links">
@@ -111,9 +212,9 @@
                             <div class="col-2"></div>
                           </div>
                         </div>
-                        <h6 class="fw-bolder mt-4 mb-3">Sign up with your email</h6>
-                        
-                        <div class="form-group row">
+                        <h6 class="fw-bolder mt-4 mb-5">Sign up with your email</h6>
+                        <h5 class="fw-5"><b>Personal Info</b></h5>
+                        <div class="form-group row my-0 py-0">
                             <div class="col-lg-6">
                                 <label for="firstName">First Name <span class="text-danger">*</span></label>
                                 <div class="form-input">
@@ -128,9 +229,8 @@
                                 <input type="text" name="lastName" id="lastName" placeholder="Last Name">
                               </div>
                             </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-lg-6">
+                        
+                            <div class="col-lg-12">
                                 <label for="email">Email <span class="text-danger">*</span> </label>
                                 <div class="form-input">
                                     <span class="inner-icon"><i class="fa-regular fa-envelope"></i></span>
@@ -138,20 +238,44 @@
                                   </div>
                             </div>
                             <div class="col-lg-6">
-                                <label for="menteeRole">Choose Role <span class="text-danger">*</span> </label>
+                              <label for="menteeRole">Role <span class="text-danger">*</span> </label>
+                              <div class="form-input">
+                                  <span class="inner-icon"><i class="fa-solid fa-user"></i></i></span>
+                                  <input type="text" name="menteeRole" id="menteeRole" value="" disabled>
+                                </div>
+                          </div>
+                            <div class="col-md-6">
+                              <label for="dob">Date Of Birth <span class="text-danger">*</span></label>
+                              <div class="form-input">
+                                <span class="inner-icon"><i class="fa-solid fa-calendar"></i></span>
+                                <input type="date" id="dob" name="dob" placeholder="Date of Birth">
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="gender">Gender <span class="text-danger">*</span> </label>
                                 <div class="form-input">
-                                    <span class="inner-icon"><i class="fa-solid fa-user"></i></i></span>
-                                    <select name="menteeRole" id="menteeRole">
-                                      <option value="">Choose Role</option>
-                                      <option value="Associate">Associate</option>
-                                      <option value="Ambassador">Ambassador</option>
-                                      <option value="Global Impact">Global Impact</option>
+                                    <span class="inner-icon"><i class="fa-solid fa-venus-mars"></i></span>
+                                    <select type="text" name="gender" id="gender">
+                                      <option value="">Select gender</option>
+                                      <option value="male">Male</option>
+                                      <option value="female">Female</option>
                                     </select>
                                   </div>
                             </div>
+                            <div class="col-md-6">
+                              <label for="nationality">Nationality</label>
+                              <div class="form-input">
+                                <span class="inner-icon"><i class="fa-solid fa-pen-to-square"></i></span>
+                               <select name="nationality" id="nationality">
+                                <option value="">Nigeria</option>
+                               </select>
+                              </div>
+                            </div>
+                           
                         </div>
 
-                        <div class="form-group row associate-school-info d-none">
+                        <!------------------ Associate School Info  ---------------------->
+                        <div class="form-group row associate-school-info my-0 py-0">
                           <div class="col-lg-6">
                             <label for="schoolName">Name of School <span class="text-danger">*</span></label>
                             <div class="form-input">
@@ -160,29 +284,98 @@
                             </div>
                           </div>
                           <div class="col-lg-6">
-                            <label for="schoolCountry">School Address (Country) <span class="text-danger">*</span></label>
+                            <label for="dob">Class <span class="text-danger">*</span></label>
                             <div class="form-input">
-                              <span class="inner-icon"><i class="fa-regular fa-pen-to-square"></i></span>
-                              <input type="text" id="schoolCountry" name="schoolCountry" placeholder="School Name">
-                            </div>
-                          </div>
-                          <div class="col-lg-6">
-                            <label for="schoolState">School Address (State) <span class="text-danger">*</span></label>
-                            <div class="form-input">
-                              <span class="inner-icon"><i class="fa-regular fa-pen-to-square"></i></span>
-                              <input type="text" id="schoolState" name="schoolState" placeholder="School Name">
-                            </div>
-                          </div>
-                          <div class="col-lg-6">
-                            <label for="schoolTown">School Address (Town) <span class="text-danger">*</span></label>
-                            <div class="form-input">
-                              <span class="inner-icon"><i class="fa-regular fa-pen-to-square"></i></span>
-                              <input type="text" id="schoolTown" name="schoolTown" placeholder="School Name">
+                              <span class="inner-icon"><i class="fa-solid fa-landmark"></i></i></span>
+                              <select type="text" id="class" name="class">
+                                <option value="">Select class</option>
+                                <option value="jss1">J S S 1</option>
+                                <option value="jss2">J S S 2</option>
+                                <option value="jss3">J S S 3</option>
+                                <option value="sss1">S S S 1</option>
+                                <option value="sss1">S S S 2</option>
+                                <option value="sss1">S S S 3</option>
+                              </select>
                             </div>
                           </div>
                         </div>
 
+                        <!------------------ Ambassador School Info  ---------------------->
+                        <div class="form-group row ambassador-school-info my-0 py-0">
+                          <div class="col-lg-6">
+                            <label for="schoolName">Name of Institution <span class="text-danger">*</span></label>
+                            <div class="form-input">
+                              <span class="inner-icon"><i class="fa-regular fa-pen-to-square"></i></span>
+                              <input type="text" id="schoolName" name="schoolName" placeholder="School Name">
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <label for="department">Department <span class="text-danger">*</span></label>
+                            <div class="form-input">
+                              <span class="inner-icon"><i class="fa-regular fa-pen-to-square"></i></span>
+                              <input type="text" id="department" name="department" placeholder="Department">
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <label for="reg-number">Reg. No. <span class="text-danger">*</span></label>
+                            <div class="form-input">
+                              <span class="inner-icon"><i class="fa-regular fa-pen-to-square"></i></span>
+                              <input type="text" id="reg-number" name="reg-number" placeholder="Registration Number">
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <label for="dob">Level <span class="text-danger">*</span></label>
+                            <div class="form-input">
+                              <span class="inner-icon"><i class="fa-solid fa-landmark"></i></i></span>
+                              <select type="text" id="level" name="level">
+                                <option value="">Select level</option>
+                                <option value="jss1">Year 1/ND1</option>
+                                <option value="jss2">Year 2/ND2</option>
+                                <option value="jss3">Year 3/HND1 </option>
+                                <option value="sss1">Year 4/HND2</option>
+                                <option value="sss1">Year 5</option>
+                              </select>
+                            </div>
+                          </div>                  
+                        </div>
                         <div class="form-group row">
+                          <div class="col-lg-6">
+                            <label for="schoolCountry">Country <span class="text-danger">*</span></label>
+                            <div class="form-input">
+                              <span class="inner-icon"><i class="fa-regular fa-pen-to-square"></i></span>
+                              <input type="text" id="schoolCountry" name="schoolCountry" placeholder="Country">
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <label for="schoolState">State <span class="text-danger">*</span></label>
+                            <div class="form-input">
+                              <span class="inner-icon"><i class="fa-regular fa-pen-to-square"></i></span>
+                              <input type="text" id="schoolState" name="schoolState" placeholder="State">
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <label for="schoolTown">Town <span class="text-danger">*</span></label>
+                            <div class="form-input">
+                              <span class="inner-icon"><i class="fa-regular fa-pen-to-square"></i></span>
+                              <input type="text" id="schoolTown" name="schoolTown" placeholder="City/Town">
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <label for="phoneNo">Phone Number <span class="text-danger">*</span></label>
+                            <div class="form-input">
+                              <span class="inner-icon"><select name="countryCode" id="countryCode" style="padding: 0 0 0 0; margin-right: 10px; background-color: transparent;">
+                                <option value="">+234</option>
+                                <option value="">+299</option>
+                              </select></span>
+                            <input type="tel" name="phoneNo" id="phoneNo" placeholder="phoneNo" style="padding-left: 80px;">
+                            </div>
+                          </div> 
+                          <div class="col-lg-12">
+                            <label for="dob">Address <span class="text-danger">*</span></label>
+                            <div class="form-input">
+                              <textarea  id="address" name="address" class="form-control"></textarea>
+                            </div>
+                          </div>
                             <div class="col-lg-6">
                               <label for="password">Password <span class="text-danger">*</span></label>
                               <div class="form-input">
@@ -199,209 +392,352 @@
                             </div>
                         </div>
                     </div>
+                    
                     <div class="mentee-signup-tab">
-                      <h4><b>Community Guidelines</b></h4>
-                      <div class="my-4">
-                        <span>You are joining <b>WhatNextMentors</b> as a <span class="text-danger user-role-display fw-bolder">Mentee</span></span>
-                      </div>
-                      <p>
-                        Welcome to WhatNextMentors! Here are the very top-leve guidelines all memebers of our community must follow.
-                        <br>
-                        Our entire Code of Conduct can be found here.
-                        <div class="d-flex align-items-start">
-                          <div style="margin-right: 20px; font-size: 1.7rem;"><i class="fa-solid fa-check-double text-green"></i></div>
-                          <div>
-                            <p><b>Mentees may not ask mentors for financial support.</b></p>
-                            <p>
-                              Mentors provide guidance and advice, but do not provide financial support. Mentees asking mentors for direct
-                              financing will have their accounts deactivated immediately.
-                            </p>
+                      <h5 class="fw-5 my-3"><b>Self Assessment</b></h5>
+                      <div class="row">
+                          <div class="col-md-5">
+                            <div class="self-assess-intro">
+                              Take this quick quiz to identify the strengths and weaknesses of your interest. 
+                              Completing this portion greatly improves your chances of finding the right mentor, as 
+                              it will give them detailed insight into your needs. You can return to this quiz and update
+                              your responses as you confidence and business knowlege grows. 
+                            </div>
+                          </div>
+                          <div class="col-md-7">
+                            <div class="self-assess-result">
+                              <div class="item"><span> Setup </span> <div class="result"><div class="setup-result"></div></div>
+                              <div class="item"><span> Market </span><div class="result"><div class="market-research-result"></div></div></div>
+                              <div class="item"><span> Finances </span> <div class="result"><div class="finance-result"></div></div></div>
+                              <div class="item"><span> Sales </span> <div class="result"><div class="sales-result"></div></div></div>
+                              <div class="item"><span> Operations </span> <div class="result"><div class="operations-result"></div></div></div>
+                            </div>
                           </div>
                         </div>
-                        <div class="d-flex align-items-start">
-                          <div style="margin-right: 20px; font-size: 1.7rem;"><i class="fa-solid fa-check-double text-green"></i></div>
-                          <div>
-                            <p><b>Mentors may not charge for their services</b></p>
-                            <p>
-                             WhatNextMentors is a 100% free service, where volunteer mentors share their experience and their guaidance.
-                             Mentors suggesting that Mentees pay for mentoring services on or off teh site will have their accounts 
-                             deactivated immediately.
-                            </p>
+                        <div class="col-12 my-3">
+                          <div class="self-assess-stages w-100">
+                            <div class="stage setup">Setup</div>
                           </div>
                         </div>
-                        <div class="d-flex align-items-start">
-                          <div style="margin-right: 20px; font-size: 1.7rem;"><i class="fa-solid fa-check-double text-green"></i></div>
-                          <div>
-                            <p><b>Report prohibited behavior</b></p>
-                            <p>
-                              Both mentors and Mentees are invited to report either of the above prohibited behaviors via the REPORT links throughout the site. 
-                            </p>
+                        <div id="self-assess-questions">
+                          <div class="row questions" id="setup-questions">
+                            <div class="col-12">
+                              <div class="question">
+                                <label>How much confidence do you have in your ability to manage your time effectively?</label>
+                              <ul class="options">
+                                 <li value="1">0 - 20%</li>
+                                 <li value="2">21 - 40%</li>
+                                 <li value="3">41 - 60%</li>
+                                 <li value="4">61 - 80%</li>
+                                 <li value="5">81 - 100%</li>
+                              </ul>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <div class="question">
+                                <label>How much confidence do you have in your ability to plan and set goals for yourself?</label>
+                              <ul class="options">
+                                 <li value="1">0 - 20%</li>
+                                 <li value="2">21 - 40%</li>
+                                 <li value="3">41 - 60%</li>
+                                 <li value="4">61 - 80%</li>
+                                 <li value="5">81 - 100%</li>
+                              </ul>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <div class="question">
+                                <label>How much confidence do you have in your ability to think and brainstorm?</label>
+                              <ul class="options">
+                                 <li value="1">0 - 20%</li>
+                                 <li value="2">21 - 40%</li>
+                                 <li value="3">41 - 60%</li>
+                                 <li value="4">61 - 80%</li>
+                                 <li value="5">81 - 100%</li>
+                              </ul>
+                              </div>
+                            </div>
                           </div>
                         </div>
-                      </p>
-                      <div class="form-group">
-                        <input type="checkbox"> I, <b>Pablo Escobar, agree to these expectations.</b>
                       </div>
                     </div>
                     <div class="mentee-signup-tab">
-                        <div class="form-group row">
-                          <div class="col-md-6">
-                            <label for="dob">Date Of Birth</label>
-                            <div class="form-input">
-                              <span class="inner-icon"><i class="fa-solid fa-calendar"></i></span>
-                              <input type="date" id="dob" name="dob" placeholder="Date of Birth">
+                      <h5 class="fw-5 my-3"><b>Self Assessment</b></h5>
+                      <div class="row">
+                          <div class="col-md-5">
+                            <div class="self-assess-intro">
+                              Take this quick quiz to identify the strengths and weaknesses of your interest. 
+                              Completing this portion greatly improves your chances of finding the right mentor, as 
+                              it will give them detailed insight into your needs. You can return to this quiz and update
+                              your responses as you confidence and business knowlege grows. 
                             </div>
                           </div>
-                          <div class="col-md-6">
-                            <label for="nationality">Nationality</label>
-                            <div class="form-input">
-                              <span class="inner-icon"><i class="fa-solid fa-pen-to-square"></i></span>
-                             <select name="nationality" id="nationality">
-                              <option value="">Nigeria</option>
-                             </select>
-                            </div>
-                          </div>
-                        </div>
-                
-                        <div class="form-group row">
-                        <div class="col-md-6">
-                          <label for="countryOfResidence">Country of Residence</label>
-                          <div class="form-input">
-                            <span class="inner-icon"><i class="fa-solid fa-flag"></i></span>
-                           <select name="countryOfResidence" id="countryOfResidence">
-                            <option value="">Nigeria</option>
-                           </select>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <label for="stateOfResidence">State/Region</label>
-                          <div class="form-input">
-                            <span class="inner-icon"><i class="fa-solid fa-pen-to-square"></i></span>
-                           <select name="stateOfResidence" id="stateOfResidence">
-                            <option value="">Ebonyi</option>
-                           </select>
-                          </div>
-                        </div>
-                        </div>
-                
-                        <div class="form-group row">
-                        <div class="col-md-6">
-                          <label for="cityOfResidence">City of Residence</label>
-                          <div class="form-input">
-                            <span class="inner-icon"><i class="fa-solid fa-pen-to-square"></i></span>
-                           <select name="cityOfResidence" id="cityOfResidence">
-                            <option value="">City of Residence</option>
-                           </select>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <label for="phoneNo">Phone Number</label>
-                          <div class="form-input">
-                            <span class="inner-icon"><select name="countryCode" id="countryCode" style="padding: 0 0 0 0; margin-right: 10px; background-color: transparent;">
-                              <option value="">+234</option>
-                              <option value="">+299</option>
-                            </select></span>
-                          <input type="tel" name="phoneNo" id="phoneNo" placeholder="phoneNo" style="padding-left: 80px;">
-                          </div>
-                        </div>
-                        </div>
-                
-                        <div class="form-group row">
-                          <div class="col-12">
-                            <label for="bio">Brief Biography</label>
-                            <div class="form-input">
-                              <textarea name="bio" class="form-control" id="bio" placeholder="A brief Bio about yourself" cols="30" rows="5" style="padding-left: 10px;"></textarea>
+                          <div class="col-md-7">
+                            <div class="self-assess-result">
+                              <div class="item"><span> Setup  </span> <div class="result"><div class="setup-result"></div></div>
+                              <div class="item"><span> Market  </span><div class="result"><div class="market-research-result"></div></div></div>
+                              <div class="item"><span> Finances </span> <div class="result"><div class="finance-result"></div></div></div>
+                              <div class="item"><span> Sales </span> <div class="result"><div class="sales-result"></div></div></div>
+                              <div class="item"><span> Operations </span> <div class="result"><div class="operations-result"></div></div></div>
                             </div>
                           </div>
                         </div>
-                
-                        <div class="form-group row">
-                          <div class="col-12">
-                            <label for="expectation">Expectations</label>
-                            <div class="form-input">
-                              <textarea name="expectation" class="form-control" id="expectation" placeholder="What are your expectations?" cols="30" rows="5" style="padding-left: 10px;"></textarea>
+                        <div class="col-12 my-3">
+                          <div class="self-assess-stages w-100">
+                            <div class="stage market-research">Market</div>
+                          </div>
+                        </div>
+                        <div id="self-assess-questions">
+                          <div class="row questions" id="market-research-questions">
+                            <div class="col-12">
+                              <div class="question">
+                                <label>How much confidence do you have in your ability to manage your time effectively?</label>
+                              <ul class="options">
+                                 <li value="1">0 - 20%</li>
+                                 <li value="2">21 - 40%</li>
+                                 <li value="3">41 - 60%</li>
+                                 <li value="4">61 - 80%</li>
+                                 <li value="5">81 - 100%</li>
+                              </ul>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <div class="question">
+                                <label>How much confidence do you have in your ability to plan and set goals for yourself?</label>
+                              <ul class="options">
+                                 <li value="1">0 - 20%</li>
+                                 <li value="2">21 - 40%</li>
+                                 <li value="3">41 - 60%</li>
+                                 <li value="4">61 - 80%</li>
+                                 <li value="5">81 - 100%</li>
+                              </ul>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <div class="question">
+                                <label>How much confidence do you have in your ability to think and brainstorm?</label>
+                              <ul class="options">
+                                 <li value="1">0 - 20%</li>
+                                 <li value="2">21 - 40%</li>
+                                 <li value="3">41 - 60%</li>
+                                 <li value="4">61 - 80%</li>
+                                 <li value="5">81 - 100%</li>
+                              </ul>
+                              </div>
                             </div>
                           </div>
                         </div>
+                      </div>
                     </div>
                     <div class="mentee-signup-tab">
-                      <div class="form-group row">
-                        <div class="col-12">
-                          <label for="areaOfExpertise">Area of expertise</label>
-                          <div class="form-input">
-                            <span class="inner-icon"><i class="fa-solid fa-calendar"></i></span>
-                            <select name="areaOfExpertise" id="areaOfExpertise">
-                              <option value="">What is your primary industry</option>
-                              <option value="">Agriculture</option>
-                              <option value="">Management</option>
-                            </select>
+                      <h5 class="fw-5 my-3"><b>Self Assessment</b></h5>
+                      <div class="row">
+                          <div class="col-md-5">
+                            <div class="self-assess-intro">
+                              Take this quick quiz to identify the strengths and weaknesses of your interest. 
+                              Completing this portion greatly improves your chances of finding the right mentor, as 
+                              it will give them detailed insight into your needs. You can return to this quiz and update
+                              your responses as you confidence and business knowlege grows. 
+                            </div>
+                          </div>
+                          <div class="col-md-7">
+                            <div class="self-assess-result">
+                              <div class="item"><span> Setup  </span> <div class="result"><div class="setup-result"></div></div>
+                              <div class="item"><span> Market </span><div class="result"><div class="market-research-result"></div></div></div>
+                              <div class="item"><span> Finances </span> <div class="result"><div class="finance-result"></div></div></div>
+                              <div class="item"><span> Sales </span> <div class="result"><div class="sales-result"></div></div></div>
+                              <div class="item"><span> Operations </span> <div class="result"><div class="operations-result"></div></div></div>
+                            </div>
                           </div>
                         </div>
-                        <div class="col-12">
-                          <label for="organization">Organization</label>
-                          <div class="form-input">
-                            <span class="inner-icon"><i class="fa-solid fa-pen-to-square"></i></span>
-                           <select name="organization" id="organization">
-                            <option value="">Your Organization</option>
-                            <option value="">Banking and finance</option>
-                            <option value="">Production</option>
-                           </select>
+                        <div class="col-12 my-3">
+                          <div class="self-assess-stages w-100">
+                            <div class="stage finance">Finance</div>
                           </div>
                         </div>
-                      </div>
-                      <div class="form-group row">
-                        <div class="col-12">
-                          <label for="roleInOrganization">Role in the Organization</label>
-                          <div class="form-input">
-                            <span class="inner-icon"><i class="fa-solid fa-calendar"></i></span>
-                            <select name="roleInOrganization" id="roleInOrganization">
-                              <option value="">Role in Organization</option>
-                              <option value="">Manager</option>
-                              <option value="">Human Resource</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-12">
-                          <label for="lang">Language</label>
-                          <div class="form-input">
-                            <span class="inner-icon"><i class="fa-solid fa-pen-to-square"></i></span>
-                           <select name="lang" id="lang">
-                            <option value="">What language do you speak fluently?</option>
-                            <option value="">English</option>
-                            <option value="">Hausa</option>
-                            <option value="">Igbo</option>
-                            <option value="">Spanish</option>
-                           </select>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <div class="col-12">
-                          <label for="countryOfProfExperience">In which country do you have professional business experiecne? </label>
-                          <div class="form-input">
-                            <span class="inner-icon"><i class="fa-solid fa-flag"></i></span>
-                            <select name="countryOfProfExperience" id="countryOfProfExperience">
-                              <option value="">Select Country</option>
-                              <option value="">Nigeria</option>
-                              <option value="">USA</option>
-                              <option value="">UK</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-12">
-                          <label for="physicalSession">Are you free for physical session?</label>
-                          <div class="form-input">
-                            <span class="inner-icon"><i class="fa-solid fa-pen-to-square"></i></span>
-                           <select name="physicalSession" id="physicalSession">
-                            <option value="">Select</option>
-                            <option value="">Yes</option>
-                            <option value="">No</option>
-                           </select>
+                        <div id="self-assess-questions">
+                          <div class="row questions" id="finance-questions">
+                            <div class="col-12">
+                              <div class="question">
+                                <label>How much confidence do you have in your ability to manage your time effectively?</label>
+                              <ul class="options">
+                                 <li value="1">0 - 20%</li>
+                                 <li value="2">21 - 40%</li>
+                                 <li value="3">41 - 60%</li>
+                                 <li value="4">61 - 80%</li>
+                                 <li value="5">81 - 100%</li>
+                              </ul>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <div class="question">
+                                <label>How much confidence do you have in your ability to plan and set goals for yourself?</label>
+                              <ul class="options">
+                                 <li value="1">0 - 20%</li>
+                                 <li value="2">21 - 40%</li>
+                                 <li value="3">41 - 60%</li>
+                                 <li value="4">61 - 80%</li>
+                                 <li value="5">81 - 100%</li>
+                              </ul>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <div class="question">
+                                <label>How much confidence do you have in your ability to think and brainstorm?</label>
+                              <ul class="options">
+                                 <li value="1">0 - 20%</li>
+                                 <li value="2">21 - 40%</li>
+                                 <li value="3">41 - 60%</li>
+                                 <li value="4">61 - 80%</li>
+                                 <li value="5">81 - 100%</li>
+                              </ul>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
+                    </div>
+                    <div class="mentee-signup-tab">
+                      <h5 class="fw-5 my-3"><b>Self Assessment</b></h5>
+                      <div class="row">
+                          <div class="col-md-5">
+                            <div class="self-assess-intro">
+                              Take this quick quiz to identify the strengths and weaknesses of your interest. 
+                              Completing this portion greatly improves your chances of finding the right mentor, as 
+                              it will give them detailed insight into your needs. You can return to this quiz and update
+                              your responses as you confidence and business knowlege grows. 
+                            </div>
+                          </div>
+                          <div class="col-md-7">
+                            <div class="self-assess-result">
+                              <div class="item"><span> Setup  </span> <div class="result"><div class="setup-result"></div></div>
+                              <div class="item"><span> Market </span><div class="result"><div class="market-research-result"></div></div></div>
+                              <div class="item"><span> Finances </span> <div class="result"><div class="finance-result"></div></div></div>
+                              <div class="item"><span> Sales </span> <div class="result"><div class="sales-result"></div></div></div>
+                              <div class="item"><span> Operations </span> <div class="result"><div class="operations-result"></div></div></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 my-3">
+                          <div class="self-assess-stages w-100">
+                            <div class="stage sales">Sales</div>
+                          </div>
+                        </div>
+                        <div id="self-assess-questions">
+                          <div class="row questions" id="sales-questions">
+                            <div class="col-12">
+                              <div class="question">
+                                <label>How much confidence do you have in your ability to manage your time effectively?</label>
+                              <ul class="options">
+                                 <li value="1">0 - 20%</li>
+                                 <li value="2">21 - 40%</li>
+                                 <li value="3">41 - 60%</li>
+                                 <li value="4">61 - 80%</li>
+                                 <li value="5">81 - 100%</li>
+                              </ul>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <div class="question">
+                                <label>How much confidence do you have in your ability to plan and set goals for yourself?</label>
+                              <ul class="options">
+                                 <li value="1">0 - 20%</li>
+                                 <li value="2">21 - 40%</li>
+                                 <li value="3">41 - 60%</li>
+                                 <li value="4">61 - 80%</li>
+                                 <li value="5">81 - 100%</li>
+                              </ul>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <div class="question">
+                                <label>How much confidence do you have in your ability to think and brainstorm?</label>
+                              <ul class="options">
+                                 <li value="1">0 - 20%</li>
+                                 <li value="2">21 - 40%</li>
+                                 <li value="3">41 - 60%</li>
+                                 <li value="4">61 - 80%</li>
+                                 <li value="5">81 - 100%</li>
+                              </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mentee-signup-tab">
+                      <h5 class="fw-5 my-3"><b>Self Assessment</b></h5>
+                      <div class="row">
+                          <div class="col-md-5">
+                            <div class="self-assess-intro">
+                              Take this quick quiz to identify the strengths and weaknesses of your interest. 
+                              Completing this portion greatly improves your chances of finding the right mentor, as 
+                              it will give them detailed insight into your needs. You can return to this quiz and update
+                              your responses as you confidence and business knowlege grows. 
+                            </div>
+                          </div>
+                          <div class="col-md-7">
+                            <div class="self-assess-result">
+                              <div class="item"><span> Setup  </span> <div class="result"><div class="setup-result"></div></div>
+                              <div class="item"><span> Market</span><div class="result"><div class="market-research-result"></div></div></div>
+                              <div class="item"><span> Finances </span> <div class="result"><div class="finance-result"></div></div></div>
+                              <div class="item"><span> Sales </span> <div class="result"><div class="sales-result"></div></div></div>
+                              <div class="item"><span> Operations </span> <div class="result"><div class="operations-result"></div></div></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 my-3">
+                          <div class="self-assess-stages w-100">
+                            <div class="stage operations">Operations</div>
+                          </div>
+                        </div>
+                        <div id="self-assess-questions">
+                          <div class="row questions" id="operations-questions">
+                            <div class="col-12">
+                              <div class="question">
+                                <label>How much confidence do you have in your ability to manage your time effectively?</label>
+                              <ul class="options">
+                                 <li value="1">0 - 20%</li>
+                                 <li value="2">21 - 40%</li>
+                                 <li value="3">41 - 60%</li>
+                                 <li value="4">61 - 80%</li>
+                                 <li value="5">81 - 100%</li>
+                              </ul>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <div class="question">
+                                <label>How much confidence do you have in your ability to plan and set goals for yourself?</label>
+                              <ul class="options">
+                                 <li value="1">0 - 20%</li>
+                                 <li value="2">21 - 40%</li>
+                                 <li value="3">41 - 60%</li>
+                                 <li value="4">61 - 80%</li>
+                                 <li value="5">81 - 100%</li>
+                              </ul>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <div class="question">
+                                <label>How much confidence do you have in your ability to think and brainstorm?</label>
+                              <ul class="options">
+                                 <li value="1">0 - 20%</li>
+                                 <li value="2">21 - 40%</li>
+                                 <li value="3">41 - 60%</li>
+                                 <li value="4">61 - 80%</li>
+                                 <li value="5">81 - 100%</li>
+                              </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="mentee-signup-tab">
                       <div class="form-group row">
-                        <label>Which areas of expertise would you like to share as a mentor?</label>
+                        <label>Choose 3 areas of expertise that would be most helpful to you right now <span class="text-danger">*</span></label>
 
                         <div class="accordion" id="accordionPanelsStayOpenExample">
                           <div class="accordion-item">
@@ -618,39 +954,65 @@
                       </div>
                       <div class="form-group row">
                         <div class="col-12">
-                          <label for="professionalBackground">Describe your professional background <span class="text-danger">*</span></label>
+                          <label for="menteeInterestDescription">Write a brief description of your interest for mentors to see <span class="text-danger">*</span></label>
                           <div class="form-input">
-                            <textarea name="professionalBackground" id="professionalBackground" class="form-control" style="padding-left: 20px;" cols="30" rows="5" placeholder="Describe your professional background"></textarea>
+                            <textarea name="menteeInterestDescription" id="menteeInterestDescription" class="form-control" style="padding-left: 20px;" cols="30" rows="5" placeholder="Describe your professional background"></textarea>
                           </div>
                         </div>
                       </div>
                       <div class="form-group row">
                         <div class="col-12">
-                          <label for="mentorWhatToOffer">What I can offer <span class="text-danger">*</span></label>
+                          <label for="menteeCountryOfOperation">In which country do you (or will you operate)? <span class="text-danger">*</span></label>
                           <div class="form-input">
-                            <textarea name="mentorWhatToOffer" id="mentorWhatToOffer" class="form-control" style="padding-left: 20px;" cols="30" rows="5" placeholder="Mentors who fill out these questions thoroghly are more likeyly to good responses from prospective Mentees."></textarea>
+                            <span class="inner-icon"><i class="fa-solid fa-flag"></i></span>
+                            <select name="menteeCountryOfOperation" id="menteeCountryOfOperation" class="form-control" >
+                              <option value="">select country</option>
+                              <option value="Nigeria">Nigeria</option>
+                            </select>
                           </div>
                         </div>
                       </div>
                       <div class="form-group row">
                         <div class="col-12">
-                          <label for="mentoringExpectation">My expectations for a successful mentoring relationship</label>
+                          <label for="menteeFluentLanguage">What language do you speak fluently?</label>
                           <div class="form-input">
-                            <textarea name="mentoringExpectation" id="mentoringExpectation" class="form-control" style="padding-left: 20px;" cols="30" rows="5" placeholder="Mentors who fill out these questions thoroghly are more likeyly to good responses from prospective Mentees."></textarea>
+                            <span class="inner-icon"><i class="fa-solid fa-language"></i></span>
+                            <input type="text" name="menteeFluentLanguage" id="menteeFluentLanguage" class="form-control" >
                           </div>
                         </div>
                       </div>
                       <div class="form-group row">
                         <div class="col-12">
-                          <label for="menteeToDo">What an entrepreneur should do to prepare before I begin mentoring them <span class="text-danger">*</span></label>
+                          <label for="howAMentorCanHelpMe">How a mentor can help me<span class="text-danger">*</span></label>
                           <div class="form-input">
-                            <textarea name="menteeToDo" id="menteeToDo" class="form-control" style="padding-left: 20px;" cols="30" rows="5" placeholder="Mentors who fill out these questions thoroghly are more likeyly to good responses from prospective Mentees."></textarea>
+                            <textarea name="howAMentorCanHelpMe" id="howAMentorCanHelpMe" class="form-control" style="padding-left: 20px;" cols="30" rows="5" placeholder="Mentees who fill out these questions thoroghly are more likeyly to good responses from prospective Mentors."></textarea>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <div class="col-12">
+                          <label for="menteeActionsTaken">What actions I've taken so far.<span class="text-danger">*</span></label>
+                          <div class="form-input">
+                            <textarea name="menteeActionsTaken" id="menteeActionsTaken" class="form-control" style="padding-left: 20px;" cols="30" rows="5" placeholder="Mentors who fill out these questions thoroghly are more likeyly to good responses from prospective Mentees."></textarea>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <label for="menteeMotivation">My motivations to have a mentor<span class="text-danger">*</span></label>
+                          <div class="form-input">
+                            <textarea name="menteeMotivation" id="menteeMotivation" class="form-control" style="padding-left: 20px;" cols="30" rows="5" placeholder="Mentees who fill out these questions thoroghly are more likeyly to good responses from prospective Mentors."></textarea>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <label for="menteeWebsite">Website</label>
+                          <div class="form-input"><span class="inner-icon"><i class="fa-solid fa-globe"></i></span>
+                            <input type="text" name="menteeWebsite" id="menteeWebsite" class="form-control" placeholder="https:www.example.com">
                           </div>
                         </div>
                       </div>
                     </div>
-                    <a href="#" class="partner-btn mb-4" id="prevBtn">Previous</a>
-                    <a href="#" class="getstarted-btn mb-4" id="nextBtn">Next</a>
+                    
+                    <a href="#" class="partner-btn mb-4" id="prevBtn"><i class="fa-solid fa-angles-left"></i> Previous</a>
+                    <a href="#" class="getstarted-btn mb-4" id="nextBtn">Next <i class="fa-solid fa-angles-right"></i></a>
                     <button class="getstarted-btn d-non mb-4" id="update-profile">Complete</button>
                  </form>
             </div>

@@ -65,6 +65,9 @@
   padding: 0;
   margin: 0;
 }
+html{
+  scroll-behavior: smooth!important;
+}
 
 body {
   background-color: #ffffff;
@@ -176,7 +179,12 @@ section{
   top: 0;
   z-index: 100;
   border-top: 0;
-  box-shadow: 0px 15px 10px -15px rgba(0, 0, 0, 0.09);  
+  box-shadow: 0px 15px 10px -15px rgba(0, 0, 0, 0.09);
+  transition: all 0.5 ease-in-out;  
+}
+
+.m-gn{
+  margin-bottom: 64.5938px;
 }
 
 
@@ -707,6 +715,10 @@ text-transform: capitalize;
   background-color: var(--green-color);
 }
 
+.bg-light-green{
+  background: rgb(28, 88, 28);
+}
+
 .footer-links li{
   font-weight: 500;
   margin-bottom: 10px;
@@ -765,7 +777,7 @@ header#signup-login{
 #form-containter{
   margin-top: 20px;
   position: relative;
-  height:750px;
+  height:600px;
   margin: 50px 3rem 10px 3rem;
   display: block;
   background-color: var(--light-color);
@@ -773,13 +785,13 @@ header#signup-login{
 }
 
 .form-field, .form-intro{
-  height: 750px;
+  height: 600px;
 }
 
 .form-intro h4{
   font-size: 1.15rem;
   text-transform: uppercase;
-  margin-bottom: 300px!important;
+  margin-bottom: 170px!important;
   display: block;
 }
 .sign-up-container{
@@ -788,6 +800,7 @@ header#signup-login{
   justify-content: center;
   align-items: center;
   row-gap: 50px;
+  padding: 20px;
 }
 .sign-up-container h2{
   font-size: 1.3rem;
@@ -812,10 +825,10 @@ header#signup-login{
 }
 
 .sign-up-container .mentee-link{
-  background: rgb(20, 20, 176);
+  background: var(--green-color);
 }
 .sign-up-container .mentee-link:hover{
-  background: rgb(2, 2, 82);
+  opacity: .8;
 }
 
 .form-intro h2{
@@ -836,7 +849,7 @@ header#signup-login{
   padding: 15px 0px;
   text-transform: uppercase;
   font-size: 1.2rem;
-  background-color: var(--green-color);
+  background: rgb(28, 88, 28);
   border-radius: 50px;
   border: 1px solid var(--light-color);
   color: var(--light-color);
@@ -848,8 +861,8 @@ header#signup-login{
   text-transform: uppercase;
   font-size: .8rem;
   font-weight: 800;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 10px;
+  margin-bottom: 30px;
   text-align: center;
 }
 
@@ -1549,13 +1562,14 @@ body#blog{
   text-transform: uppercase;
 }
 
-#change-role,
+
 .getstarted-btn.continue{
   font-size: .9rem;
   padding: 10px 20px;
   margin: 5px 10px;
   border: none;
   font-weight: 100;
+  background-color: #30814D
 };
 
 .getstarted-btn.continue{
@@ -1771,7 +1785,7 @@ body#blog{
 
 .mentor-signup-progress-bar{
   background: rgba(237, 230, 230, 0.76);
-  height: 20px;
+  height: 10px;
   width: 100%;
   border-radius: 15px;
   overflow: hidden;
@@ -1861,10 +1875,141 @@ body#blog{
 #mentor-signup-form .form-group,
 #mentee-signup-form .form-group
 {
+  margin-bottom: 30px;
+}
+
+.mentee-role-card{
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  margin-top: 20px;
+}
+
+.mentee-role-card-header{
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px;
+  color: #ffffff;
+}
+
+.mentee-role-card-header.g-impact-card-header{
+  background: var(--red-color);
+}
+.mentee-role-card-header.ambassador-card-header{
+  background: rgba(129, 48, 87, 1);
+}
+.mentee-role-card-header.associate-card-header{
+  background: var(--green-color);
+}
+
+.mentee-role-card-header .heading{
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.mentee-role-card-body{
+  padding: 10px;
+  font-size: .8rem;
+  text-align: justify;
+}
+
+.mentee-role-card-footer{
+text-align: center;
+margin: 10px 0;
+}
+
+.mentee-role-card-footer button{
+    background: rgb(14, 119, 14);
+    color: #ffffff;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-size: 1rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.mentee-role-card-footer button:hover{
+  background: rgb(17, 164, 17);
+}
+
+#change-role{
+  display: inline-block;
+  background: rgb(17, 164, 17);
+  padding: 5px 10px;
+  font-size: .9rem;
+  border-radius: 4px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.mentee-role-display{
+  text-transform: uppercase;
+  font-family: poppins-semibold;
+}
+
+#menteeRole{
+  text-transform: capitalize;
+}
+.self-assess-intro,
+.self-assess-result{
+  font-size: .9rem;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
-.tab
+.self-assess-intro{
+  text-align: left;
+}
+
+.self-assess-result{
+  text-align: right;
+}
+
+.self-assess-result .item .result,
+.self-assess-stages{
+  display: inline-block;
+  width: 200px;
+  height: 10px;
+  border-radius: 10px;
+  background: rgb(183, 220, 235);
+}
+.operations-result,
+.sales-result,
+.finance-result,
+.market-research-result,
+.setup-result{
+  background: rgb(18, 101, 226);
+  height: inherit;
+  border-radius: inherit;
+  width: 0;
+}
+
+
+.self-assess-stages{
+  display: flex;
+  align-items: center;
+  overflow: visible;
+}
+
+.self-assess-stages .stage{
+  height: 1px;
+  border-radius: inherit;
+  background: rgb(18, 101, 226);
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  padding: 8px 0;
+  font-size: .9rem;
+}
+
+.self-assess-result .item{
+  margin: 10px 0;
+}
+
+#nextBtn{
+  float: right;
+}
 
 
 /* MENTEE UPDATE PROFILE PAGE */
@@ -2834,24 +2979,28 @@ form#ask-question input.question:focus{
   box-shadow: none;
 }
 
-#survey-form ul.options{
+ ul.options{
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-left: 0;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
-#survey-form ul.options li{
-  border: 1px solid black;
-  font-size: 1rem;
-  padding: 3px 25px;
+ ul.options li{
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  font-size: .8rem;
   border-radius: 10px;
   cursor: pointer;
+  text-transform: capitalize;
+  padding: 5px;
 }
-#survey-form ul.options li.active{
+ ul.options li.active{
   background: var(--green-color);
   color: var(--light-color);
   border: none;
+  pointer-events: none;
 }
 
 #survey-form .answer-btn{
@@ -2863,6 +3012,23 @@ form#ask-question input.question:focus{
   color: #ffffff;
   border-radius: 7px;
 }
+
+.setup{
+  margin-left: 0%;
+}
+.market-research{
+  margin-left: 20%;
+}
+.finance{
+  margin-left: 40%;
+}
+.sales{
+  margin-left: 60%;
+}
+.operations{
+  margin-left: 80%;
+}
+
 
 
 

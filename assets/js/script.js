@@ -25,13 +25,17 @@ $(document).ready(function(){
     })
 
     //sticky top navbar
+    var navHeight = $("nav.navbar").height();
+    // alert(navHeight);
     var stickyNavTop = $("nav.navbar").offset().top;
     var stickyNav = function(){
         var scrollTop = $(window).scrollTop();
         if(scrollTop > stickyNavTop){
             $("nav.navbar").addClass("sticky");
+            $(".header .top").addClass('m-gn');
         }else{
             $("nav.navbar").removeClass("sticky");
+            $(".header .top").removeClass('m-gn');
         }
     };
     stickyNav();
@@ -134,29 +138,6 @@ $(document).ready(function(){
          
     );
     })
-
-
-
-
-
-
-    $("#change-role").click(function(){
-      let user =  $(".user-role").text();
-      if(user == "Mentor"){
-        $(".user-role").text("Mentee");
-      } else if(user == "Mentee"){
-        $(".user-role").text("Mentor");
-      }
-    })
-
-    
-
-
-
-
-    
-
-
 
 
 
@@ -292,6 +273,179 @@ $("#survey-form ul.options li").click(function(){
 
 
 
+
+
+$("#setup-questions  ul.options li").click(function(){
+    $(this).addClass("active").addClass("clicked");
+    $(this).siblings().removeClass("active");
+    
+    let setupResultParent = $(".result");
+    // let setupResultParent = $(this).parent(".options").parent('.question').parent(".col-12").parent(".questions").parent("#self-assess-questions").siblings(".col-12").siblings(".col-md-7").children(".self-assess-result").children('.item').children(".result");
+    let setupResultParentWidth = setupResultParent.width();
+
+    // let setupResult = $(this).parent(".options").parent('.question').parent(".col-12").parent(".questions").parent("#self-assess-questions").siblings(".col-12").siblings(".col-md-7").children(".self-assess-result").children('.item').children(".result").children(".setup-result");
+    let setupResult = $(".setup-result");
+    let setupResultWidth = setupResult.width();
+
+    let questions = $("#setup-questions").children(".col-12").children(".question"); 
+    let options = $(this).parent('.options').children("li");
+
+
+    let markForEachQuestion = setupResultParentWidth / questions.length;
+
+    let markForEachOption = (markForEachQuestion / options.length) * $(this).val();
+    
+ 
+    if($(this).siblings("li").hasClass('clicked') == true){
+       var clickedValue = $(this).siblings("li.clicked").val() * (markForEachQuestion / options.length);
+        setupResultWidth -= clickedValue;
+        setupResult.width(setupResultWidth);
+        $(this).siblings("li").removeClass("clicked");
+        $(this).attr("disabled")
+    }if($(this).siblings("li").hasClass('clicked') == false){
+        setupResultWidth += markForEachOption;
+        setupResult.width(setupResultWidth);
+    }
+})
+
+
+$("#market-research-questions  ul.options li").click(function(){
+    $(this).addClass("active").addClass("clicked");
+    $(this).siblings().removeClass("active");
+    
+    let marketResultParent = $(".result");
+    // let setupResultParent = $(this).parent(".options").parent('.question').parent(".col-12").parent(".questions").parent("#self-assess-questions").siblings(".col-12").siblings(".col-md-7").children(".self-assess-result").children('.item').children(".result");
+    let marketResultParentWidth = marketResultParent.width();
+
+    // let setupResult = $(this).parent(".options").parent('.question').parent(".col-12").parent(".questions").parent("#self-assess-questions").siblings(".col-12").siblings(".col-md-7").children(".self-assess-result").children('.item').children(".result").children(".setup-result");
+    let marketResult = $(".market-research-result");
+    let marketResultWidth = marketResult.width();
+
+    let questions = $("#setup-questions").children(".col-12").children(".question"); 
+    let options = $(this).parent('.options').children("li");
+
+
+    let markForEachQuestion = marketResultParentWidth / questions.length;
+
+    let markForEachOption = (markForEachQuestion / options.length) * $(this).val();
+    
+ 
+    if($(this).siblings("li").hasClass('clicked') == true){
+       var clickedValue = $(this).siblings("li.clicked").val() * (markForEachQuestion / options.length);
+        marketResultWidth -= clickedValue;
+        marketResult.width(marketResultWidth);
+        $(this).siblings("li").removeClass("clicked");
+        $(this).attr("disabled")
+    }if($(this).siblings("li").hasClass('clicked') == false){
+        marketResultWidth += markForEachOption;
+        marketResult.width(marketResultWidth);
+    }
+})
+
+$("#finance-questions  ul.options li").click(function(){
+    $(this).addClass("active").addClass("clicked");
+    $(this).siblings().removeClass("active");
+    
+    let financeResultParent = $(".result");
+    // let setupResultParent = $(this).parent(".options").parent('.question').parent(".col-12").parent(".questions").parent("#self-assess-questions").siblings(".col-12").siblings(".col-md-7").children(".self-assess-result").children('.item').children(".result");
+    let financeResultParentWidth = financeResultParent.width();
+
+    // let setupResult = $(this).parent(".options").parent('.question').parent(".col-12").parent(".questions").parent("#self-assess-questions").siblings(".col-12").siblings(".col-md-7").children(".self-assess-result").children('.item').children(".result").children(".setup-result");
+    let financeResult = $(".finance-result");
+    let financeResultWidth = financeResult.width();
+
+    let questions = $("#finance-questions").children(".col-12").children(".question"); 
+    let options = $(this).parent('.options').children("li");
+
+
+    let markForEachQuestion = financeResultParentWidth / questions.length;
+
+    let markForEachOption = (markForEachQuestion / options.length) * $(this).val();
+    
+ 
+    if($(this).siblings("li").hasClass('clicked') == true){
+       var clickedValue = $(this).siblings("li.clicked").val() * (markForEachQuestion / options.length);
+        financeResultWidth -= clickedValue;
+        financeResult.width(financeResultWidth);
+        $(this).siblings("li").removeClass("clicked");
+        $(this).attr("disabled")
+    }if($(this).siblings("li").hasClass('clicked') == false){
+        financeResultWidth += markForEachOption;
+        financeResult.width(financeResultWidth);
+    }
+})
+
+$("#sales-questions  ul.options li").click(function(){
+    $(this).addClass("active").addClass("clicked");
+    $(this).siblings().removeClass("active");
+    
+    let salesResultParent = $(".result");
+    // let setupResultParent = $(this).parent(".options").parent('.question').parent(".col-12").parent(".questions").parent("#self-assess-questions").siblings(".col-12").siblings(".col-md-7").children(".self-assess-result").children('.item').children(".result");
+    let salesResultParentWidth = salesResultParent.width();
+
+    // let setupResult = $(this).parent(".options").parent('.question').parent(".col-12").parent(".questions").parent("#self-assess-questions").siblings(".col-12").siblings(".col-md-7").children(".self-assess-result").children('.item').children(".result").children(".setup-result");
+    let salesResult = $(".sales-result");
+    let salesResultWidth = salesResult.width();
+
+    let questions = $("#sales-questions").children(".col-12").children(".question"); 
+    let options = $(this).parent('.options').children("li");
+
+
+    let markForEachQuestion = salesResultParentWidth / questions.length;
+
+    let markForEachOption = (markForEachQuestion / options.length) * $(this).val();
+    
+ 
+    if($(this).siblings("li").hasClass('clicked') == true){
+       var clickedValue = $(this).siblings("li.clicked").val() * (markForEachQuestion / options.length);
+        salesResultWidth -= clickedValue;
+        salesResult.width(salesResultWidth);
+        $(this).siblings("li").removeClass("clicked");
+        $(this).attr("disabled")
+    }if($(this).siblings("li").hasClass('clicked') == false){
+        salesResultWidth += markForEachOption;
+        salesResult.width(salesResultWidth);
+    }
+})
+$("#operations-questions  ul.options li").click(function(){
+    $(this).addClass("active").addClass("clicked");
+    $(this).siblings().removeClass("active");
+    
+    let operationsResultParent = $(".result");
+    // let setupResultParent = $(this).parent(".options").parent('.question').parent(".col-12").parent(".questions").parent("#self-assess-questions").siblings(".col-12").siblings(".col-md-7").children(".self-assess-result").children('.item').children(".result");
+    let operationsResultParentWidth = operationsResultParent.width();
+
+    // let setupResult = $(this).parent(".options").parent('.question').parent(".col-12").parent(".questions").parent("#self-assess-questions").siblings(".col-12").siblings(".col-md-7").children(".self-assess-result").children('.item').children(".result").children(".setup-result");
+    let operationsResult = $(".operations-result");
+    let operationsResultWidth = operationsResult.width();
+
+    let questions = $("#operations-questions").children(".col-12").children(".question"); 
+    let options = $(this).parent('.options').children("li");
+
+
+    let markForEachQuestion = operationsResultParentWidth / questions.length;
+
+    let markForEachOption = (markForEachQuestion / options.length) * $(this).val();
+    
+ 
+    if($(this).siblings("li").hasClass('clicked') == true){
+       var clickedValue = $(this).siblings("li.clicked").val() * (markForEachQuestion / options.length);
+        operationsResultWidth -= clickedValue;
+        operationsResult.width(operationsResultWidth);
+        $(this).siblings("li").removeClass("clicked");
+        $(this).attr("disabled")
+    }if($(this).siblings("li").hasClass('clicked') == false){
+        operationsResultWidth += markForEachOption;
+        operationsResult.width(operationsResultWidth);
+    }
+})
+
+
+
+
+
+
+
 $("input.area:checkbox").on("change", function(){
     var rate =  $(this).parent(".accordion-body").parent(".accordion-collapse").siblings(".accordion-header").children(".accordion-button").children(".mentor-expertise-share").children(".rate");
     var level =  $(this).parent(".accordion-body").parent(".accordion-collapse").siblings(".accordion-header").children(".accordion-button").children(".mentor-expertise-share");
@@ -301,15 +455,11 @@ $("input.area:checkbox").on("change", function(){
     
     var increment = levelWidth / totalOptions;
    if($(this).prop("checked")){
-
         rateWidth  += increment;
         rate.width(rateWidth);
-        console.log(rateWidth);
- 
     }else{
         rateWidth  -= increment;
         rate.width(rateWidth);
-        console.log(rateWidth);
    }
 
 })
@@ -317,22 +467,35 @@ $("input.area:checkbox").on("change", function(){
 
 
 
-$("#mentee-signup-form select#menteeRole").change(function(){
-    var selectedRole = $(this).children("option:selected").val();
-    $("#mentee-signup-form span.user-role-display").text(selectedRole);
-    
-    if(selectedRole == "Associate"){
-        $("#mentee-signup-form .associate-school-info").removeClass("d-none");
-    } else if(selectedRole !== "Associate"){
-        $("#mentee-signup-form .associate-school-info").addClass("d-none");
+
+
+
+$(".mentee-signp-form-intro-btn").click(function(){
+    let menteeRole = $(this).val();
+    $(".mentee-role-card-container").addClass("d-none");
+    $("#mentee-signup-form").removeClass("d-none");
+    $(".mentee-role-display").text(menteeRole);
+    $("#mentee-signup-form #menteeRole").attr("value", menteeRole);
+
+
+    if(menteeRole == "Global Impact" || menteeRole == "global impact"){
+        $(".associate-school-info").addClass('d-none');
+        $(".ambassador-school-info").addClass("d-none");
+    } else if(menteeRole == "Ambassador" || menteeRole == "ambassador"){
+        $(".associate-school-info").addClass("d-none");
+    } else if(menteeRole == "Associate" || menteeRole == "associate"){
+        $(".ambassador-school-info").addClass("d-none");
     }
-});
+})
 
 
 
+$("#change-role").click(function(){
+    $(".mentee-role-card-container").removeClass("d-none");
+    $("#mentee-signup-form").addClass("d-none");
+    $(".associate-school-info").removeClass('d-none');
+    $(".ambassador-school-info").removeClass("d-none");
 
-
-
-
+  })
 
 });

@@ -152,6 +152,8 @@
    overflow-x: hidden;
   overflow-y: hidden;
 }
+
+
 }
 
 
@@ -656,6 +658,10 @@ form#ask-question input.question{
 .answer-container .answer-details .answer-content {
   font-size: .8rem;
 }
+.self-assess-stages .stage {
+ 
+  font-size: .65rem;
+}
 }
 
 @media screen and (max-width: 375px) {
@@ -738,6 +744,12 @@ form#ask-question input.question{
   color: var(--light-color);
   border-radius: 20px;
 }
+
+ul.options li {
+  font-size: .7rem;;
+  padding: 3px;
+}
+
 }
 
 @media screen and (max-width: 320px) {
