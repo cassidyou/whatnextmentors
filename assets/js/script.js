@@ -481,10 +481,19 @@ $(".mentee-signp-form-intro-btn").click(function(){
     if(menteeRole == "Global Impact" || menteeRole == "global impact"){
         $(".associate-school-info").addClass('d-none');
         $(".ambassador-school-info").addClass("d-none");
+        $("#menteeSignup").addClass("global-impact-create-account");
+        $("#menteeSignup").removeClass("associate-create-account");
+        $("#menteeSignup").removeClass("ambassador-create-account");
     } else if(menteeRole == "Ambassador" || menteeRole == "ambassador"){
         $(".associate-school-info").addClass("d-none");
+        $("#menteeSignup").removeClass("global-impact-create-account");
+        $("#menteeSignup").removeClass("associate-create-account");
+        $("#menteeSignup").addClass("ambassador-create-account");
     } else if(menteeRole == "Associate" || menteeRole == "associate"){
         $(".ambassador-school-info").addClass("d-none");
+        $("#menteeSignup").removeClass("global-impact-create-account");
+        $("#menteeSignup").addClass("associate-create-account");
+        $("#menteeSignup").removeClass("ambassador-create-account");
     }
 })
 

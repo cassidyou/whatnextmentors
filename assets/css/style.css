@@ -1704,12 +1704,12 @@ body#blog{
 
 #mentor-signup-form .getstarted-btn,
 #mentor-signup-form .partner-btn,
-#update-profile-form .getstarted-btn,
-#update-profile-form .partner-btn,
+#mentor-update-profile-form .getstarted-btn,
+#mentor-update-profile-form .partner-btn,
 #mentee-signup-form .getstarted-btn,
 #mentee-signup-form .partner-btn,
-#update-profile-form .getstarted-btn,
-#update-profile-form .partner-btn
+#mentee-update-profile-form .getstarted-btn,
+#mentee-update-profile-form .partner-btn
 
 {
   border: none;
@@ -1758,7 +1758,13 @@ body#blog{
 #mentor-signup-form .form-input input,
 #mentor-signup-form .form-input select,
 #mentee-signup-form .form-input input,
-#mentee-signup-form .form-input select
+#mentee-signup-form .form-input select,
+#mentee-update-profile-form input[type="text"],
+#mentee-update-profile-form select,
+#mentor-update-profile-form input[type="text"],
+#mentor-update-profile-form input[type="date"],
+#mentor-update-profile-form input[type="tel"],
+#mentor-update-profile-form select
 
  {
  width: 100%;
@@ -1783,7 +1789,8 @@ body#blog{
   left: 15px;
 }
 
-.mentor-signup-progress-bar{
+.mentor-signup-progress-bar,
+.mentee-signup-progress-bar{
   background: rgba(237, 230, 230, 0.76);
   height: 10px;
   width: 100%;
@@ -1791,15 +1798,16 @@ body#blog{
   overflow: hidden;
   margin-top: 20px;
 }
-.mentor-signup-progress-bar .width{
+.mentor-signup-progress-bar .width,
+.mentee-signup-progress-bar .width{
   background: green;
   height: 100%;
   width: 0%;
   border-radius: inherit;
 }
 
-#mentor-signup-form  .mentor-expertise-share,
-#mentee-signup-form  .mentor-expertise-share
+#mentor-update-profile-form  .mentor-expertise-share,
+#mentee-update-profile-form  .mentor-expertise-share
 {
   width: 100px;
   height: 15px;
@@ -1808,40 +1816,40 @@ body#blog{
   background: rgb(205, 227, 235);
 }
 
-#mentor-signup-form  .mentor-expertise-share .rate,
-#mentee-signup-form  .mentor-expertise-share .rate
+#mentor-update-profile-form  .mentor-expertise-share .rate,
+#mentee-update-profile-form  .mentor-expertise-share .rate
 {
   background: rgb(35, 186, 245);
   width: 0;
   height: 100%;
   border-radius: inherit;
 }
-#mentor-signup-form .accordion-button,
-#mentee-signup-form .accordion-button
+#mentor-update-profile-form .accordion-button,
+#mentee-update-profile-form .accordion-button
 {
   font-size: .9rem;
 }
 
-#mentor-signup-form .accordion-button:focus, 
-#mentee-signup-form .accordion-button:focus 
+#mentor-update-profile-form .accordion-button:focus, 
+#mentee-update-profile-form .accordion-button:focus 
 {
   box-shadow: none;
 }
 
-#mentor-signup-form .accordion-button:not(.collapsed)::after,
-#mentee-signup-form .accordion-button:not(.collapsed)::after
+#mentor-update-profile-form .accordion-button:not(.collapsed)::after,
+#mentee-update-profile-form .accordion-button:not(.collapsed)::after
  {
  display: none;
 }
-#mentor-signup-form .accordion-button:not(.collapsed)::before,
-#mentee-signup-form .accordion-button:not(.collapsed)::before
+#mentor-update-profile-form .accordion-button:not(.collapsed)::before,
+#mentee-update-profile-form .accordion-button:not(.collapsed)::before
  {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230c63e4'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
   transform: rotate(-180deg);
 }
 
-#mentor-signup-form .accordion-button::before,
-#mentee-signup-form .accordion-button::before
+#mentor-update-profile-form .accordion-button::before,
+#mentee-update-profile-form .accordion-button::before
  {
   flex-shrink: 0;
   width: 1rem;
@@ -1854,26 +1862,26 @@ body#blog{
   transition: transform .2s ease-in-out;
 }
 
-#mentor-signup-form .accordion-button::after,
-#mentee-signup-form .accordion-button::after
+#mentor-update-profile-form .accordion-button::after,
+#mentee-update-profile-form .accordion-button::after
 {
   display: none;
 }
 
-#mentor-signup-form .accordion-body,
-#mentee-signup-form .accordion-body
+#mentor-update-profile-form .accordion-body,
+#mentee-update-profile-form .accordion-body
 {
   font-size: .8rem;
 }
 
-#mentor-signup-form .accordion-body input,
-#mentee-signup-form .accordion-body input
+#mentor-update-profile-form .accordion-body input,
+#mentee-update-profile-form .accordion-body input
 {
   margin-top: 10px;
 }
 
-#mentor-signup-form .form-group,
-#mentee-signup-form .form-group
+#mentor-update-profile-form .form-group,
+#mentee-update-profile-form .form-group
 {
   margin-bottom: 30px;
 }
