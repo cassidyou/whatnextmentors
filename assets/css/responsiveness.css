@@ -662,6 +662,11 @@ form#ask-question input.question{
  
   font-size: .65rem;
 }
+
+#mentor-signup-form .getstarted-btn, #mentor-signup-form .partner-btn, #mentor-update-profile-form .getstarted-btn, #mentor-update-profile-form .partner-btn, #mentee-signup-form .getstarted-btn, #mentee-signup-form .partner-btn, #mentee-update-profile-form .getstarted-btn, #mentee-update-profile-form .partner-btn {
+  font-size: .9rem;
+  padding: 8px 15px!important;
+}
 }
 
 @media screen and (max-width: 375px) {

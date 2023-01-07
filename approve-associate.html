@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Approve Associate</title>
+
+    <!-- add icon link -->
+    <link rel = "icon" href ="./assets/img/logo/logo1.png" type = "image/x-icon">
+
+    <!----------------------------Fontawesome CSS  ------------------------->
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/all6.2.1.min.css">
+
+    <!----------------------------Bootstrap CSS  ------------------------->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+    <!----------------------------Owl Carousel CSS  ------------------------->
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+
+    <!----------------------------Animation on scroll CSS  ------------------------->
+    <link rel="stylesheet" href="./assets/css/aos.css">
+
+
+
+    <!----------------------------Custom CSS  ------------------------->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsiveness.css">
+</head>
+<body>
+    <!-------------------- HEADER SECTION  ------------------->
+    <div class="header" id="about-us-header">
+      <div class="top text-light bg-green">
+        <div class="container">
+          <div class="topnav-content d-flex align-items-center justify-content-between"  data-aos="fade-up" data-aos-duration="1000">
+            <div id="social-links text-light">
+                <a href="" class="text-light mx-3"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="" class="text-light mx-3"><i class="fa-brands fa-instagram"></i></a>
+                <a href="" class="text-light mx-3"><i class="fab fa-youtube"></i></a>
+                <a href="" class="text-light mx-3"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="contact">
+                <div class="text-sm">Call Us Today! +1-513-8074 &nbsp;|&nbsp; info@whatnextmentors.org</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--------------------------- NAVBAR SECTION ------------------------------>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container cosynav">
+          <a class="navbar-brand" href="index.html"><img src="./assets/img/logo/logo1.png" class="img-fluid" id="logo" alt="logo"></a>
+          
+          <ul class="navbar-nav ma-auto  nav-sm">
+              <span class="close d-lg-none d-sm-block">&times;</span>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"> </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="mentee-search.html">Find Mentees</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="mentor-search.html">Find Mentors</a>
+              </li>
+              <li class="nav-item" title="Answer to my questions">
+                <a class="nav-link" href="forum-answers.html"><i class="fa-regular fa-comment-dots fa-2x"></i></a>
+              </li>
+              <li class="nav-item" title="forum">
+                <a class="nav-link" href="forum.html"><i class="fa-solid fa-person-circle-question fa-2x"></i></a>
+              </li>
+              <li class="nav-item" title="Conversation">
+                <div class="counter">1</div>
+                <a class="nav-link" href="chat.html"><i class="fa-regular fa-envelope fa-2x"></i></a>
+              </li>
+              <li class="nav-item" title="Notification">
+                <div class="counter">99</div>
+                <a class="nav-link " href="#"><i class="fa-regular fa-bell fa-2x"></i></a>
+                <div class="card notify" style="display: none;">
+                  <div class="card-body px-1 text-start">
+                    <div class="notify-msg">
+                      <div class="user-ico">
+                         <i class="fa-solid fa-user"></i>
+                      </div>
+                      <a href="approve-associate.html">New associate signed up</a> 
+                    </div>
+                    <div class="notify-msg">
+                      <div class="user-ico">
+                         <i class="fa-solid fa-user"></i>
+                      </div>
+                      <a href="approve-associate.html">New associate signed up</a> 
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item" id="dp-nav-item">
+                <a href="#" class="nav-link">
+                  <div class="user-dp">
+                    <img src="./assets/img/profile/profile-img.png" class="img-fluid">
+                  </div>
+                </a>
+                <div class="card" style="display: none;">
+                  <div class="card-body px-1 text-start">
+                    <a href="user-dashboard.html">Dashboard</a> 
+                    <a href="profile-setting.html">Profile Settings</a>
+                  </div>
+                  
+                  <div class="card-footer text-center">
+                   <a href="signup.html">Logout</a>
+                  </div>
+                </div>
+              </li>
+          </ul>
+             <!-- Harmburger menu icon -->
+             <div class="menu-btn d-lg-none d-sm-block pt-2">
+              <div class="menu-btn-burger"></div>
+            </div>
+        </div>
+      </nav>
+
+      <section class="bg-green mt-0 py-3 text-light" data-aos="zoom-in" data-aos-duration="2000">
+        <div class="container">
+           <h3>Verify and Approve Associates</h3>
+           <p>
+            Ambassadors are strongly advised to go to associate's school to verify if he/she is 
+            a bonified student before approval. 
+            <br>
+            On no account should an ambassador approve associate without verification.
+           </p>
+        </div>
+      </section>
+
+      <section id="approve-associate">
+        <div class="container">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Pending</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Approved</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">My Approvals</button>
+                </li>
+              </ul>
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                              <th scope="col">S/N</th>
+                              <th scope="col">First</th>
+                              <th scope="col">Last</th>
+                              <th scope="col">Phone</th>
+                              <th scope="col">Status</th>
+                              <th scope="col">Date</th>
+                              <th scope="col">Action</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td class="col">Mark</td>
+                                <td class="col">Otto</td>
+                                <td class="col">23470387764521</td>
+                                <td class="col pending">Pending</td>
+                                <td class="col">10/01/2023</td>
+                                <td class="col tb-action">
+                                    <!--Button trigger modal -->
+                                    <button type="button"  title="View Profile" class="view-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <i class="fa-solid fa-eye"></i> 
+                                    </button>
+                            
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-scrollable">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <h5 class="modal-title" id="exampleModalLabel">Associate Info</h5>
+                                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                             <div class="row associate-approval-container">
+                                                <div class="col-md-6 item order-md-1">
+                                                    <div class="dp">
+                                                        <img src="./assets/img/asso/associate1.jpg" class="img-fluid">
+                                                        <div class="name"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 item order-md-3">
+                                                    <div class="info">
+                                                        <div class="heading">Personal Info</div>
+                                                        <div class="title">Name</div>
+                                                        <div class="title-val">Eunice Okoro</div>
+    
+                                                        <div class="title">Gender</div>
+                                                        <div class="title-val">Female</div>
+    
+                                                        <div class="title">Date Of Birth</div>
+                                                        <div class="title-val">12/12/2007</div>
+    
+                                                        <div class="title">Nationality</div>
+                                                        <div class="title-val">Nigerian</div>
+    
+                                                        <div class="title">Accounty type</div>
+                                                        <div class="title-val">Associate</div>
+    
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 item order-md-2">
+                                                    <div class="heading">Contact Info</div>
+    
+                                                    <div class="title">Phone</div>
+                                                    <div class="title-val">+2347048763987</div>
+    
+                                                    <div class="title">Email</div>
+                                                    <div class="title-val">euniceokoro33@gmail.com</div>
+                                                </div>                                           
+                                                <div class="col-md-6 item order-md-4">
+                                                    <div class="heading">School Info</div>
+    
+                                                    <div class="title">Name of School</div>
+                                                    <div class="title-val">Ebunwana Model Girl's Secondary School</div>
+                                                    
+                                                    <div class="title">Class</div>
+                                                    <div class="title-val">J.S.S. 3</div>
+                                                    
+                                                    <div class="title">Country</div>
+                                                    <div class="title-val">Nigeria</div>
+    
+                                                    <div class="title">State</div>
+                                                    <div class="title-val">Ebonyi</div>
+    
+                                                    <div class="title">Town</div>
+                                                    <div class="title-val">Ebunwana Edda</div>
+    
+                                                </div>                                     
+                                             </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                              <button type="button" class="btn btn-success btn-approve">Approve</button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                </td>
+                              </tr>
+                              <tr>
+                          </tbody>
+                      </table>
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                              <th scope="col">S/N</th>
+                              <th scope="col">First</th>
+                              <th scope="col">Last</th>
+                              <th scope="col">Phone</th>
+                              <th scope="col">Status</th>
+                              <th scope="col">Date</th>
+                              <th scope="col">Action</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td class="col">Mark</td>
+                                <td class="col">Otto</td>
+                                <td class="col">23470387764521</td>
+                                <td class="col approved">Approved</td>
+                                <td class="col">10/01/2023</td>
+                                <td class="col tb-action">
+                                    <!--Button trigger modal -->
+                                    <button type="button"  title="View Profile" class="view-btn"  data-bs-toggle="modal" data-bs-target="#approvedModal">
+                                        <i class="fa-solid fa-eye"></i> 
+                                    </button>
+                            
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="approvedModal" tabindex="-1" aria-labelledby="approvedModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-scrollable">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <h5 class="modal-title" id="approvedModalLabel">Associate Info</h5>
+                                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                             <div class="row associate-approval-container">
+                                                <div class="col-md-6 item order-md-1">
+                                                    <div class="dp">
+                                                        <img src="./assets/img/asso/associate1.jpg" class="img-fluid">
+                                                        <div class="name"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 item order-md-3">
+                                                    <div class="info">
+                                                        <div class="heading">Personal Info</div>
+                                                        <div class="title">Name</div>
+                                                        <div class="title-val">Eunice Okoro</div>
+    
+                                                        <div class="title">Gender</div>
+                                                        <div class="title-val">Female</div>
+    
+                                                        <div class="title">Date Of Birth</div>
+                                                        <div class="title-val">12/12/2007</div>
+    
+                                                        <div class="title">Nationality</div>
+                                                        <div class="title-val">Nigerian</div>
+    
+                                                        <div class="title">Accounty type</div>
+                                                        <div class="title-val">Associate</div>
+    
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 item order-md-2">
+                                                    <div class="heading">Contact Info</div>
+    
+                                                    <div class="title">Phone</div>
+                                                    <div class="title-val">+2347048763987</div>
+    
+                                                    <div class="title">Email</div>
+                                                    <div class="title-val">euniceokoro33@gmail.com</div>
+                                                </div>                                           
+                                                <div class="col-md-6 item order-md-4">
+                                                    <div class="heading">School Info</div>
+    
+                                                    <div class="title">Name of School</div>
+                                                    <div class="title-val">Ebunwana Model Girl's Secondary School</div>
+                                                    
+                                                    <div class="title">Class</div>
+                                                    <div class="title-val">J.S.S. 3</div>
+                                                    
+                                                    <div class="title">Country</div>
+                                                    <div class="title-val">Nigeria</div>
+    
+                                                    <div class="title">State</div>
+                                                    <div class="title-val">Ebonyi</div>
+    
+                                                    <div class="title">Town</div>
+                                                    <div class="title-val">Ebunwana Edda</div>
+    
+                                                </div>                                     
+                                             </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                              <button type="button" class="btn btn-success btn-approve"> <i class="fa-solid fa-user-check"></i> Approved</button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                </td>
+                              </tr>
+                              <tr>
+                          </tbody>
+                      </table>
+                </div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                              <th scope="col">S/N</th>
+                              <th scope="col">First</th>
+                              <th scope="col">Last</th>
+                              <th scope="col">Phone</th>
+                              <th scope="col">Status</th>
+                              <th scope="col">Date</th>
+                              <th scope="col">Action</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td class="col">Mark</td>
+                                <td class="col">Otto</td>
+                                <td class="col">23470387764521</td>
+                                <td class="col approved">Approved</td>
+                                <td class="col">10/01/2023</td>
+                                <td class="col tb-action">
+                                    <!--Button trigger modal -->
+                                    <button type="button"  title="View Profile" class="view-btn"  data-bs-toggle="modal" data-bs-target="#myApprovalModal">
+                                        <i class="fa-solid fa-eye"></i> 
+                                    </button>
+                            
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="myApprovalModal" tabindex="-1" aria-labelledby="myApprovalModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-scrollable">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <h5 class="modal-title" id="myApprovalModalLabel">Associate Info</h5>
+                                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                             <div class="row associate-approval-container">
+                                                <div class="col-md-6 item order-md-1">
+                                                    <div class="dp">
+                                                        <img src="./assets/img/asso/associate1.jpg" class="img-fluid">
+                                                        <div class="name"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 item order-md-3">
+                                                    <div class="info">
+                                                        <div class="heading">Personal Info</div>
+                                                        <div class="title">Name</div>
+                                                        <div class="title-val">Eunice Okoro</div>
+    
+                                                        <div class="title">Gender</div>
+                                                        <div class="title-val">Female</div>
+    
+                                                        <div class="title">Date Of Birth</div>
+                                                        <div class="title-val">12/12/2007</div>
+    
+                                                        <div class="title">Nationality</div>
+                                                        <div class="title-val">Nigerian</div>
+    
+                                                        <div class="title">Accounty type</div>
+                                                        <div class="title-val">Associate</div>
+    
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 item order-md-2">
+                                                    <div class="heading">Contact Info</div>
+    
+                                                    <div class="title">Phone</div>
+                                                    <div class="title-val">+2347048763987</div>
+    
+                                                    <div class="title">Email</div>
+                                                    <div class="title-val">euniceokoro33@gmail.com</div>
+                                                </div>                                           
+                                                <div class="col-md-6 item order-md-4">
+                                                    <div class="heading">School Info</div>
+    
+                                                    <div class="title">Name of School</div>
+                                                    <div class="title-val">Ebunwana Model Girl's Secondary School</div>
+                                                    
+                                                    <div class="title">Class</div>
+                                                    <div class="title-val">J.S.S. 3</div>
+                                                    
+                                                    <div class="title">Country</div>
+                                                    <div class="title-val">Nigeria</div>
+    
+                                                    <div class="title">State</div>
+                                                    <div class="title-val">Ebonyi</div>
+    
+                                                    <div class="title">Town</div>
+                                                    <div class="title-val">Ebunwana Edda</div>
+    
+                                                </div>                                     
+                                             </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                              <button type="button" class="btn btn-success btn-approve"> <i class="fa-solid fa-user-check"></i> Approved</button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                </td>
+                              </tr>
+                              <tr>
+                          </tbody>
+                      </table>
+                </div>
+              </div>
+        </div>
+        </div>
+      </section>
+  </div>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+    <!-------------------- FOOTER SECTION  ------------------->
+    <footer id="footer">
+      <div class="container-fluid">
+        <div class="row align-items-center footer-row">
+          <div class="col-12 col-sm-4 col-lg- py-6" data-aos="fade-up" data-aos-duration="2000">
+            <div class="row">
+              <div class="col-sm-1"></div>
+              <div class="col-sm-10 text-center">
+                <img src="./assets/img/logo/logo1.png" class="img-fluid">
+              </div>
+              <div class="col-sm-1"></div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-8 py-6 bg-green">
+            <div class="row">
+              <div class="col-lg-1"></div>
+              <div class="col-12 col-sm-4 col-md-5 col-lg-4" data-aos="fade-up" data-aos-duration="2500">
+                <ul class="footer-links">
+                  <li><a href="contact-us.html">Contact Us</a></li>
+                  <li><a href="about-us.html">About</a></li>
+                  <li><a href="#">How It Works</a></li>
+                  <li><a href="signup.html">Get Started</a></li>
+                  <li><a href="signup.html">Find a mentor</a></li>
+                  <li><a href="signup.html">Become a mentor</a></li>
+                  <li class="mb-0"><a href="blog.html">Blog</a></li>
+                </ul>
+              </div>
+              <div class="col-12 col-sm-6 col-md-6 col-lg-5 text-light footer-intro" data-aos="fade-up" data-aos-duration="3000">      
+                <h6>WhatNextMentors</h6>
+                <p>WhatNextMentors is the world's largest community of professional and mentors, mentees and Volunteers</p>
+                <br><br>
+                <p class="mb-0">WhatNextMentors is a non-profit. Help support our mission.</p>
+    
+                <div>For support or other questions</div>
+                <div class="mt-3">
+                  <div class="d-inline-block">Contact Us</div>
+                  <div class="d-inline-block" id="footer-social-icons">
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-youtube"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-2"></div>
+            </div> 
+          </div>
+        </div>
+      </div>
+      <div class="subfooter">
+        <div class="container">
+          <div class="contents py-3">
+            <div> 
+              &copy; WhatNextMentors &nbsp; | &nbsp; All Rights Reserved
+            </div>
+            <div>
+              Design by Tutapis
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+      <!----------------------------Javascript Files  ------------------------->
+      <script src="./assets/js/jQuery3.6.1.min.js"></script>
+      <script src="./assets/js/all.min.js"></script>
+      <script src="./assets/js/all6.2.1.min.js"></script>
+      <script src="./assets/js/bootstrap.min.js"></script>
+      <script src="./assets/js/owl.carousel.min.js"></script>
+      <script src="./assets/js/aos.js"></script>
+
+      <script src="./assets/js/script.js"></script>
+</body>
+</html>

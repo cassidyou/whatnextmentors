@@ -229,7 +229,86 @@ section{
 .page-direction {
   font-size: .8rem;
 }
+.navbar-nav{
+  display: flex;
+  align-items: center;
+}
+.user-dp{
+  height: 40px;
+  width: 40px;
+  margin-top: 0;
+  padding-top: 0;
+  border-radius: 50px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.user-dp img{
+ height: 100%;
+ width: auto;
+}
+.nav-item{
+  position: relative;
+}
+.nav-item .card{
+  position: absolute;
+  width: 150px;
+  font-size: .9rem;
+  z-index: 999999999;
+}
+.nav-item .card.notify{
+  width: 250px;
+  left: -5px;
+}
 
+.nav-item .card .card-body{
+  display: flex;
+  flex-direction: column;
+  padding: 10px!important;
+}
+
+.nav-item .card .card-body a{
+ color: #000000;
+ padding: 5px;
+}
+
+.nav-item .card .card-footer a{
+  color: orangered;
+}
+
+.notify-msg{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+.user-ico{
+  background-color: var(--green-color);
+  color: #ffffff;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+.counter{
+  position: absolute;
+  right: 0;
+  font-size: .8rem;
+  height: 20px;
+  width: 20px;
+  background-color: var(--red-color);
+  color: #ffffff;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /************************* HEADER SECTION  **************************/
  .header {
@@ -3037,6 +3116,145 @@ form#ask-question input.question:focus{
   margin-left: 80%;
 }
 
+
+
+
+
+/* Approve Associate Page */
+#approve-associate .nav.nav-pills{
+  display: inline-flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start!important;
+  column-gap: auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+  margin-bottom: 30px;
+}
+
+.nav-pills .nav-link{
+  margin-left: 0!important;
+  border-radius: 0!important;
+  padding: .4rem;
+  font-size: 1rem;
+}
+
+td.pending{
+  color: var(--red-color);
+}
+td.approved{
+  color: rgb(64, 189, 6);
+}
+
+#approve-associate .nav.nav-pills > li{
+  padding-bottom: 5px;
+}
+
+#approve-associate .nav.nav-pills > li a{
+  color: rgb(64, 189, 6);
+}
+
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: rgb(64, 189, 6);
+  background-color: transparent;
+  border-radius: 0;
+}
+
+#approve-associate .tab-content .tab-pane{
+  overflow-x: scroll;
+}
+
+
+
+#approve-associate .tab-content >.tab-pane{
+position: absolute;
+
+}
+#approve-associate .tab-content >.tab-pane.active{
+position: static;
+
+}
+
+.view-btn{
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(24, 168, 24);
+  color: rgb(24, 168, 24);
+  font-size: .8rem;
+}
+
+#approvedModal .modal-footer button,
+#myApprovalModal .modal-footer button{
+ display: flex;
+ align-items: center;
+ column-gap: 20px;
+ pointer-events: none;
+ font-size: 1rem;
+ padding: 15px 20px;
+font-size: 1rem;
+}
+
+#approvedModal .modal-footer button .fa-user-check,
+#myApprovalModal .modal-footer button .fa-user-check
+{
+background: white;
+color: #30814D;
+padding: 10px;
+border-radius: 50px;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 20px;
+width: 20px;
+}
+
+.associate-approval-container .item .heading{
+  color: rgb(49, 179, 49);
+  text-transform: uppercase;
+  margin-top: 10px;
+  font-weight: 700px;
+}
+
+.associate-approval-container .item .title{
+  text-transform: capitalize;
+  opacity: .5;
+  font-size: .9rem;
+  margin-top: 15px;
+}
+.associate-approval-container .item .title-val{
+  opacity: .8;
+}
+.associate-approval-container .item .dp{
+ position: relative;
+ border-radius: 10px;
+ overflow: hidden;
+ text-align: center;
+}
+.associate-approval-container .item .dp .name{
+  position: absolute;
+  width: 80%;
+  height: 30px;
+  display: block;
+  padding: 5px 10px;
+  border-radius: 10px;
+  z-index: 88;
+  bottom: -10px;
+ left: 10%;
+  text-align: center;
+  background:  rgba(49, 179, 49, 0.452);
+  color: #ffffff;
+}
+
+.btn-approve{
+  background-color: green;
+  color: #ffffff;
+}
+.btn-approve:focus{
+  outline: none;
+  border-color: transparent;
+  box-shadow: none;
+}
 
 
 

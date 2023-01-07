@@ -506,5 +506,30 @@ $("#change-role").click(function(){
     $(".ambassador-school-info").removeClass("d-none");
 
   })
+  $(".nav-item").children(".card").fadeOut();
+
+  $(".nav-item").hover(function(){
+    $(this).children(".card").fadeIn();
+  }, function(){
+    $(this).children(".card").fadeOut();
+  })
+
+
+
+  var triggerTabList = [].slice.call(document.querySelectorAll('#myTab a'))
+triggerTabList.forEach(function (triggerEl) {
+  var tabTrigger = new bootstrap.Tab(triggerEl)
+
+  triggerEl.addEventListener('click', function (event) {
+    event.preventDefault()
+    tabTrigger.show()
+  })
+})
+
+
+
+
+
+
 
 });
