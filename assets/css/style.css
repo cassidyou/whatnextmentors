@@ -2481,8 +2481,9 @@ body#team #footer{
   overflow-y: scroll;
   position: relative;
   /* top: -15px; */
-  padding-top: 15px;
+  /* padding-top: 15px; */
   /* padding-bottom: 100px; */
+  border: 1px solid red;
 }
 
 
