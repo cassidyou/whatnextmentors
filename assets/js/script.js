@@ -146,7 +146,7 @@ $(document).ready(function(){
     var chatAreaBodyHeight = $("#chat-area .chat-area-body").outerHeight();
     var chatAreaFooterHeight = $("#chat-area .chat-area-footer").outerHeight();
 
-    alert(chatAreaBodyHeight)
+    alert(chatAreaHeaderHeight + chatAreaFooterHeight)
    
     
 

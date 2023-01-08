@@ -2476,13 +2476,13 @@ body#team #footer{
 
 
 .chat-area-body{
-  height: 100%;
+  height: calc(100% - 153px);
   /* height: 500px; */
   overflow-y: scroll;
   position: relative;
   top: -15px;
   padding-top: 15px;
-  padding-bottom: 100px;
+  /* padding-bottom: 100px; */
 }
 
 
