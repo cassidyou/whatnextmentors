@@ -43,7 +43,8 @@ $(document).ready(function(){
         // stickyNav();
     });
 
-    $("#chat-area")
+
+
 
     $("#testimonial .owl-carousel").owlCarousel({
         items: 1,
@@ -141,7 +142,13 @@ $(document).ready(function(){
     })
 
 
+    var chatAreaHeaderHeight = $("#chat-area .chat-area-header").outerHeight();
+    var chatAreaBodyHeight = $("#chat-area .chat-area-body").outerHeight();
+    var chatAreaFooterHeight = $("#chat-area .chat-area-footer").outerHeight();
 
+    alert(chatAreaBodyHeight)
+   
+    
 
     
 var screenSize = $(window).innerWidth();
