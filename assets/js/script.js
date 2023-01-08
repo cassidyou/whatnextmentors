@@ -38,11 +38,12 @@ $(document).ready(function(){
             $(".header .top").removeClass('m-gn');
         }
     };
-    stickyNav();
+    // stickyNav();
     $(window).scroll(function(){
-        stickyNav();
+        // stickyNav();
     });
 
+    $("#chat-area")
 
     $("#testimonial .owl-carousel").owlCarousel({
         items: 1,
@@ -111,7 +112,7 @@ $(document).ready(function(){
                            '   <div id="submit-container" class="text-center">' +
                            '      <a href="./user-dashboard.html" type="submit" id="signin-submit"> SIGN IN</a>' +
                            '   </div>' +
-                           ' <div class="text-end mt-3"><a href="#" class="text-success">Forgot Password</a></div>'+
+                           ' <div class="text-end mt-3"><a href="./forgot-password.html" class="text-success">Forgot Password</a></div>'+
                            ' </form>' +
                        ' </div>' 
     );

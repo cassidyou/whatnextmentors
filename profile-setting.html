@@ -132,10 +132,8 @@
                   <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Account Info</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Self-Assessment</button>
+                  <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Change Password</button>
                 </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">My Approvals</button>
                 </li>
               </ul>
               <div class="tab-content" id="pills-tabContent">
@@ -158,49 +156,6 @@
                                     <input type="text" name="lastName" id="lastName" placeholder="Last Name">
                                   </div>
                                 </div>
-                            
-                                <div class="col-lg-12">
-                                    <label for="email">Email <span class="text-danger">*</span> </label>
-                                    <div class="form-input">
-                                        <span class="inner-icon"><i class="fa-regular fa-envelope"></i></span>
-                                        <input type="text" id="email" name="email" placeholder="Email">
-                                      </div>
-                                </div>
-                                <div class="col-lg-6">
-                                  <label for="menteeRole">Role <span class="text-danger">*</span> </label>
-                                  <div class="form-input">
-                                      <span class="inner-icon"><i class="fa-solid fa-user"></i></i></span>
-                                      <input type="text" name="menteeRole" id="menteeRole" value="" disabled>
-                                    </div>
-                              </div>
-                                <div class="col-md-6">
-                                  <label for="dob">Date Of Birth <span class="text-danger">*</span></label>
-                                  <div class="form-input">
-                                    <span class="inner-icon"><i class="fa-solid fa-calendar"></i></span>
-                                    <input type="date" id="dob" name="dob" placeholder="Date of Birth">
-                                  </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <label for="gender">Gender <span class="text-danger">*</span> </label>
-                                    <div class="form-input">
-                                        <span class="inner-icon"><i class="fa-solid fa-venus-mars"></i></span>
-                                        <select type="text" name="gender" id="gender">
-                                          <option value="">Select gender</option>
-                                          <option value="male">Male</option>
-                                          <option value="female">Female</option>
-                                        </select>
-                                      </div>
-                                </div>
-                                <div class="col-md-6">
-                                  <label for="nationality">Nationality</label>
-                                  <div class="form-input">
-                                    <span class="inner-icon"><i class="fa-solid fa-pen-to-square"></i></span>
-                                   <select name="nationality" id="nationality">
-                                    <option value="">Nigeria</option>
-                                   </select>
-                                  </div>
-                                </div>
-                               
                             </div>
                             <!------------------ Associate School Info  ---------------------->
                         <div class="form-group row associate-school-info my-0 py-0 d-none">
@@ -268,21 +223,21 @@
                           </div>
                           <div class="form-group row">
                             <div class="col-lg-6">
-                              <label for="schoolCountry">Country <span class="text-danger">*</span></label>
+                              <label for="schoolCountry">Country of Residence <span class="text-danger">*</span></label>
                               <div class="form-input">
                                 <span class="inner-icon"><i class="fa-regular fa-pen-to-square"></i></span>
                                 <input type="text" id="schoolCountry" name="schoolCountry" placeholder="Country">
                               </div>
                             </div>
                             <div class="col-lg-6">
-                              <label for="schoolState">State <span class="text-danger">*</span></label>
+                              <label for="schoolState">State/Province/Region <span class="text-danger">*</span></label>
                               <div class="form-input">
                                 <span class="inner-icon"><i class="fa-regular fa-pen-to-square"></i></span>
                                 <input type="text" id="schoolState" name="schoolState" placeholder="State">
                               </div>
                             </div>
                             <div class="col-lg-6">
-                              <label for="schoolTown">Town <span class="text-danger">*</span></label>
+                              <label for="schoolTown">Town/City <span class="text-danger">*</span></label>
                               <div class="form-input">
                                 <span class="inner-icon"><i class="fa-regular fa-pen-to-square"></i></span>
                                 <input type="text" id="schoolTown" name="schoolTown" placeholder="City/Town">
@@ -298,12 +253,13 @@
                               <input type="tel" name="phoneNo" id="phoneNo" placeholder="phoneNo" style="padding-left: 80px;">
                               </div>
                             </div> 
-                            <div class="col-lg-12">
-                              <label for="dob">Address <span class="text-danger">*</span></label>
-                              <div class="form-input">
-                                <textarea  id="address" name="address" class="form-control"></textarea>
+                              <div class="col-lg-6">
+                                <label for="email">Email <span class="text-danger">*</span></label>
+                                <div class="form-input">
+                                  <span class="inner-icon"><i class="fa-solid fa-envelope"></i></span>
+                                  <input type="email" id="email" name="email" placeholder="Email">
+                                </div>
                               </div>
-                            </div>
                               <div class="col-lg-6">
                                 <label for="password">Password <span class="text-danger">*</span></label>
                                 <div class="form-input">
@@ -311,23 +267,38 @@
                                   <input type="password" id="password" name="password" placeholder="Password">
                                 </div>
                               </div>
-                              <div class="col-lg-6">
-                                <label for="confirmPassword">Confirm password <span class="text-danger">*</span></label>
-                                <div class="form-input">
-                                  <span class="inner-icon"><i class="fa-solid fa-lock"></i></span>
-                                  <input type="confirmPassword" id="confirmPassword" name="confirmPassword" placeholder="Confirm password">
-                                </div>
-                              </div>
+                             
                           </div>
+                          <button class="getstarted-btn my-2" style="display: inline;" id="acct-in-update-btn">Save Account Info</button>
                         </div>
                     </div>
                    </div>
                 </div>
                 <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                  2
-                </div>
-                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                    3
+                  <form action="" id="change-password-form">
+                    <div class="col-lg-12">
+                      <label for="oldPassword">Old Password <span class="text-danger">*</span></label>
+                      <div class="form-input">
+                        <span class="inner-icon"><i class="fa-solid fa-lock"></i></span>
+                        <input type="password" id="oldPassword" name="oldPassword" placeholder="Old Password">
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <label for="newPassword">Old Password <span class="text-danger">*</span></label>
+                      <div class="form-input">
+                        <span class="inner-icon"><i class="fa-solid fa-lock"></i></span>
+                        <input type="password" id="newPassword" name="newPassword" placeholder="New Password">
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <label for="newPasswordconfirmPassword">Confirm Password <span class="text-danger">*</span></label>
+                      <div class="form-input">
+                        <span class="inner-icon"><i class="fa-solid fa-lock"></i></span>
+                        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="New Password">
+                      </div>
+                    </div>
+                    <button class="getstarted-btn" style="font-size: 1rem;"   id="password-update-btn">Update Password</button>
+                  </form>
                 </div>
               </div>
         </div>

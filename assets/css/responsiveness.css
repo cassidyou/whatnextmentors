@@ -467,7 +467,7 @@ form#ask-question input.question{
     }
     
     #chats .chat-inbox-body{
-      height: 330px;
+      height: auto;
       top: 0;
     }
 
