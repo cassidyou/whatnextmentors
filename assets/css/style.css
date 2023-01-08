@@ -3189,10 +3189,10 @@ position: static;
 #myApprovalModal .modal-footer button{
  display: flex;
  align-items: center;
- column-gap: 20px;
+ column-gap: 10px;
  pointer-events: none;
- font-size: 1rem;
- padding: 15px 20px;
+ font-size: .9rem;
+ /* padding: 15px 20px; */
 font-size: 1rem;
 }
 
@@ -3201,13 +3201,13 @@ font-size: 1rem;
 {
 background: white;
 color: #30814D;
-padding: 10px;
+padding: 5px;
 border-radius: 50px;
 display: flex;
 align-items: center;
 justify-content: center;
-height: 20px;
-width: 20px;
+height: 15px;
+width: 15px;
 }
 
 .associate-approval-container .item .heading{
