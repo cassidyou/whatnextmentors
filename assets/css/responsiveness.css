@@ -466,10 +466,6 @@ form#ask-question input.question{
       position: absolute;
     }
     
-    #chats .chat-inbox-body{
-      height: auto;
-      top: 0;
-    }
 
     #chat-area .chat-area-header .close-view{
       display: block;
@@ -481,18 +477,15 @@ form#ask-question input.question{
     }
 
     .chat-area-body{
-      height: 310px;
-      position: static;
-      border-bottom: 0;
-      padding-bottom: 10px;
+      height: calc(100% - 253px)!important;
     }
     .chat-area-footer{
       bottom: 100px;
     }
 
-    #chat-area #input-form{
+    /* #chat-area #input-form{
       padding: 8px 130px 8px 25px;
-    }
+    } */
     .right-inner-icon .svg-inline--fa.fa-paperclip, .right-inner-icon .svg-inline--fa.fa-camera, .right-inner-icon .svg-inline--fa.fa-face-smile {
     margin: 0 5px;
     }
@@ -730,7 +723,7 @@ form#ask-question input.question{
 
 @media screen and (max-width: 350px) {
   #chat-area #input-form{
-    padding: 8px 115px 8px 5px;
+    /* padding: 8px 115px 8px 5px; */
     font-size: .9rem;
   }
   .right-inner-icon .svg-inline--fa.fa-paperclip, .right-inner-icon .svg-inline--fa.fa-camera, .right-inner-icon .svg-inline--fa.fa-face-smile {

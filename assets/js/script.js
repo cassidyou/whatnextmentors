@@ -40,7 +40,7 @@ $(document).ready(function(){
     };
     // stickyNav();
     $(window).scroll(function(){
-        // stickyNav();
+        stickyNav();
     });
 
 
@@ -142,11 +142,12 @@ $(document).ready(function(){
     })
 
 
-    var chatAreaHeaderHeight = $("#chat-area .chat-area-header").outerHeight();
-    var chatAreaBodyHeight = $("#chat-area .chat-area-body").outerHeight();
+    var chatsHeaderHeight = $("#chats .chat-header").outerHeight();
+    var chatsInboxBodyHeight = $("#chats .chat-inbox-body").outerHeight();
     var chatAreaFooterHeight = $("#chat-area .chat-area-footer").outerHeight();
 
-    // alert(chatAreaHeaderHeight + chatAreaFooterHeight)
+    // alert(chatsInboxBodyHeight)
+    // alert(chatsHeaderHeight)
    
     
 

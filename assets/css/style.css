@@ -2353,12 +2353,7 @@ body#team #footer{
 
 #chats .chat-inbox-body{
   overflow-y: scroll;
-  height: 440px;
-  position: relative;
-  top: -20px;
-  z-index: 1;
-  padding-top: 23px;
-  padding-bottom: 18px;
+  height: calc(100% - 142px);
 }
 
 .chat-inbox{
@@ -2477,13 +2472,7 @@ body#team #footer{
 
 .chat-area-body{
   height: calc(100% - 153px);
-  /* height: 500px; */
   overflow-y: scroll;
-  position: relative;
-  /* top: -15px; */
-  /* padding-top: 15px; */
-  /* padding-bottom: 100px; */
-  border: 1px solid red;
 }
 
 
@@ -2569,7 +2558,8 @@ body#team #footer{
   background: var(--light-color);
   margin: 10px 0;
   width: 100%;
-  padding: 8px 170px 8px 50px;
+  /* padding: 8px 170px 8px 50px; */
+  padding: 8px 50px 8px 15px;
   border-radius: 30px;
 }
 
