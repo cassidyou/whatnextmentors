@@ -113,7 +113,7 @@
     height: 100vh;
     /* border: 1px solid red; */
     display: grid;
-    grid-template-columns: 2fr 8fr;
+    grid-template-columns: 1.5fr 8.5fr;
 }
 
 .gtc-closed{
@@ -156,11 +156,17 @@
     padding: 10px;
     background: #ffffff;
 }
+#dashboard-container #sidebar .header .logo{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 
 #dashboard-container #sidebar .body{
     background: var(--green-color);
     padding: 20px;
+    height: calc(100% - 48px);
 }
 #dashboard-container #sidebar .body ul{
    display: flex;
@@ -173,4 +179,8 @@
     border-radius: 10px;
     margin-bottom: 10px;
     padding: 10px 20px;
+    font-size: .9rem;
+}
+#dashboard-container #sidebar .body li a{
+    color: var(--green-color);
 }
