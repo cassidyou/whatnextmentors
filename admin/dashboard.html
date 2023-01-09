@@ -31,12 +31,38 @@
     <title>Admin - Dashboard</title>
 </head>
 <body>
-   <a href="https://www.figma.com/proto/jYpZEhQR5OWUNzJNP17a7K/DASHBOARD-MENTORS?node-id=211%3A1079&starting-point-node-id=1%3A7549" class="text-dark">Figma Dashboard</a>
+   <!-- <a href="https://www.figma.com/proto/jYpZEhQR5OWUNzJNP17a7K/DASHBOARD-MENTORS?node-id=211%3A1079&starting-point-node-id=1%3A7549" class="text-dark">Figma Dashboard</a> -->
 <main>
     <div class="container-fluid mx-0 px-0">
         <div id="dashboard-container">
-            <div class="sidebar">
-                <div class="header"></div>
+            <div id="sidebar" >
+                <div class="sidebar-close ">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <div class="sidebar-open d-none">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="header ">
+                    <div class="logo">
+                        <div class="logo-img">
+                            <img src="../assets/img/logo/logo2.png" class="img-fluid">
+                        </div>
+                        <div class="logo-text">WhatNextMentors</div>
+                    </div>
+                </div>
+                <div class="body">
+                    <ul>
+                        <li><a href=""> Dashboard</a></li>
+                        <li><a href=""> Administrators</a></li>
+                        <li><a href=""> Mentors</a></li>
+                        <li><a href=""> Mentees</a></li>
+                        <li><a href=""> Partners</a></li>
+                        <li><a href=""> Donations</a></li>
+                        <li><a href=""> Blog</a></li>
+                        <li><a href=""> Support</a></li>
+                        <li class="mt-5"><a href="login.html"> Logout</a></li>
+                    </ul>
+                </div>
             </div>
             <div class="main">main</div>
         </div>
@@ -53,5 +79,6 @@
       <script src="../assets/js/owl.carousel.min.js"></script>
       <script src="../assets/js/aos.js"></script>
       <script src="../assets/js/script.js"></script>
+      <script src="../assets/js/admin-script.js"></script>
 </body>
 </html>

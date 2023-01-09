@@ -1,3 +1,65 @@
+@import url("../css/fonts.css");
+
+
+
+:root{
+  --red-color: #FF0707;
+  --green-color: #30814D;
+  --text-green:  rgba(61, 114, 80, 1);
+  --light-color: rgba(255, 255, 255, 1);
+  --partner-btncolor: rgba(255, 4, 4, 1);
+  --get-started-btncolor: rgba(255, 7, 7, 1);
+  --dark-color: #000000;
+  --overlay-bgcolor: rgba(0, 0, 0, 0.76);
+  --ambassador-tagcolor: rgba(129, 48, 87, 1);
+  --showcase-color: rgba(48, 129, 77, 0.06);
+  --partnership-bgcolor: rgba(251, 250, 250, 1);
+  --usersbg-color: rgb(227, 222, 222);
+  --social-icons-bgcolor: rgba(250, 249, 249, 1);
+  --email-password-inputcolor: rgba(235, 233, 233, 0.25);
+  --know-us-bgcolor: rgba(217, 217, 217, 0.2);
+  --blog-bgcolor: rgba(245, 245, 245, 1);
+  --search-inputcolor: rgba(244, 242, 242, 1);
+  --mentor-rating-bgcolor: rgba(20, 44, 56, 0.25);
+  --mentor-reg-inputcolor: rgba(244, 242, 242, 1);
+  --logo-container-bgcolor: rgba(209, 210, 209, 0.22);
+  --dropshadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+  --chat-bgcolor:  rgba(248, 248, 248, 1);
+  --appreciation-bgcolor:  rgba(241, 241, 241, 1);
+  --textarea-bordercolor: rgba(104, 104, 104, 1)
+}
+
+.red-color{color: var(--red-color);}
+.green-color{color: var(--green-color);}
+.text-green{color: var(--text-green);}
+.light-color{color: var(--light-color);}
+
+.bg-red{background-color: var(--red-color);}
+.light-color{color: var(--light-color);}
+.bg-green{background-color: var(--green-color);}
+.overlay-bgcolor{background-color: var(--overlay-bgcolor);}
+.partner-btncolor{background-color: var(--partner-btncolor);}
+.get-started-btncolor{background-color: var(--get-started-btncolor);}
+.dark-color{color: var(--dark-color);}
+
+.ambassador-tagcolor{color: var(--ambassador-tagcolor);}
+.showcase-color{color: var(--showcase-color);}
+.bg-showcase{background-color: var(--showcase-color);}
+.partnership-bgcolor{background-color: var(--partnership-bgcolor);}
+.usersbg-color{background-color: var(--usersbg-color);}
+.social-icons-bgcolor{background-color: var(--social-icons-bgcolor);}
+.email-password-inputcolor{background-color: var(--email-password-inputcolor);}
+.know-us-bgcolor{background-color: var(--know-us-bgcolor);}
+.blog-bgcolor{background-color: var(--blog-bgcolor);}
+.search-inputcolor{color: var(--search-inputcolor);}
+.mentor-rating-bgcolor{background-color: var(--mentor-rating-bgcolor);}
+.mentor-reg-inputcolor{background-color: var(--mentor-reg-inputcolor);}
+.logo-container-bgcolor{background: var(--logo-container-bgcolor);}
+.dropshadow{box-shadow: var(--dropshadow);}
+.chat-bgcolor{background-color: var(--chat-bgcolor);}
+.appreciation-bgcolor{background-color: var(--appreciation-bgcolor);}
+.textarea-bordercolor{border-color: var(--textarea-bordercolor);}
+
 .admin-login-container{
     padding: 50px 10px;
 }
@@ -49,7 +111,66 @@
 
 #dashboard-container{
     height: 100vh;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: grid;
     grid-template-columns: 2fr 8fr;
+}
+
+.gtc-closed{
+    grid-template-columns: .2fr 8fr!important;
+}
+
+#dashboard-container #sidebar{
+    padding-top: 10px;
+    position: relative;
+    border-right: 1px solid rgba(236, 233, 233, 0.76);
+    overflow: hidden;
+}
+.wp-40{
+    width: 40px;
+}
+
+#dashboard-container #sidebar .sidebar-close,
+#dashboard-container #sidebar .sidebar-open
+{
+    position: absolute;
+    z-index: 88;
+
+}
+
+#dashboard-container #sidebar .sidebar-close{
+    right: 20px;
+    top: 10px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+#dashboard-container #sidebar .sidebar-open{
+    right: 12px;
+    top: 10px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+
+#dashboard-container #sidebar .header{
+    padding: 10px;
+    background: #ffffff;
+}
+
+
+#dashboard-container #sidebar .body{
+    background: var(--green-color);
+    padding: 20px;
+}
+#dashboard-container #sidebar .body ul{
+   display: flex;
+   flex-direction: column;
+   padding-left: 0;
+}
+#dashboard-container #sidebar .body li{
+    display: block;
+    background: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
 }
