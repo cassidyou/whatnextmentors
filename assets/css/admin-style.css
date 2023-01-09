@@ -1,0 +1,55 @@
+.admin-login-container{
+    padding: 50px 10px;
+}
+
+.logo{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    column-gap: 5px;
+    margin-bottom: 20px;
+}
+
+ .logo img{
+ height: 3rem;
+}
+ .logo .logo-text{
+    color: rgb(25, 155, 25);
+}
+
+#admin-login-form .intro,
+#rest-password-form .intro .intro,
+#forgot-password-form .intro{
+    font-size: .9rem;
+}
+
+#admin-login-form .form-group,
+#reset-password-form .form-group,
+#forgot-password-form .form-group{
+    margin-top: 20px;
+}
+
+ label{
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+
+ .getstarted-btn
+{
+    font-size: 1rem;
+    font-family: poppins-light;
+    padding: 7px 0;
+    background: rgb(0, 90, 0);
+}
+
+#forgot-password-form a.text-green{
+    color: rgb(0, 90, 0);
+}
+
+#dashboard-container{
+    height: 100vh;
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+}

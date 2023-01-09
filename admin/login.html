@@ -4,27 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- add icon link -->
+    <link rel = "icon" href ="../assets/img/logo/logo1.png" type = "image/x-icon">
+
+    <!----------------------------Fontawesome CSS  ------------------------->
+    <link rel="stylesheet" href="../assets/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/all6.2.1.min.css">
+
+    <!----------------------------Bootstrap CSS  ------------------------->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+    <!----------------------------Owl Carousel CSS  ------------------------->
+    <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../assets/css/owl.theme.default.min.css">
+
+    <!----------------------------Animation on scroll CSS  ------------------------->
+    <link rel="stylesheet" href="../assets/css/aos.css">
+
+
+
+    <!----------------------------Custom CSS  ------------------------->
+    <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/admin-style.css">
+    <link rel="stylesheet" href="../assets/css/responsiveness.css">
     <title>Admin Login</title>
 </head>
 <body>
-    <div class="container">
-        <div id="admin-login-form">
-            <div class="logo">
-                <div class="logo-img">
-                    <img src="../assets/img/logo/logo2.png" class="img-fluid">
+    <div class="container d-flex align-items-center justify-content-center h-100hv">
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+                <div class="admin-login-container">
+                    <form id="admin-login-form">
+                        <div class="logo">
+                            <div class="logo-img">
+                                <img src="../assets/img/logo/logo2.png" class="img-fluid">
+                            </div>
+                            <div class="logo-text">WhatNextMentors</div>
+                        </div>
+                        <h5 class="text-center intro">Enter your information to login</h5>
+                        <div class="form-group row">
+                            <div class="col-12">
+                                <label for="email">Email</label>
+                                <input type="text" id="email" name="email" class="form-control" placeholder="john@me.com">
+                            </div>
+                            <div class="col-12">
+                                <label for="password">Password</label>
+                                <input type="password" id="password" class="form-control" name="password" placeholder="Enter your password">
+                            </div>
+                        </div>   
+                        <div class="text-end my-4">
+                            <a href="forgot-password.html" class="text-dark">Forgot Password?</a>
+                        </div>                     
+                        
+                        <a href="./dashboard.html" class="getstarted-btn admin-login-btn d-block w-100 text-center">Login <i class="fa-solid fa-arrow-right-to-bracket"></i></a>
+                    </form>
                 </div>
-                <h6 class="logo-text">WhatNextMentors</h6>
+                
             </div>
-            <h5>Enter your information to login</h5>
-
-            <label for="email"></label>
-            <input type="text" id="email" class="form-control" placeholder="john@me.com">
-            <label for="password"></label>
-            <input type="text" id="password" class="form-control" placeholder="">
+            <div class="col-sm-1"></div>
         </div>
+       
     </div>
 
-    
+
+
+
+     <!----------------------------Javascript Files  ------------------------->
+      <script src="../assets/js/jQuery3.6.1.min.js"></script>
+      <script src="../assets/js/all.min.js"></script>
+      <script src="../assets/js/all6.2.1.min.js"></script>
+      <script src="../assets/js/bootstrap.min.js"></script>
+      <script src="../assets/js/owl.carousel.min.js"></script>
+      <script src="../assets/js/aos.js"></script>
+      <script src="../assets/js/script.js"></script>
 </body>
 </html>
