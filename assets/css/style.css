@@ -1507,14 +1507,21 @@ body#blog{
   margin: 10px 0;
 }
 
+.search-card-body .expertise-levels .rating-container{
+  display: inline-block;
+  width: 100%;
+  height: 10px;
+  border-radius: 10px;
+  background: #ffffff;
+}
 .search-card-body .expertise-levels .rating{
-  height: 15px;
+  height: 10px;
   background: var(--green-color);
   border-radius: 10px;
 }
 
 .search-card-body .expertise-levels .hrm-rate{
-  width: 45%;
+  width: 45%!important;
 }
 .search-card-body .expertise-levels .fa-rate{
   width: 60%;
@@ -3222,9 +3229,12 @@ width: 15px;
   opacity: .5;
   font-size: .9rem;
   margin-top: 15px;
+  font-weight: 700;
 }
 .associate-approval-container .item .title-val{
-  opacity: .8;
+  opacity: 1;
+  color: #000000;
+  font-weight: 700;
 }
 .associate-approval-container .item .dp{
  position: relative;
@@ -3257,6 +3267,19 @@ width: 15px;
   box-shadow: none;
 }
 
+.badge-counter{
+  font-size: 1rem!important;
+}
+
+.nav-link svg.svg-inline--fa.fa-bell{
+  font-size: 1.5rem!important;
+}
+
+.badge {
+  position: absolute!important;
+  right: 5px!important;
+  top: 15px!important;
+}
 
 
 

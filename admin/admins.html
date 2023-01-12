@@ -31,8 +31,6 @@
     <link href="../assets/css/sb-admin-2.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/admin-style.css">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
-
     <title>Dashboard</title>
 
 </head>
@@ -130,6 +128,7 @@
             <!-- Main Content -->
             <div id="content">
 
+                <!-- Topbar -->
                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
                     <!-- Sidebar Toggle (Topbar) -->
@@ -251,64 +250,153 @@
                     </ul>
 
                 </nav>
+                <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-                    </div>
-
-                    <!-- Content Row -->
-                    <div class="row">
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-success shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                                Total Mentors (Monthly)</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">40,000</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fa-solid fa-user fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3"></div>
-                        <div class="col-xl-3"></div>
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-success shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                               Total Mentees (all time)</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">15,000</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fa-solid fa-user fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <h1 class="h3 mb-0 text-gray-800">Adminstrators</h1>
                     </div>
 
                     <!-- Content Row -->
 
                     <div class="row">
+                        <div class="d-flex justify-content-end">
+                            <button id="add-admin-btn" data-bs-toggle="modal" data-bs-target="#addAdminModal" class="admin-btn">add administrator &nbsp;<i class="fa-solid fa-plus"></i></button>
+                        </div>
+                         <!-- Add Admin Modal -->
+                         <div class="modal fade" id="addAdminModal" tabindex="-1" aria-labelledby="addAdminModalLabel" aria-hidden="true">
+                             <div class="modal-dialog">
+                               <div class="modal-content">
+                                 <div class="modal-header">
+                                   <h5 class="modal-title" id="exampleModalLabel">Add New Admin</h5>
+                                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                 </div>
+                                 <div class="modal-body">
+                                   <form action="" id="add-admin-form">
+                                       <h6>Enter New Admin Details</h6>
+                                       <div class="form-group row">
+                                           <div class="col-12">
+                                               <label for="firstName">First Name <span class="text-danger">*</span></label>
+                                               <div class="form-input">
+                                                 <span class="inner-icon"><svg class="svg-inline--fa fa-user fa-w-14" aria-hidden="true" focusable="false" data-prefix="fa-regular" data-icon="user" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M272 304h-96C78.8 304 0 382.8 0 480c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32C448 382.8 369.2 304 272 304zM48.99 464C56.89 400.9 110.8 352 176 352h96c65.16 0 119.1 48.95 127 112H48.99zM224 256c70.69 0 128-57.31 128-128c0-70.69-57.31-128-128-128S96 57.31 96 128C96 198.7 153.3 256 224 256zM224 48c44.11 0 80 35.89 80 80c0 44.11-35.89 80-80 80S144 172.1 144 128C144 83.89 179.9 48 224 48z"></path></svg><!-- <i class="fa-regular fa-user"></i> Font Awesome fontawesome.com --></span>
+                                                 <input type="text" id="firstName" name="firstName" placeholder="FirstName">
+                                               </div>
+                                           </div>
+                                           <div class="col-12">
+                                               <label for="lastName">Last Name <span class="text-danger">*</span></label>
+                                               <div class="form-input">
+                                                 <span class="inner-icon"><svg class="svg-inline--fa fa-user fa-w-14" aria-hidden="true" focusable="false" data-prefix="fa-regular" data-icon="user" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M272 304h-96C78.8 304 0 382.8 0 480c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32C448 382.8 369.2 304 272 304zM48.99 464C56.89 400.9 110.8 352 176 352h96c65.16 0 119.1 48.95 127 112H48.99zM224 256c70.69 0 128-57.31 128-128c0-70.69-57.31-128-128-128S96 57.31 96 128C96 198.7 153.3 256 224 256zM224 48c44.11 0 80 35.89 80 80c0 44.11-35.89 80-80 80S144 172.1 144 128C144 83.89 179.9 48 224 48z"></path></svg><!-- <i class="fa-regular fa-user"></i> Font Awesome fontawesome.com --></span>
+                                                 <input type="text" id="lastName" name="lastName" placeholder="lastName">
+                                               </div>
+                                           </div>
+                                           <div class="col-12">
+                                               <label for="email"> Email<span class="text-danger">*</span></label>
+                                               <div class="form-input">
+                                                 <span class="inner-icon"><i class="fa-regular fa-envelope"></i></span>
+                                                 <input type="text" id="email" name="email" placeholder="myname@email.com">
+                                               </div>
+                                           </div>
+                                           <div class="col-12">
+                                               <label for="phoneNumber">Telephone Number <span class="text-danger">*</span></label>
+                                               <div class="form-input">
+                                                 <span class="inner-icon"><i class="fa-solid fa-phone"></i></span>
+                                                 <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="+2347076354635">
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </form>
+                                 </div>
+                                 <div class="modal-footer">
+                                   <button type="button" class="btn btn-success">Add Admin</button>
+                                 </div>
+                               </div>
+                             </div>
+                        </div>
+                    </div>
 
-                        <!-- Area Chart -->
-                        <div class="col-12">
-                            <div class="card shadow mb-4">
-                                <!-- Card Body -->
-                                <div class="card-body">
-                                    <div class="chart-container">
-                                        <canvas id="myChart" style="width:100%; height:100%"></canvas>
+                    <div class="card shadow my-4">
+                        <div class="card-header py-3">
+                            <h5 class="m-0 font-weight-bold text-center text-success">List of Adminstrators</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <div id="dataTable_wrapper" class="dataTables_wrapper dt-bootstrap4">
+                                    <div class="row">
+                                        <div class="col-sm-12 my-4">
+                                            <div id="dataTable_filter" class="dataTables_filter form-input">
+                                                <span class="inner-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                                <input type="search" class="form-control pl-5" placeholder="Search for admin">                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                    <div class="col-sm-12">
+                                        <table class="table dataTable" id="dataTable" width="100%" cellspacing="0" role="grid" aria-describedby="dataTable_info" style="width: 100%;">
+                                            <thead>
+                                                <tr role="row">
+                                                    <th class="sorting sorting_asc" tabindex="0" aria-controls="dataTable"  aria-sort="ascending" aria-label="Name: activate to sort column descending" style="width: 224px;">First Name</th>
+                                                    <th class="sorting" tabindex="0" aria-controls="dataTable"  aria-label="Position: activate to sort column ascending" style="width: 337px;">Last Name</th>
+                                                    <th class="sorting" tabindex="0" aria-controls="dataTable"  aria-label="Office: activate to sort column ascending" style="width: 163px;">Email</th>
+                                                    <th class="sorting" tabindex="0" aria-controls="dataTable"  aria-label="Age: activate to sort column ascending" style="width: 79px;">Telephone</th>
+                                                    <th class="sorting" tabindex="0" aria-controls="dataTable"  aria-label="Start date: activate to sort column ascending" style="width: 154px;">Status</th>
+                                                    <th class="sorting" tabindex="0" aria-controls="dataTable"  aria-label="Salary: activate to sort column ascending" style="width: 139px;">Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>               
+                                                <tr>
+                                                    <td>Smith</td>
+                                                    <td>Wilson</td>
+                                                    <td>smithwilson@gmail.com</td>
+                                                    <td>+2347067653421</td>
+                                                    <td><div class="status active">Active</div></td>
+                                                    <!-- <td><div class="status inactive">Inactive</div></td> -->
+                                                    <td>
+                                                        <div class="action">
+                                                            <button class="suspend">Suspend</button>
+                                                            <!-- <button class="view">View</button> -->
+                                                            <button class="activate">Activate</button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Smith</td>
+                                                    <td>Wilson</td>
+                                                    <td>smithwilson@gmail.com</td>
+                                                    <td>+2347067653421</td>
+                                                    <!-- <td><div class="status active">Active</div></td> -->
+                                                    <td><div class="status inactive">Inactive</div></td>
+                                                    <td>
+                                                        <div class="action">
+                                                            <button class="suspend">Suspend</button>
+                                                            <!-- <button class="view">View</button> -->
+                                                            <button class="activate">Activate</button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                          </tbody>
+                                        </table>
+                                    </div>
+                                    </div>
+                                    <div class="row justify-content-end">
+                                    <div class="col-sm-12 col-md-5">
+                                        <div class="dataTables_info" id="dataTable_info" role="status" aria-live="polite">
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-7">
+                                        <div class="dataTables_paginate paging_simple_numbers" id="dataTable_paginate">
+                                            <ul class="pagination table-pagination">
+                                                <li class="paginate_button page-item previous disabled" id="dataTable_previous"><a href="#" aria-controls="dataTable" data-dt-idx="0" tabindex="0" class="page-link"><i class="fa-solid fa-angles-left"></i></a></li>
+                                                <li class="paginate_button page-item active"><a href="#" aria-controls="dataTable" data-dt-idx="1" tabindex="0" class="page-link">1</a></li>
+                                                <li class="paginate_button page-item "><a href="#" aria-controls="dataTable" data-dt-idx="2" tabindex="0" class="page-link">2</a></li>
+                                                <li class="paginate_button page-item "><a href="#" aria-controls="dataTable" data-dt-idx="3" tabindex="0" class="page-link">3</a></li>
+                                                <li class="paginate_button page-item next" id="dataTable_next"><a href="#" aria-controls="dataTable" data-dt-idx="4" tabindex="0" class="page-link"><i class="fa-solid fa-angles-right"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                     </div>
                                 </div>
                             </div>
@@ -329,9 +417,8 @@
                 </div>
             </footer>
             <!-- End of Footer -->
-
         </div>
-        <!-- End of Content Wrapper -->
+       
 
     </div>
     <!-- End of Page Wrapper -->
@@ -340,6 +427,9 @@
     <a class="scroll-to-top rounded" href="#page-top">
         <i class="fa-solid fa-angle-up"></i>
     </a>
+
+    
+   
 
     <!-- Logout Modal-->
     <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -372,14 +462,11 @@
     <script src="../assets/js/sb-admin-2.min.js"></script>
 
     <!-- Page level plugins -->
-    <script src="../assets/js/Chart.bundle.min.js"></script>
+    <!-- <script src="../assets/js/Chart.bundle.min.js"></script>
 
-    <!-- Page level custom scripts -->
+    <! Page level custom scripts --
     <script src="../assets/js/chart-area-demo.js"> </script>
-    <script src="../assets/js/chart-pie-demo.js"></script>
-
-    <script src="../assets/js/all.min.js"></script>
-    <script src="../assets/js/all6.2.1.min.js"></script>
+    <script src="../assets/js/chart-pie-demo.js"></script> -->
 
     <script src="../assets/js/all.min.js"></script>
     <script src="../assets/js/all6.2.1.min.js"></script>
@@ -393,41 +480,7 @@
       <script src="../assets/js/script.js"></script>
       <script src="../assets/js/admin-script.js"></script>
 
-      <script>
-        var xValues = ["Jan.","Feb","Mar.","Apri.", "May", "Jun.", "Jul", "Aug.", "Sep.", "Oct.", "Nov.", "Dec."];
 
-        new Chart("myChart", {
-          type: "line",
-          data: {
-            labels: xValues,
-            datasets: [{
-              data: [20, 30, 50, 80, 60, 90, 40, 70, 50, 30, 90, 100],
-              borderColor: "red",
-              fill: false,
-              label: "Mentees"
-            },{
-              data: [16,55, 25, 80, 20, 30, 50, 80, 60, 90, 20, 50],
-              borderColor: "green",
-              fill: false,
-              label: "Mentors"
-            }]
-          },
-          options: {
-            maintainAspectRatio: false,
-            responsive: true,
-            legend: {
-                display: true,
-                position: "top",
-                align: "end",
-            },
-            title: {
-                display: true,
-                text: "Mentorship Impact",
-                fontSize: 20
-            }
-          }
-        });
-      </script>
 </body>
 
 </html>

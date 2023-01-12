@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <!-- add icon link -->
+     <link rel = "icon" href ="../assets/img/logo/logo1.png" type = "image/x-icon">
+      <!----------------------------Fontawesome CSS  ------------------------->
+    <link rel="stylesheet" href="../assets/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/all6.2.1.min.css">
+
+
+    <!-- Custom styles for this template-->
+    <!----------------------------Bootstrap CSS  ------------------------->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+    <!----------------------------Owl Carousel CSS  ------------------------->
+    <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../assets/css/owl.theme.default.min.css">
+
+    <!----------------------------Animation on scroll CSS  ------------------------->
+    <link rel="stylesheet" href="../assets/css/aos.css">
+
+
+    <!----------------------------Custom CSS  ------------------------->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsiveness.css">
+    <link href="../assets/css/sb-admin-2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/admin-style.css">
+
+    <title>Mentees</title>
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div class="navbar-nav bg-green sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <div class="header">
+                <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon">
+                    <img src="../assets/img/logo/logo1.png" class="img-fluid">
+                </div>
+            </a>
+            </div>
+            <ul class="body">
+
+                <!-- Nav Item - Dashboard -->
+                <li class="nav-item active">
+                    <a class="nav-link" href="dashboard.html">
+                        <i class="fa-solid fa-gauge-high"></i>
+                        <span>Dashboard</span></a>
+                </li>
+
+                <!-- Divider -->
+                <hr class="sidebar-divider">
+                <li class="nav-item active">
+                    <a class="nav-link" href="admins.html">
+                        <i class="fa-solid fa-users-gear"></i>
+                        <span>Adminstrators</span></a>
+                </li>
+
+                <hr class="sidebar-divider">
+                <li class="nav-item active">
+                    <a class="nav-link" href="mentors.html">
+                        <i class="fa-solid fa-users"></i>
+                        <span>Mentors</span></a>
+                </li>
+
+                <hr class="sidebar-divider">
+                <li class="nav-item active">
+                    <a class="nav-link" href="mentees.html">
+                        <i class="fa-solid fa-users"></i>
+                        <span>Mentees</span></a>
+                </li>
+
+                <hr class="sidebar-divider">
+                <li class="nav-item active">
+                    <a class="nav-link" href="partners.html">
+                        <i class="fa-solid fa-handshake"></i>
+                        <span>Partners</span></a>
+                </li>
+
+                <hr class="sidebar-divider">
+                <li class="nav-item active">
+                    <a class="nav-link" href="donations.html">
+                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                        <span>Donations</span></a>
+                </li>
+
+                <hr class="sidebar-divider">
+                <li class="nav-item active">
+                    <a class="nav-link" href="blog.html">
+                        <i class="fa-brands fa-blogger-b"></i>
+                        <span>Blog</span></a>
+                </li>
+
+                <hr class="sidebar-divider">
+                <li class="nav-item active">
+                    <a class="nav-link" href="support.html">
+                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                        <span>Support</span></a>
+                </li>
+
+                <hr class="sidebar-divider mt-5">
+                <li class="nav-item active">
+                    <a class="nav-link" href="login.html" data-toggle="modal" data-target="#logoutModal">
+                        <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                        <span>Logout</span> 
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-non rounded-circle mr-3">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                        <!-- <li class="nav-item dropdown no-arrow d-sm-none">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-search fa-fw"></i>
+                            </a>
+                            <-- Dropdown - Messages --
+                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                                aria-labelledby="searchDropdown">
+                                <form class="form-inline mr-auto w-100 navbar-search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-light border-0 small"
+                                            placeholder="Search for..." aria-label="Search"
+                                            aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="button">
+                                                <i class="fas fa-search fa-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li> -->
+
+                        <!-- Nav Item - Alerts -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-bell fa-fw fa-2x"></i>
+                                <!-- Counter - Alerts -->
+                                <span class="badge badge-danger badge-counter">12</span>
+                            </a>
+                            <!-- Dropdown - Alerts -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="alertsDropdown">
+                                <h6 class="dropdown-header">
+                                   Notifications
+                                </h6>
+                                <a class="dropdown-item d-flex align-items-center" href="mentees.html">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-success text-light">
+                                            <i class="fa-solid fa-user-plus"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">December 12, 2019</div>
+                                        <span class="font-weight-bold">A new Ambassador Signup waiting for approval</span>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="blog.html">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-success text-light">
+                                            <i class="fa-brands fa-blogger-b"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">December 7, 2019</div>
+                                        New Blog submission
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="support.html">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-warning">
+                                            <i class="fas fa-exclamation-triangle text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">December 2, 2019</div>
+                                        New report submission
+                                    </div>
+                                </a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                            </div>
+                        </li>
+
+                        <div class="topbar-divider d-none d-sm-block"></div>
+
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                                <span class="mr-2 d-none d-lg-inline text-gray-600">Jane Smith</span>
+                                <img class="img-profile rounded-circle"
+                                    src="../assets/img/team/team-img14.png">
+                            </a>
+                            <!-- Dropdown - User Information -->
+                            <!-- <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Profile
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Settings
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Activity Log
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Logout
+                                </a>
+                            </div> -->
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">Mentees</h1>
+                    </div>
+
+                    <!-- Content Row -->
+
+
+                    <div class="card shadow my-4">
+                        <div class="card-header py-3">
+                            <h5 class="m-0 font-weight-bold text-center text-success">List of Mentees</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <div id="dataTable_wrapper" class="dataTables_wrapper dt-bootstrap4">
+                                    <div class="row">
+                                        <div class="col-sm-12 my-4">
+                                            <div id="dataTable_filter" class="dataTables_filter form-input">
+                                                <span class="inner-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                                <input type="search" class="form-control pl-5" placeholder="Search for mentees">                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                    <div class="col-sm-12">
+                                        <table class="table dataTable" id="dataTable" width="100%" cellspacing="0" role="grid" aria-describedby="dataTable_info" style="width: 100%;">
+                                            <thead>
+                                                <tr role="row">
+                                                    <th class="sorting sorting_asc" tabindex="0" aria-controls="dataTable">First Name</th>
+                                                    <th class="sorting" tabindex="0" aria-controls="dataTable">Last Name</th>
+                                                    <th class="sorting" tabindex="0" aria-controls="dataTable">Nationality</th>
+                                                    <th class="sorting" tabindex="0" aria-controls="dataTable">Email</th>
+                                                    <th class="sorting" tabindex="0" aria-controls="dataTable">Telephone</th>
+                                                    <th class="sorting" tabindex="0" aria-controls="dataTable">Role</th>
+                                                    <th class="sorting" tabindex="0" aria-controls="dataTable">Status</th>
+                                                    <th class="sorting" tabindex="0" aria-controls="dataTable">Joined Date</th>
+                                                    <th class="sorting" tabindex="0" aria-controls="dataTable">Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>               
+                                                <tr>
+                                                    <td>Smith</td>
+                                                    <td>Wilson</td>
+                                                    <td>Nigeria</td>
+                                                    <td>smithwilson@gmail.com</td>
+                                                    <td>+2347067653421</td>
+                                                    <td>Ambassador</td>
+                                                    <td><div class="pending">Pending</div></td>
+                                                    <td>22/10/2022</td>
+                                                    <td>
+                                                        <div class="action">
+                                                            <!-- <button class="suspend">Suspend</button> -->
+                                                            <button type="button"  title="View Profile" class="view-btn view" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                                <!-- <i class="fa-solid fa-eye"></i>  -->  View
+                                                            </button>
+                                                            <!-- <button class="activate">Activate</button> -->
+                                                        </div>
+
+                                                        <!-- Modal -->
+                                                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog modal-dialog-scrollable">
+                                                              <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                  <h5 class="modal-title text-success" id="exampleModalLabel">Personal Details</h5>
+                                                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                 <div class="row associate-approval-container">
+                                                                    <div class="col-sm-12">
+                                                                        <div class="row">
+                                                                            <div class="col-md-6 item order-md-1">
+                                                                                <div class="dp">
+                                                                                    <img src="../assets/img/team/black_man_on_suit.jpg" class="img-fluid">
+                                                                                    <div class="name"></div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-6 item order-md-3">
+                                                                                <div class="info">
+                                                                                    <div class="heading">Personal Info</div>
+                                                                                    <div class="title">Name</div>
+                                                                                    <div class="title-val">Michael Rohan</div>
+                                                                                
+                                                                                    <div class="title">Gender</div>
+                                                                                    <div class="title-val">Male</div>
+                                                                                
+                                                                                    <div class="title">Date Of Birth</div>
+                                                                                    <div class="title-val">12/12/2007</div>
+                                                                                
+                                                                                    <div class="title">Nationality</div>
+                                                                                    <div class="title-val">Nigerian</div>
+                                                                                
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-6 item order-md-2">
+                                                                                <div class="heading">Contact Details</div>
+                                                                            
+                                                                                <div class="title">Phone</div>
+                                                                                <div class="title-val">+2347048763987</div>
+                                                                            
+                                                                                <div class="title">Email</div>
+                                                                                <div class="title-val">euniceokoro33@gmail.com</div>
+
+                                                                                <div class="title">Account Type</div>
+                                                                                <div class="title-val">Mentee</div>
+
+                                                                                <div class="title">Account Tier</div>
+                                                                                <div class="title-val">Associate</div>
+                                                                            </div>                                           
+                                                                            <div class="col-md-6 item order-md-4">
+                                                                                <div class="heading">Address</div>
+
+                                                                                <div class="title">Address Line</div>
+                                                                                <div class="title-val">35 Cresent Road</div>
+                                                                                <div class="title">City</div>
+                                                                                <div class="title-val">Abakaliki</div>
+                                                                            
+                                                                                <div class="title">State</div>
+                                                                                <div class="title-val">Ebonyi</div>
+        
+                                                                                <div class="title">Country</div>
+                                                                                <div class="title-val">Nigeria</div>
+                                                                            
+                                                                            </div> 
+                                                                            <div class="col-12 order-5 mt-4">
+                                                                                <h6 class="heading">Area of Expertise</h6>
+                                                                                <div class="search-card-body px-3 pb-3">
+                                                                                    <div class="expertise-levels py-2">
+                                                                                      <div class="row">
+                                                                                        <div class="col-6">
+                                                                                          Human Reasource Management
+                                                                                        </div>
+                                                                                        <div class="col-6">
+                                                                                          <div class="rating-container">
+                                                                                            <div class="hrm-rate rating"></div>
+                                                                                        </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                      <div class="row">
+                                                                                        <div class="col-6">
+                                                                                          Financial Analysis
+                                                                                        </div>
+                                                                                        <div class="col-6">
+                                                                                          <div class="rating-container">
+                                                                                            <div class="fa-rate rating"></div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                      <div class="row">
+                                                                                        <div class="col-6">
+                                                                                          Sales Management
+                                                                                        </div>
+                                                                                        <div class="col-6">
+                                                                                          <div class="rating-container">
+                                                                                            <div class="sm-rate rating"></div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                      <div class="row">
+                                                                                        <div class="col-6">
+                                                                                          Teaching
+                                                                                        </div>
+                                                                                        <div class="col-6">
+                                                                                          <div class="rating-container">
+                                                                                            <div class="t-rate rating"></div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                      <div class="row">
+                                                                                        <div class="col-6">
+                                                                                         Life Coach
+                                                                                        </div>
+                                                                                        <div class="col-6">
+                                                                                          <div class="rating-container">
+                                                                                            <div class="lc-rate rating"></div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>                              
+                                                                 </div>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <!-- <div class="account-status approved">
+                                                                        <div class="icon"><i class="fa-solid fa-user-check"></i></div>
+                                                                        <div class="text">Account Approved</div>
+                                                                    </div> -->
+                                                                    <div class="account-status suspended">
+                                                                        <div class="icon"><i class="fa-solid fa-user-xmark"></i></div>
+                                                                        <div class="text">Account Suspended</div>
+                                                                    </div>
+                                                                  <button type="button" class="btn-suspend">Suspend</button>
+                                                                  <button type="button" class="btn-approve">Approve</button>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Chidi</td>
+                                                    <td>Okoro</td>
+                                                    <td>Nigeria</td>
+                                                    <td>chidi333@gmail.com</td>
+                                                    <td>+2347067653421</td>
+                                                    <td>Associate</td>
+                                                    <td><div class="resolved">Approved</div></td>
+                                                    <td>22/10/2022</td>
+                                                    <td>
+                                                        <div class="action">
+                                                            <!-- <button class="suspend">Suspend</button> -->
+                                                            <button type="button"  title="View Profile" class="view-btn view" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                                                <!-- <i class="fa-solid fa-eye"></i>  -->  View
+                                                            </button>
+                                                            <!-- <button class="activate">Activate</button> -->
+                                                        </div>
+
+                                                        <!-- Modal -->
+                                                        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog modal-dialog-scrollable">
+                                                              <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                  <h5 class="modal-title text-success" id="exampleModalLabel">Personal Details</h5>
+                                                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                 <div class="row associate-approval-container">
+                                                                    <div class="col-sm-12">
+                                                                        <div class="row">
+                                                                            <div class="col-md-6 item order-md-1">
+                                                                                <div class="dp">
+                                                                                    <img src="../assets/img/team/black_man_on_suit.jpg" class="img-fluid">
+                                                                                    <div class="name"></div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-6 item order-md-3">
+                                                                                <div class="info">
+                                                                                    <div class="heading">Personal Info</div>
+                                                                                    <div class="title">Name</div>
+                                                                                    <div class="title-val">Michael Rohan</div>
+                                                                                
+                                                                                    <div class="title">Gender</div>
+                                                                                    <div class="title-val">Male</div>
+                                                                                
+                                                                                    <div class="title">Date Of Birth</div>
+                                                                                    <div class="title-val">12/12/2007</div>
+                                                                                
+                                                                                    <div class="title">Nationality</div>
+                                                                                    <div class="title-val">Nigerian</div>
+                                                                                
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-6 item order-md-2">
+                                                                                <div class="heading">Contact Details</div>
+                                                                            
+                                                                                <div class="title">Phone</div>
+                                                                                <div class="title-val">+2347048763987</div>
+                                                                            
+                                                                                <div class="title">Email</div>
+                                                                                <div class="title-val">euniceokoro33@gmail.com</div>
+
+                                                                                <div class="title">Account Type</div>
+                                                                                <div class="title-val">Mentee</div>
+
+                                                                                <div class="title">Account Tier</div>
+                                                                                <div class="title-val">Ambassador</div>
+                                                                            </div>                                           
+                                                                            <div class="col-md-6 item order-md-4">
+                                                                                <div class="heading">Address</div>
+
+                                                                                <div class="title">Address Line</div>
+                                                                                <div class="title-val">35 Cresent Road</div>
+                                                                                <div class="title">City</div>
+                                                                                <div class="title-val">Abakaliki</div>
+                                                                            
+                                                                                <div class="title">State</div>
+                                                                                <div class="title-val">Ebonyi</div>
+        
+                                                                                <div class="title">Country</div>
+                                                                                <div class="title-val">Nigeria</div>
+                                                                            
+                                                                            </div> 
+                                                                            <div class="col-12 order-5 mt-4">
+                                                                                <h6 class="heading">Area of Expertise</h6>
+                                                                                <div class="search-card-body px-3 pb-3">
+                                                                                    <div class="expertise-levels py-2">
+                                                                                      <div class="row">
+                                                                                        <div class="col-6">
+                                                                                          Human Reasource Management
+                                                                                        </div>
+                                                                                        <div class="col-6">
+                                                                                          <div class="rating-container">
+                                                                                            <div class="hrm-rate rating"></div>
+                                                                                        </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                      <div class="row">
+                                                                                        <div class="col-6">
+                                                                                          Financial Analysis
+                                                                                        </div>
+                                                                                        <div class="col-6">
+                                                                                          <div class="rating-container">
+                                                                                            <div class="fa-rate rating"></div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                      <div class="row">
+                                                                                        <div class="col-6">
+                                                                                          Sales Management
+                                                                                        </div>
+                                                                                        <div class="col-6">
+                                                                                          <div class="rating-container">
+                                                                                            <div class="sm-rate rating"></div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                      <div class="row">
+                                                                                        <div class="col-6">
+                                                                                          Teaching
+                                                                                        </div>
+                                                                                        <div class="col-6">
+                                                                                          <div class="rating-container">
+                                                                                            <div class="t-rate rating"></div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                      <div class="row">
+                                                                                        <div class="col-6">
+                                                                                         Life Coach
+                                                                                        </div>
+                                                                                        <div class="col-6">
+                                                                                          <div class="rating-container">
+                                                                                            <div class="lc-rate rating"></div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>                              
+                                                                 </div>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <div class="account-status approved">
+                                                                        <div class="icon"><i class="fa-solid fa-user-check"></i></div>
+                                                                        <div class="text">Account Approved</div>
+                                                                    </div>
+                                                                    <!-- <div class="account-status suspended">
+                                                                        <div class="icon"><i class="fa-solid fa-user-xmark"></i></div>
+                                                                        <div class="text">Account Suspended</div>
+                                                                    </div> -->
+                                                                  <button type="button" class="btn-suspend">Suspend</button>
+                                                                  <button type="button" class="btn-approve">Approve</button>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Chidi</td>
+                                                    <td>Okoro</td>
+                                                    <td>Nigeria</td>
+                                                    <td>chidi333@gmail.com</td>
+                                                    <td>+2347067653421</td>
+                                                    <td>Global Impact</td>
+                                                    <td><div class="resolved">Approved</div></td>
+                                                    <td>22/10/2022</td>
+                                                    <td>
+                                                        <div class="action">
+                                                            <!-- <button class="suspend">Suspend</button> -->
+                                                            <button type="button"  title="View Profile" class="view-btn view" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                                                <!-- <i class="fa-solid fa-eye"></i>  -->  View
+                                                            </button>
+                                                            <!-- <button class="activate">Activate</button> -->
+                                                        </div>
+
+                                                        <!-- Modal -->
+                                                        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog modal-dialog-scrollable">
+                                                              <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                  <h5 class="modal-title text-success" id="exampleModalLabel">Personal Details</h5>
+                                                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                 <div class="row associate-approval-container">
+                                                                    <div class="col-sm-12">
+                                                                        <div class="row">
+                                                                            <div class="col-md-6 item order-md-1">
+                                                                                <div class="dp">
+                                                                                    <img src="../assets/img/team/black_man_on_suit.jpg" class="img-fluid">
+                                                                                    <div class="name"></div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-6 item order-md-3">
+                                                                                <div class="info">
+                                                                                    <div class="heading">Personal Info</div>
+                                                                                    <div class="title">Name</div>
+                                                                                    <div class="title-val">Michael Rohan</div>
+                                                                                
+                                                                                    <div class="title">Gender</div>
+                                                                                    <div class="title-val">Male</div>
+                                                                                
+                                                                                    <div class="title">Date Of Birth</div>
+                                                                                    <div class="title-val">12/12/2007</div>
+                                                                                
+                                                                                    <div class="title">Nationality</div>
+                                                                                    <div class="title-val">Nigerian</div>
+                                                                                
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-6 item order-md-2">
+                                                                                <div class="heading">Contact Details</div>
+                                                                            
+                                                                                <div class="title">Phone</div>
+                                                                                <div class="title-val">+2347048763987</div>
+                                                                            
+                                                                                <div class="title">Email</div>
+                                                                                <div class="title-val">euniceokoro33@gmail.com</div>
+
+                                                                                <div class="title">Account Type</div>
+                                                                                <div class="title-val">Mentee</div>
+
+                                                                                <div class="title">Account Tier</div>
+                                                                                <div class="title-val">Ambassador</div>
+                                                                            </div>                                           
+                                                                            <div class="col-md-6 item order-md-4">
+                                                                                <div class="heading">Address</div>
+
+                                                                                <div class="title">Address Line</div>
+                                                                                <div class="title-val">35 Cresent Road</div>
+                                                                                <div class="title">City</div>
+                                                                                <div class="title-val">Abakaliki</div>
+                                                                            
+                                                                                <div class="title">State</div>
+                                                                                <div class="title-val">Ebonyi</div>
+        
+                                                                                <div class="title">Country</div>
+                                                                                <div class="title-val">Nigeria</div>
+                                                                            
+                                                                            </div> 
+                                                                            <div class="col-12 order-5 mt-4">
+                                                                                <h6 class="heading">Area of Expertise</h6>
+                                                                                <div class="search-card-body px-3 pb-3">
+                                                                                    <div class="expertise-levels py-2">
+                                                                                      <div class="row">
+                                                                                        <div class="col-6">
+                                                                                          Human Reasource Management
+                                                                                        </div>
+                                                                                        <div class="col-6">
+                                                                                          <div class="rating-container">
+                                                                                            <div class="hrm-rate rating"></div>
+                                                                                        </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                      <div class="row">
+                                                                                        <div class="col-6">
+                                                                                          Financial Analysis
+                                                                                        </div>
+                                                                                        <div class="col-6">
+                                                                                          <div class="rating-container">
+                                                                                            <div class="fa-rate rating"></div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                      <div class="row">
+                                                                                        <div class="col-6">
+                                                                                          Sales Management
+                                                                                        </div>
+                                                                                        <div class="col-6">
+                                                                                          <div class="rating-container">
+                                                                                            <div class="sm-rate rating"></div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                      <div class="row">
+                                                                                        <div class="col-6">
+                                                                                          Teaching
+                                                                                        </div>
+                                                                                        <div class="col-6">
+                                                                                          <div class="rating-container">
+                                                                                            <div class="t-rate rating"></div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                      <div class="row">
+                                                                                        <div class="col-6">
+                                                                                         Life Coach
+                                                                                        </div>
+                                                                                        <div class="col-6">
+                                                                                          <div class="rating-container">
+                                                                                            <div class="lc-rate rating"></div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>                              
+                                                                 </div>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <div class="account-status approved">
+                                                                        <div class="icon"><i class="fa-solid fa-user-check"></i></div>
+                                                                        <div class="text">Account Approved</div>
+                                                                    </div>
+                                                                    <!-- <div class="account-status suspended">
+                                                                        <div class="icon"><i class="fa-solid fa-user-xmark"></i></div>
+                                                                        <div class="text">Account Suspended</div>
+                                                                    </div> -->
+                                                                  <button type="button" class="btn-suspend">Suspend</button>
+                                                                  <button type="button" class="btn-approve">Approve</button>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                          </tbody>
+                                        </table>
+                                    </div>
+                                    </div>
+                                    <div class="row">
+                                    <div class="col-sm-12 col-md-5"></div>
+                                    <div class="col-sm-12 col-md-7">
+                                      <div class="dataTables_paginate paging_simple_numbers" id="dataTable_paginate">
+                                          <ul class="pagination table-pagination">
+                                              <li class="paginate_button page-item previous disabled" id="dataTable_previous"><a href="#" aria-controls="dataTable" data-dt-idx="0" tabindex="0" class="page-link"><i class="fa-solid fa-angles-left"></i></a></li>
+                                              <li class="paginate_button page-item active"><a href="#" aria-controls="dataTable" data-dt-idx="1" tabindex="0" class="page-link">1</a></li>
+                                              <li class="paginate_button page-item "><a href="#" aria-controls="dataTable" data-dt-idx="2" tabindex="0" class="page-link">2</a></li>
+                                              <li class="paginate_button page-item "><a href="#" aria-controls="dataTable" data-dt-idx="3" tabindex="0" class="page-link">3</a></li>
+                                              <li class="paginate_button page-item next" id="dataTable_next"><a href="#" aria-controls="dataTable" data-dt-idx="4" tabindex="0" class="page-link"><i class="fa-solid fa-angles-right"></i></a></li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; WhatNextMentors 2023</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+        </div>
+       
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fa-solid fa-angle-up"></i>
+    </a>
+
+    
+   
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="../assets/js/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="../assets/js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <!-- <script src="../assets/js/Chart.bundle.min.js"></script>
+
+    <! Page level custom scripts --
+    <script src="../assets/js/chart-area-demo.js"> </script>
+    <script src="../assets/js/chart-pie-demo.js"></script> -->
+
+    <script src="../assets/js/all.min.js"></script>
+    <script src="../assets/js/all6.2.1.min.js"></script>
+
+    <script src="../assets/js/jQuery3.6.1.min.js"></script>
+      <script src="../assets/js/all.min.js"></script>
+      <script src="../assets/js/all6.2.1.min.js"></script>
+      <script src="../assets/js/bootstrap.min.js"></script>
+      <script src="../assets/js/owl.carousel.min.js"></script>
+      <script src="../assets/js/aos.js"></script>
+      <script src="../assets/js/script.js"></script>
+      <script src="../assets/js/admin-script.js"></script>
+
+
+</body>
+
+</html>
