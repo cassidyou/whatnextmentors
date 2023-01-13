@@ -85,27 +85,30 @@
 <main>
      <!-------------------- PARTNERSHIP SECTION  ------------------->
 
-     <section id="partnership" class="mb-5">
-        <div class="container">
-         <div class="row mb-4">
-           <div class="col-sm-12 text-center" data-aos="fade-up" data-aos-duration="1000">
-             <h4 class="section-heading">Partnership</h4>
-             <h5><b> Our esteemed partners in progress </b></h5>
-           </div>
+     <section id="partnership">
+      <div class="container">
+       <div class="row mb-4">
+         <div class="col-sm-12 text-center" data-aos="fade-up" data-aos-duration="1000">
+           <h4 class="section-heading">Partnership</h4>
+           <h5><b> Our esteemed partners in progress </b></h5>
          </div>
-        </div>
-        <div  id="partners">
-          <div class="container">
-            <div id="partners-logo">
-              <div data-aos="fade-up" data-aos-duration="1500"><img src="./assets/img/logo/proconnect-logo.png" class="img-fluid"></div>
-              <div data-aos="fade-up" data-aos-duration="2000"><img src="./assets/img/logo/boundless-logo.png" class="img-fluid"></div>
-              <div data-aos="fade-up" data-aos-duration="2500"><img src="./assets/img/logo/ifenet-logo.png" class="img-fluid"></div>
-            </div>
+       </div>
+      </div>
+      <div  id="partners">
+        <div class="container">
+          <div id="partners-logo"  class="owl-carousel owl-theme">
+            <div ><img src="./assets/img/logo/proconnect-logo.png" class="img-fluid"></div>
+            <div  ><img src="./assets/img/logo/boundless-logo.png" class="img-fluid"></div>
+            <div ><img src="./assets/img/logo/ifenet-logo.png" class="img-fluid"></div>
+           
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
     <div class="container">
+      <h4 class="text-center mt-5"><b>Do you wish to be our next Partner?</b></h4>
+      <h5 class="text-center mb-3">Fill the form below</h5>
         <small class="text-danger">All fields are required</small>
 
         <form action="" id="update-profile-form">
@@ -125,6 +128,13 @@
             <input type="text" id="firstName" name="firstName" placeholder="First Name">
           </div>
         </div>
+        <div class="col-md-12">
+          <label for="orgName">Organization Name</label>
+          <div class="form-input">
+            <span class="inner-icon"><i class="fa-regular fa-user"></i></span>
+            <input type="text" id="orgName" name="orgName" placeholder="Organization Name">
+          </div>
+        </div>
         </div>
 
         <div class="form-group row">
@@ -136,11 +146,11 @@
           </div>
         </div>
         <div class="col-md-6">
-          <label for="sex">Sex</label>
+          <label for="gender">Gender</label>
           <div class="form-input">
             <span class="inner-icon"><i class="fa-solid fa-venus-mars"></i></span>
-            <select name="sex" id="sex">
-              <option value="">Sex</option>
+            <select name="gender" id="gender">
+              <option value="">Gender</option>
               <option value="Male">Male</option>
               <option value="Female">Female</option>
             </select>
@@ -215,25 +225,25 @@
             <div class="col-sm-4 roles-card">
                 <div class="roles">
                     <input checked type="radio" name="role" value="associate" style="width: auto; display: inline-block;"> <b>GOLD</b>
-                    <p>
+                    <!-- <p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, quo!
-                    </p>
+                    </p> -->
                 </div>
             </div>
             <div class="col-sm-4 roles-card">
                 <div class="roles">
                     <input type="radio" name="role" value="associate" style="width: auto; display: inline-block;"> <b>PREMIUM</b>
-                    <p>
+                    <!-- <p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, quo!
-                    </p>
+                    </p> -->
                 </div>
             </div>
             <div class="col-sm-4 roles-card">
                 <div class="roles">
                     <input type="radio" name="role" value="associate" style="width: auto; display: inline-block;"> <b>PLANTINUM</b>
-                    <p>
+                    <!-- <p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, quo!
-                    </p>
+                    </p> -->
                 </div>
             </div>
         </div>
@@ -241,7 +251,7 @@
 
       <a href="#" class="partner-btn" id="prevBtn">Previous</a>
       <a href="#" class="getstarted-btn" id="nextBtn">Next</a>
-      <button class="getstarted-btn d-none mt-5 text-center" id="update-profile">Submit</button>
+      <button class="getstarted-btn d-none mt-5 text-center btn-sm" id="update-profile">Submit</button>
         </form>
     </div>
 </main>

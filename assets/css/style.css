@@ -199,6 +199,22 @@ section{
   margin: 0 50px;
 }
 
+.people-btn{
+  display: block;
+  width: 90%;
+  text-align: center;
+  background: #ffffff;
+  padding: 10px 15px;
+  border-radius: 7px;
+  border: 1px solid #4ae44a;
+  color: #4ae44a;
+  margin-bottom: .8rem;
+  font-size: .9rem;
+}
+.people-btn:hover{
+  opacity: .8;
+  color: #4ae44a;
+}
 
 .showcase-50{
   height: 320px;
@@ -461,15 +477,20 @@ section{
 .showcase-content .input-group input[type="text"],
 .header .search-input{
   box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.07);
-  background-color: var(--light-color);
-  height: 50px;
+  background-color: var(--light-color)!important;
+  height: 50px!important;
   border-radius: 50px!important;
   z-index: 1;
   text-align: center;
 }
 
+.header .search-input:focus{
+  border: 1px solid rgba(0, 0, 0, 0.07)!important;
+}
 
-.header .showcase .showcase-content .input-group button{
+
+.header .showcase .showcase-content .input-group button,
+.header .input-group-append button{
   background-color: var(--red-color);
   height: 50px;
   width: 50px;
@@ -557,11 +578,28 @@ section{
   font-family: poppins-medium;
 
 } 
+.user-testimony-btn,
+.testimony-submit-btn{
+  cursor: pointer;
+}
 
 
 /************************ MENTORSHIP CATEGORIES ***********/
- .mentorship-category.red{
-box-shadow: var(--dropshadow);
+.mentorship-category{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  box-shadow: var(--dropshadow);
+}
+.mentorship-category .red,
+.mentorship-category .green{
+  width: 100%;
+}
+.mentorship-category img{
+  margin: 0;
+  width: 100%;
 }
 .mentorship-category h3.green{
  background-color: var(--green-color);
@@ -689,6 +727,9 @@ box-shadow: var(--dropshadow);
   margin-top: 20px;
 }
 #testimonials-carousel div.owl-dot{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
   height: 50px;
   width: 50px;
   overflow: hidden;
@@ -697,6 +738,16 @@ box-shadow: var(--dropshadow);
   opacity: .2;
   transition: all .5s ease-in-out;
 }
+
+#testimonials-carousel div.owl-dot button.owl-dot img{
+  height: 100%;
+  width: 100%;
+}
+.owl-theme .owl-dots .owl-dot {
+  height: 100%;
+  width: 100%;
+}
+
 #testimonials-carousel div.owl-dot.active{
   height: 80px;
   width: 80px;
@@ -742,20 +793,14 @@ box-shadow: var(--dropshadow);
 
 /************************** PARTNERSHIP ***************************/
 #partners{
-  padding: 90px 0;
+  padding: 60px 0;
   background-color: var(--partnership-bgcolor);
 }
-#partners-logo{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: row;
-  margin-top: 40px 0;
-  vertical-align: middle;
-}
+
 
 #partners-logo img{
-  width: 90%;
+ height: 100px;
+ width: auto;
 }
 
 
@@ -847,7 +892,7 @@ text-transform: capitalize;
 
 .subfooter .contents{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   font-size: .85rem;
@@ -862,7 +907,7 @@ header#signup-login{
 #form-containter{
   margin-top: 20px;
   position: relative;
-  height:600px;
+  height: 400px;
   margin: 50px 3rem 10px 3rem;
   display: block;
   background-color: var(--light-color);
@@ -870,7 +915,11 @@ header#signup-login{
 }
 
 .form-field, .form-intro{
-  height: 600px;
+  height: 400px;
+}
+
+.form-intro{
+background-image: linear-gradient(120deg, #84fab0 0%, #056133 100%);
 }
 
 .form-intro h4{
@@ -940,6 +989,14 @@ header#signup-login{
   color: var(--light-color);
   font-weight: 700;
   width: 250px;
+}
+
+#signup-btn, .form-intro #signin-btn{
+  background: transparent!important;
+  transition: 2s;
+}
+#signup-btn:hover{
+  background: linear-gradient(120deg, #84fab0 0%,    #056133 100%)!important;
 }
 
 .form-field h5{

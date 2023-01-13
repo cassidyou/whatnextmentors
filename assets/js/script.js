@@ -1,8 +1,8 @@
 $(document).ready(function(){
-   //Animation on Scroll Instance
+   //ANIMATION ON SCROLL INITIALIZATION
     AOS.init();
 
-    //Navbar toggling 
+    //NAVBAR TOGGLING
     const menuBtn = $('.menu-btn');
     let menuOpen = false;
     menuBtn.click(function() {
@@ -24,9 +24,8 @@ $(document).ready(function(){
         menuOpen = false;
     })
 
-    //sticky top navbar
+    //STICKY TOP NAVBAR 
     var navHeight = $("nav.navbar").height();
-    // alert(navHeight);
     var stickyNavTop = $("nav.navbar").offset().top;
     var stickyNav = function(){
         var scrollTop = $(window).scrollTop();
@@ -38,22 +37,39 @@ $(document).ready(function(){
             $(".header .top").removeClass('m-gn');
         }
     };
-    // stickyNav();
     $(window).scroll(function(){
         stickyNav();
     });
 
 
-
+// TESTIMONIAL SECTION OF HOME PAGE
 
     $("#testimonial .owl-carousel").owlCarousel({
         items: 1,
         center: true,
         dots: true,
         dotsData: true,
-        nav: true
+        nav: true,
+        autoplay: true,
+        loop: true
         
        
+    });
+
+
+// PARTNERS SECTION OF HOME PAGE
+
+    $("#partners .owl-carousel").owlCarousel({
+        items: 4,
+        center: true,
+        dots: true,
+        center: true,
+        margin: 20,
+        loop: true,
+        autoplay: true,
+        smartSpeed: 5000,
+        autoplayHoverPause: true, 
+        rewind: false,
     });
 
     $("#testimonials-carousel .owl-nav .owl-next").html('<span aria-label="Next"><i class="fa-regular fa-circle-right"></i></span>');
@@ -70,8 +86,8 @@ $(document).ready(function(){
     $(".form-field").animate({left: '0'}, 200).removeAttr("style").removeClass("to-right");
     
 
-    $(".form-intro").html(' <h4>WhatNextMentors</h4> ' + 
-         '    <h2>Hello Friend</h2> ' +
+    $(".form-intro").html(
+         '    <h2>Hello Friend!</h2> ' +
 
          '  <h6>Create an account <br> and start your journey with us</h6> '+
 
@@ -80,42 +96,42 @@ $(document).ready(function(){
           '  </div>');
    
     $(".form-field").html('<div class="container py-5 px-3">' +
-                           ' <h5>sign in to whatnextmentors</h5>' +
-                           ' <h6>Continue with your social account</h6>' +
-                           ' <div id="social-links">' +
-                           '     <div class="row">' +
-                           '         <div class="col-2"></div>' +
-                           '         <div class="col-8">' +
-                           '         <ul>' +
-                           '             <li><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>' +
-                           '             <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>' +
-                           '             <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>' +
-                           '             <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>' +
-                           '         </ul>' +
-                           '         </div>' +
-                           '         <div class="col-2"></div>' +
-                           '     </div>' +
-                           ' </div>' +
-                           ' <h6>Sign in with your email</h6>' +
-                           ' <form id="signup-form" action="" class="mt-4">' +
-                           '   <div class="form-input">' +
-                           '     <span class="inner-icon"><i class="fa-regular fa-envelope"></i></span>' +
-                           '     <input type="text" class="" placeholder="Email">' +
-                           '   </div>' +
-                           '   <div class="form-input">' +
-                           '     <span class="inner-icon"><i class="fa-solid fa-lock"></i></span>' +
-                           '     <input type="text" class="" placeholder="Password">' +
-                           '   </div>' +
-                           '   <div class="form-input" id="hide-me">' +
-                           '     <span class="inner-icon" style="background-color:transparent; color: transparent; border: transparent;"><i class="fa-solid fa-lock"></i></span>' +
-                           '     <input type="text" class=""  style="background-color:transparent; color: transparent; border: transparent;">' +
-                           '   </div>' +
-                           '   <div id="submit-container" class="text-center">' +
-                           '      <a href="./user-dashboard.html" type="submit" id="signin-submit"> SIGN IN</a>' +
-                           '   </div>' +
-                           ' <div class="text-end mt-3"><a href="./forgot-password.html" class="text-success">Forgot Password</a></div>'+
-                           ' </form>' +
-                       ' </div>' 
+            ' <h5>sign in to whatnextmentors</h5>' +
+            // ' <h6>Continue with your social account</h6>' +
+            // ' <div id="social-links">' +
+            // '     <div class="row">' +
+            // '         <div class="col-2"></div>' +
+            // '         <div class="col-8">' +
+            // '         <ul>' +
+            // '             <li><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>' +
+            // '             <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>' +
+            // '             <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>' +
+            // '             <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>' +
+            // '         </ul>' +
+            // '         </div>' +
+            // '         <div class="col-2"></div>' +
+            // '     </div>' +
+            // ' </div>' +
+            ' <h6>Sign in with your email</h6>' +
+            ' <form id="signup-form" action="" class="mt-4">' +
+            '   <div class="form-input">' +
+            '     <span class="inner-icon"><i class="fa-regular fa-envelope"></i></span>' +
+            '     <input type="text" class="" placeholder="Email">' +
+            '   </div>' +
+            '   <div class="form-input">' +
+            '     <span class="inner-icon"><i class="fa-solid fa-lock"></i></span>' +
+            '     <input type="text" class="" placeholder="Password">' +
+            '   </div>' +
+            '   <div class="form-input" id="hide-me">' +
+            '     <span class="inner-icon" style="background-color:transparent; color: transparent; border: transparent;"><i class="fa-solid fa-lock"></i></span>' +
+            '     <input type="text" class=""  style="background-color:transparent; color: transparent; border: transparent;">' +
+            '   </div>' +
+            '   <div id="submit-container" class="text-center">' +
+            '      <a href="./user-dashboard.html" type="submit" id="signin-submit"> SIGN IN</a>' +
+            '   </div>' +
+            ' <div class="text-end mt-3"><a href="./forgot-password.html" class="text-success">Forgot Password</a></div>'+
+            ' </form>' +
+        ' </div>' 
     );
   });
 
@@ -124,8 +140,8 @@ $(document).ready(function(){
         $(".form-intro").animate({left: '0'}, 200).removeAttr("style").removeClass("to-right");
         $(".form-field").animate({right: '0'}, 200).removeAttr("style").removeClass("to-left");
 
-    $(".form-intro").html('<h4>WhatNextMentors</h4>' +
-            '<h2>Welcome back</h2>' +
+    $(".form-intro").html(
+            '<h2>Welcome back!</h2>' +
 
             '<h6>To keep connected with us <br> login with your personal info</h6>' +
 
@@ -537,6 +553,24 @@ triggerTabList.forEach(function (triggerEl) {
 
 
 
+var userTestimony = $(".user-testimony");
+var userTestimonyBtn = $(".user-testimony-btn");
+var testimonyTextarea = $(".testimonial-textarea");
+if(userTestimony.text() == "You have not submitted any testimony"){
+    userTestimonyBtn.text("Submit a testimonial");
+} else{
+    userTestimonyBtn.text("Update testimonial");
+}
+
+userTestimonyBtn.click(function(){
+    if(userTestimony.text() == "You have not submitted any testimony"){
+        testimonyTextarea.text("");
+    }else{
+        // var testimony = userTestimony.text();
+        testimonyTextarea.text(userTestimony.text());
+    }
+    $("#testimonial-form").toggleClass("d-none");
+})
 
 
 

@@ -441,7 +441,8 @@
     color: green;
 }
 
-.btn-suspend{
+.btn-suspend
+{
     background: #f5d7d7;
     color: red;
 }
@@ -452,8 +453,8 @@
 .table .action button.unpublish,
 .table .action button.delete
  {
-    color: #a81818;
-    border: 1px solid #a81818;
+    color: orangered;
+    border: 1px solid orangered;
 }
 
 .add-blog-container .card-header{
@@ -488,7 +489,8 @@
     color: #ffffff;
 }
 
-.table .resolve{
+.table .resolve,
+.table .publish{
     background: #ffffff;
     color: green;
     border: 1px solid green!important;
@@ -497,7 +499,12 @@
 .table .pending{
     color: orangered;
     background: #edffed;
-   
+}
+
+.table .pend{
+    background: #ffff;
+    color: orangered;
+    border: 1px solid orangered!important;
 }
 
 .table .resolved, .table .published{
@@ -507,7 +514,8 @@
 
 .table .resolved,
 .table .published,
-.table .pending{
+.table .pending,
+.table .pend{
     padding: 3px 7px;
     border-radius: 10px;
     display: inline-block;

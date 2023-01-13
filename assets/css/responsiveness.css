@@ -509,11 +509,17 @@ form#ask-question input.question{
 .header .search-input{
   height: 40px;
 }
-.showcase-content input[type="text"]::placeholder{
+.showcase-content input[type="text"]::placeholder
+{
   font-size: .8rem;
 }
+.header .search-input::placeholder{
+  font-size: .6rem;
+}
 
-.header .showcase .showcase-content .input-group button{
+
+.header .showcase .showcase-content .input-group button,
+.header .input-group-append button{
   background-color: var(--red-color);
   height: 40px;
   width: 40px;
@@ -660,6 +666,10 @@ form#ask-question input.question{
   font-size: .9rem;
   padding: 8px 15px!important;
 }
+#partners-logo img{
+  height: 70px;
+  width: auto;
+ }
 }
 
 @media screen and (max-width: 375px) {
@@ -687,6 +697,11 @@ form#ask-question input.question{
     height: 3rem;
     border-radius: 7px 0 0 7px;
   }
+
+  #partners-logo img{
+    height: 50px;
+    width: auto;
+   }
 
   #single-blog-main .blog-card-footer .reaction{
     margin-right: 0;
